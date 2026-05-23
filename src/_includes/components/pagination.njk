@@ -1,4 +1,4 @@
-<aside class="pagination --footer">
+<aside class="pagination">
   <div class="newer --start click-area" data-exists="{{'true' if newer else 'false'}}">
     {% if newer and newer.data.title %}<span class="subtitle">← Up next</span>{% endif %}
     {% if newer %}<a href="{{ newer.url | url }}">{{ newer.data.title or "← Newer posts" }}</a>{% endif %}

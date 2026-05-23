@@ -7,8 +7,14 @@ Thumbs.db
 .env
 .cache
 
+
 # Node modules and output
 node_modules
 _site
+.yarn
 yarn-error.log
 yarn.lock
+.zed
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.zed/

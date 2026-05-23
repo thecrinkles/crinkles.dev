@@ -1,0 +1,63 @@
+header {
+  --p: 70%;
+
+  margin-inline: auto;
+  padding-block: var(--layout-space);
+  width: 100%;
+  max-width: var(--layout-width);
+}
+
+header a.logo {
+  --layout-gap: 0.4em;
+
+  text-decoration: none;
+  color: var(--text-0);
+  transition: all 200ms;
+}
+
+header a.logo:is(:hover, :focus) {
+  color: var(--link-color);
+}
+
+header .logo span {
+  text-decoration: underline;
+  text-decoration-color: hsl(from var(--logo-text) h s l / var(--p));
+  text-decoration-thickness: 0.625ch;
+  text-underline-offset: -0.35ch;
+  text-decoration-skip-ink: none;
+  transition: all 200ms;
+  font-family: var(--monospace);
+  font-style: italic;
+  letter-spacing: -0.05em;
+  /*font-size: 0.95em;*/
+}
+
+header .logo svg {
+  transition: transform 500ms;
+  height: 1.5rem;
+}
+
+header .logo path {
+  transition: all 500ms;
+}
+
+header .logo:is(:hover, :focus) span,
+header .logo:is(:hover, :focus) svg {
+  --p: 0.3;
+  animation: wiggle 0.5s;
+}
+
+header nav a {
+  background-image: linear-gradient(var(--link-color), var(--link-color));
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.15s ease-in-out;
+  text-decoration: 1px solid var(--surface-2);
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+  background-size: 100% 0.1em;
+}

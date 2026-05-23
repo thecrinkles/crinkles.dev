@@ -1,0 +1,24 @@
+.section-header {
+  font-family: var(--monospace);
+  color: var(--header-color);
+  font-size: 0.9em;
+  text-transform: lowercase;
+  font-weight: bold;
+
+  text-decoration: underline;
+  text-decoration-color: hsl(from var(--header-color) h s l / 30%);
+  text-decoration-thickness: 0.625ch;
+  text-underline-offset: -0.35ch;
+  text-decoration-skip-ink: none;
+}
+
+.section-header::before {
+  content: "~/";
+  color: var(--text-1);
+  font-weight: normal;
+}
+
+p + .section-header,
+ul + .section-header {
+  margin-top: var(--p-size-1);
+}

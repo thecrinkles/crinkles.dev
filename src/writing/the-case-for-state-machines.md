@@ -34,7 +34,7 @@ A simple machine with only four states. The `visible` and `invisible` states spe
 
 You could argue that it would be enough to create a callback after the user is loaded. In this callback, we determine which event to trigger on the state machine, either `HIDE` or `SHOW`. In a simple state machine this would be proper implementation.
 
-But in the diagram, we see a `user_loaded` state. That is because the implementation I used allows for [actions](https://github.com/kpnnkmp/cogwheel/blob/main/docs/actions.md). These are callbacks that can be triggered for instance when we "enter" a state. It now looks something like the code below:
+But in the diagram, we see a `user_loaded` state. That is because the implementation I used allows for [actions](https://github.com/thecrinkles/cogwheel/blob/main/docs/actions.md). These are callbacks that can be triggered for instance when we "enter" a state. It now looks something like the code below:
 
 ```js
 import { send } from "cogwheel";
@@ -64,4 +64,4 @@ Because of these actions, I am now able to put the logic of determining the corr
 
 ## Wrapping up
 
-Once again, state machines saved the day for me. Features that seem simple can become unmaintainable due to unforeseen state management issues. Whenever this happens, it often becomes a smart idea to move towards a state machine implementation. An implementation like [XState](https://xstate.js.org) or [Cogwheel](https://github.com/kpnnkmp/cogwheel) might seem daunting at first. But, you will find soon enough it helps you avoid issues in the future.
+Once again, state machines saved the day for me. Features that seem simple can become unmaintainable due to unforeseen state management issues. Whenever this happens, it often becomes a smart idea to move towards a state machine implementation. An implementation like [XState](https://xstate.js.org) or [Cogwheel](https://github.com/thecrinkles/cogwheel) might seem daunting at first. But, you will find soon enough it helps you avoid issues in the future.

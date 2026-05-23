@@ -1,0 +1,45 @@
+:root {
+  /**
+   * COLORS
+   */
+  --text-0: light-dark(var(--p-neutral-5), var(--p-neutral-0));
+  --text-1: light-dark(var(--p-neutral-4), var(--p-neutral-1));
+  --text-2: light-dark(var(--p-neutral-3), var(--p-neutral-2));
+  --surface-0: light-dark(var(--p-neutral-0), var(--p-neutral-5));
+  --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
+  --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
+
+  --color-divider: var(--surface-2);
+
+  /**
+   * TYPOGRAPHY
+   */
+  --sans-serif:
+    Seravek, "Inter", "Segoe UI", source-sans-pro, system-ui, sans-serif;
+  --monospace: "Maple Mono", ui-monospace, monospace;
+  /* FONT-SIZES */
+  --size-small: var(--p-size--1);
+  --size-base: var(--p-size-0);
+  --size-header: var(--p-size-0);
+  --size-title: var(--p-size-3);
+  --size-code: var(--p-size--1);
+
+  /**
+   * LAYOUT (SPACING, WIDTH, HEIGHT)
+   */
+  --layout-space: var(--p-size-2);
+  --layout-width: min(100%, calc(var(--p-bp-5) - 2 * var(--layout-space)));
+
+  --space--2: var(--p-size--2);
+
+  /*
+   *BORDERS
+   */
+  --radius: var(--p-size--2);
+}
+
+@media (--bp-4) {
+  :root {
+    --layout-space: var(--p-size-0);
+  }
+}

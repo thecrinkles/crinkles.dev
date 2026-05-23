@@ -1,6 +1,6 @@
 {
-  "name": "interrupted.dev",
-  "version": "4.1.0",
+  "name": "crinkles.dev",
+  "version": "5.0.0",
   "type": "module",
   "description": "",
   "main": ".eleventy.js",
@@ -12,23 +12,23 @@
     "favicons": "node ./src/_setup/generate-favicons.js"
   },
   "keywords": [],
-  "author": "Kevin Pennekamp<kevin@interrupted.dev>",
+  "author": "Kevin Pennekamp<kevin@crinkles.dev>",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.1",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@types/markdown-it": "^14.1.2",
-    "browserslist": "^4.24.5",
-    "husky": "^8.0.3",
-    "lightningcss": "^1.29.3",
-    "lint-staged": "^13.2.3",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^8.6.6",
-    "markdown-it-container": "^3.0.0",
-    "posthtml": "^0.16.6",
-    "prettier": "3.5.3",
-    "sharp": "^0.34.1",
+    "browserslist": "^4.28.2",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.32.0",
+    "lint-staged": "^16.4.0",
+    "markdown-it": "^14.1.1",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-container": "^4.0.0",
+    "posthtml": "^0.16.7",
+    "prettier": "3.8.1",
+    "sharp": "^0.34.5",
     "sharp-ico": "^0.1.5"
   },
   "browserslist": [
@@ -47,7 +47,7 @@
     ]
   },
   "dependencies": {
-    "@11ty/font-awesome": "^1.0.0-beta.1",
-    "feo-css": "^6.0.0-beta.5"
+    "@11ty/font-awesome": "^1.0.1",
+    "feo-css": "^6.0.0-beta.10"
   }
 }

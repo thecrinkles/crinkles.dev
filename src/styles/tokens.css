@@ -1,89 +1,20 @@
 :root {
-  /**
-   * NEUTRAL
-   */
-  --token-neutral-0: hsl(215, 24%, 98%);
-  --token-neutral-1: hsl(215, 24%, 92%);
-  --token-neutral-2: hsl(215, 18%, 78%);
-  --token-neutral-3: hsl(215, 18%, 36%);
-  --token-neutral-4: hsl(215, 18%, 22%);
-  --token-neutral-5: hsl(215, 18%, 8%);
-
-  /**
-   * COLORS
-   */
-  --token-orange-0: #f2c89d;
-  --token-orange-1: #f6734a;
-  --token-orange-2: #f9551f;
-  --token-green-0: #55e3be;
-  --token-green-1: #25ac89;
-  --token-green-2: #1c756a;
-  --token-yellow-0: #ffd27f;
-
-  --code-primary: var(--token-orange-1);
-  --code-secondary: var(--token-orange-0);
-  --code-tertiary: var(--token-green-0);
-
-  /**
-   * OVERWRITE OF FEO TOKENS
-   */
-  --token-size-000: clamp(0.72rem, 0.7013rem + 0.0936vw, 0.7738rem);
-  --token-size-00: clamp(0.9rem, 0.8543rem + 0.2287vw, 1.0315rem);
-  --token-size-0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
-  --token-size-1: clamp(1.4063rem, 1.2579rem + 0.742vw, 1.8329rem);
-  --token-size-2: clamp(1.7578rem, 1.5194rem + 1.192vw, 2.4432rem);
-  --token-size-3: clamp(2.1973rem, 1.8287rem + 1.8427vw, 3.2568rem);
-  --token-size-4: clamp(2.7466rem, 2.1919rem + 2.7735vw, 4.3413rem);
-  --token-size-5: clamp(3.4332rem, 2.6145rem + 4.0935vw, 5.787rem);
-
-  /**
-   * FONT FAMILY
-   */
-  --sans-serif:
-    Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
-    sans-serif;
-
-  /**
-   * BORDERS
-   */
-  --radius: 0.5em;
-
-  /**
-   * SHADOW & ELEVATION
-   */
-  --box-shadow:
-    0 0.2em 0.3em hsl(from var(--box-shadow-color) h s l / 0.1),
-    0 0.5em 0.75em hsl(from var(--box-shadow-color) h s l / 0.1);
-
-  /**
-   * LIGHT THEME
-   */
-  color-scheme: light;
-  accent-color: var(--logo-color);
-
-  --text-0: var(--token-neutral-5);
-  --text-1: var(--token-neutral-4);
-  --text-2: var(--token-neutral-3);
-  --surface-0: var(--token-neutral-0);
-  --surface-1: var(--token-neutral-1);
-  --surface-2: var(--token-neutral-2);
-
-  --canvas: var(--token-green-2);
-  --logo-color-start: var(--token-green-1);
-  --logo-color-end: var(--token-green-2);
-  --link-color: var(--token-green-2);
-  --list-color: var(--token-green-2);
-  --quote-color: var(--token-green-2);
-  --header-color: var(--token-green-2);
-  --inline-code-color: var(--token-green-2);
-  --button-text: var(--token-green-2);
+  --canvas: var(--p-green-2);
+  --logo-color-start: var(--p-green-1);
+  --logo-color-end: var(--p-green-2);
+  --logo-text: var(--p-orange-0);
+  --link-color: var(--p-green-2);
+  --list-color: var(--p-green-2);
+  --quote-color: var(--p-green-2);
+  --header-color: var(--p-green-2);
+  --inline-code-color: var(--p-green-2);
+  --button-text: var(--p-green-2);
   --button-background: transparent;
-  --button-border: var(--token-green-2);
-  --box-shadow-color: var(--token-green-0);
-  --card-border: var(--token-green-2);
-  --card-shadow: 0.25em 0.25em 0px 0px var(--card-border);
-  --info-background: var(--token-orange-0);
-  --info-text: var(--token-neutral-5);
+  --button-border: var(--p-green-2);
+  --box-shadow-color: var(--p-green-0);
+  --card-border: var(--p-green-2);
+  --info-background: var(--p-orange-0);
+  --info-text: var(--p-neutral-5);
 }
 
 /**
@@ -91,29 +22,21 @@
  */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: dark;
-    --text-0: var(--token-neutral-0);
-    --text-1: var(--token-neutral-1);
-    --text-2: var(--token-neutral-2);
-    --surface-0: var(--token-neutral-5);
-    --surface-1: var(--token-neutral-4);
-    --surface-2: var(--token-neutral-3);
-
-    --canvas: var(--token-orange-0);
-    --logo-color-start: var(--token-green-0);
-    --logo-color-end: var(--token-green-1);
-    --link-color: var(--token-green-1);
-    --list-color: var(--token-orange-0);
-    --quote-color: var(--token-orange-0);
-    --header-color: var(--token-orange-0);
-    --inline-code-color: var(--token-orange-0);
-    --button-text: var(--token-orange-0);
+    --canvas: var(--p-orange-0);
+    --logo-color-start: var(--p-green-0);
+    --logo-color-end: var(--p-green-1);
+    --logo-text: var(--p-green-2);
+    --link-color: var(--p-green-1);
+    --list-color: var(--p-orange-0);
+    --quote-color: var(--p-orange-0);
+    --header-color: var(--p-orange-0);
+    --inline-code-color: var(--p-orange-0);
+    --button-text: var(--p-orange-0);
     --button-background: transparent;
-    --button-border: var(--token-orange-0);
-    --box-shadow-color: var(--token-orange-0);
-    --card-border: var(--token-orange-0);
-    --card-shadow: 0.25em 0.25em 0px 0px var(--card-border);
-    --info-background: var(--token-orange-0);
-    --info-text: var(--token-neutral-5);
+    --button-border: var(--p-orange-0);
+    --box-shadow-color: var(--p-orange-0);
+    --card-border: var(--p-orange-0);
+    --info-background: var(--p-orange-0);
+    --info-text: var(--p-neutral-5);
   }
 }

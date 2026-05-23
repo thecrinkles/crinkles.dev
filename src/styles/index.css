@@ -1,37 +1,39 @@
-@layer global, layout, components, utilities, animations, blog;
+@layer tokens, global, layout, components, utilities, blog;
 
-/** Import feo-css */
+/** Import external resources */
 @import "../../node_modules/feo-css/feo.min.css";
 
-/** Global styles to extend or overwrite feo.css */
-@import "tokens.css" layer(global);
-@import "global.css" layer(global);
+/** tokens, incl. overwrite of feo-css */
+@import "tokens/custom-media.css"; /* note: cm only works outside layers */
+@import "tokens/fonts.css" layer(tokens);
+@import "tokens/primitives.css" layer(tokens);
+@import "tokens/semantic.css" layer(tokens);
+@import "tokens/specific.css" layer(tokens);
 
-/** layout */
-@import "layout/body.css" layer(layout);
-@import "layout/header.css" layer(layout);
-@import "layout/footer.css" layer(layout);
-@import "layout/main.css" layer(layout);
+/** Global css */
+@import "global.css" layer(global);
+@import "tokens.css" layer(global);
 
 /** components */
-@import "components/article.css" layer(components);
-@import "components/pagination.css" layer(components);
-@import "components/tag.css" layer(components);
-@import "components/button.css" layer(components);
-@import "components/icon.css" layer(components);
-@import "components/info-box.css" layer(components);
-@import "components/card.css" layer(components);
-@import "components/title-section.css" layer(layout);
-@import "components/page-section.css" layer(layout);
-@import "components/info-section.css" layer(layout);
+@import "components/primitives/button.css" layer(components);
+@import "components/primitives/icon.css" layer(components);
+@import "components/primitives/tag.css" layer(components);
+@import "components/containers/card.css" layer(components);
+@import "components/navigation/pagination.css" layer(components);
+@import "components/specific/article.css" layer(components);
+@import "components/specific/background-pattern.css" layer(components);
+@import "components/specific/footer.css" layer(components);
+@import "components/specific/header.css" layer(components);
+@import "components/specific/info-box.css" layer(components);
+@import "components/specific/main.css" layer(components);
 
 /** utilities */
 @import "utilities/colors.css" layer(utilities);
-
-/* animations */
-@import "animations/wiggle.css" layer(animations);
-@import "animations/glitch.css" layer(animations);
-@import "animations/blink.css" layer(animations);
+@import "utilities/box-shadow.css" layer(utilities);
+@import "utilities/font.css" layer(utilities);
+@import "utilities/wiggle.css" layer(utilities);
+@import "utilities/glitch.css" layer(utilities);
+@import "utilities/blink.css" layer(utilities);
 
 /** Blog specific CSS for examples */
 @import "blog/dock-hover.css" layer(blog);

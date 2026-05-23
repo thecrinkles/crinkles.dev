@@ -5,34 +5,30 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: min(100%, var(--token-bp-5));
-}
-
-main:not(:has(.pagination)) {
-  padding-bottom: var(--token-size-5);
+  max-width: var(--layout-width);
 }
 
 main[data-layout="base"],
 main[data-layout="page"],
+main[data-layout="post"],
 main[data-layout="paginated"] {
   --size: 175px;
   --factor: 2;
+  --gap: var(--p-size-4);
 
   display: grid;
-  gap: var(--token-size-2);
+  row-gap: var(--p-size-2);
+  column-gap: var(--gap);
   grid-template-areas:
     "title sticker"
     "main sticker"
     "main side"
-    "footer footer";
+    "pagination pagination";
   grid-template-columns:
-    min(
-      var(--token-bp-3),
-      calc(100% - var(--factor) * var(--size) - var(--token-size-2))
-    )
+    min(var(--p-bp-3), calc(100% - var(--factor) * var(--size) - var(--gap)))
     minmax(calc(var(--factor) * var(--size)), 1fr);
   grid-template-rows: auto auto 1fr;
-  padding: var(--token-size-2);
+  padding-block: var(--layout-space);
 }
 
 main[data-layout="base"] {
@@ -42,6 +38,18 @@ main[data-layout="base"] {
     "main -";
 }
 
+main[data-layout="post"] {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "main"
+    "pagination";
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main[data-layout="post"],
 main[data-layout="paginated"] {
   padding-bottom: 0;
 }
@@ -69,8 +77,8 @@ main[data-layout="paginated"] {
   grid-area: sticker;
 }
 
-.--footer {
-  grid-area: footer;
+.--pagination {
+  grid-area: pagination;
 }
 
 /** Media queries*= */
@@ -97,7 +105,7 @@ main[data-layout="paginated"] {
       "title"
       "main"
       "side"
-      "footer";
+      "pagination";
   }
 
   .--title {

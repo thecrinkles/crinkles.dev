@@ -6,7 +6,7 @@
 
 .info,
 .archive {
-  padding: var(--token-size-0);
+  padding: var(--p-size-0);
   background-color: var(--surface-1);
   font-size: 0.9em;
   position: relative;
@@ -25,7 +25,7 @@
   position: absolute;
   display: block;
   top: -0.675em;
-  font-size: var(--token-size-00);
+  font-size: var(--p-size--1);
   color: var(--info-text);
   padding: 0px 6px;
   background-color: var(--info-background);

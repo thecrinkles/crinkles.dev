@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title or metadata.title }} • Interrupted</title>
+    <title>{{ title or metadata.title }} • Crinkles</title>
     <link rel="stylesheet" href="{{ '/styles/index.css' | url }}" />
     <meta name="generator" content="Eleventy" />
     <meta name="color-scheme" content="light dark" />
@@ -53,6 +53,9 @@
       content="{{ description or metadata.description }}"
     />
     <meta property="og:image" content="{{ metadata.social.img }}" />
+
+    <!-- FONTS -->
+    <link href="/fonts/MapleMono-regular.ttf.woff2" rel="preload" type="font/woff2" as="font">
   </head>
 
   <body>

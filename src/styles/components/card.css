@@ -1,9 +1,0 @@
-.card {
-  background-color: var(--surface-1);
-  padding: var(--token-size-2) var(--token-size-0);
-  position: relative;
-  box-shadow: var(--card-shadow);
-  border-radius: var(--radius);
-  width: 100%;
-  max-width: var(--card-width, var(--token-bp-3));
-}

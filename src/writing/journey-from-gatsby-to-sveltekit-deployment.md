@@ -58,5 +58,5 @@ Turning off all asset optimizations on Netlify increased performance on my websi
 When moving from the stable Gatsby to the unstable SvelteKit public beta, I took a risk. Not only did I have to learn a new framework, I had to build logic to replace community plugins. I was at risk of encountering bugs that few encountered before me. With the knowledge that I could not rely on Google or Stack Overflow, I jumped into the deep. But in the end, it all paid off. I build a new website that is not only faster but more enjoyable for me to work on. The experience that Svelte and SvelteKit bring is promising, and now I cannot shut up about it.
 
 ::: info
-If you are curious about the result, check the code on the open [GitHub repository](https://github.com/kpnnkmp/interrupted.dev).
+If you are curious about the result, check the code on the open [GitHub repository](https://github.com/thecrinkles/crinkles.dev).
 :::

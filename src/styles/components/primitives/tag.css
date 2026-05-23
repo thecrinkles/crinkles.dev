@@ -9,8 +9,10 @@
   --tag-color: var(--link-color);
   --tag-hash-color: var(--tag-color);
   color: inherit;
+  font-family: var(--monospace);
 
   transition: all 300ms;
+  font-size: var(--p-size--1);
 }
 
 .tag:not(.token)[data-selected="true"] {

@@ -13,12 +13,12 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: var(--token-size-00);
+  font-size: var(--p-size--1);
   font-weight: bold;
   color: var(--button-text);
   background: var(--button-background);
   border: 2px solid var(--button-border);
-  padding: 0.5em var(--token-size-000);
+  padding: 0.5em var(--p-size--2);
   border-radius: var(--radius);
   transition: all 0.2s;
 }

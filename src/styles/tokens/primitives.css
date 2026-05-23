@@ -1,0 +1,18 @@
+:root {
+  /** NEUTRAL */
+  --p-neutral-0: hsl(215, 24%, 98%);
+  --p-neutral-1: hsl(215, 24%, 92%);
+  --p-neutral-2: hsl(215, 18%, 78%);
+  --p-neutral-3: hsl(215, 18%, 36%);
+  --p-neutral-4: hsl(215, 18%, 22%);
+  --p-neutral-5: hsl(215, 18%, 8%);
+
+  /** BRAND COLORS */
+  --p-orange-0: #f2c89d;
+  --p-orange-1: #f6734a;
+  --p-orange-2: #f9551f;
+  --p-green-0: #55e3be;
+  --p-green-1: #25ac89;
+  --p-green-2: #1c756a;
+  --p-yellow-0: #ffd27f;
+}

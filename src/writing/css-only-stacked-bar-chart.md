@@ -121,4 +121,4 @@ Now we have a variable that we can use to indicate the index of an element. We c
 
 ## Wrapping up
 
-By combining different forms of flexbox, `:hover` and some small tricks, we can create a nice responsive bar chart. The only downside is you need to bind the values via the `style` attribute in the HTML templates. This should not be an issue in most modern frameworks. But, it is still something to be aware of. Curious about the live example? Then visit [this codepen.io/kpnnkmp](https://codepen.io/kpnnkmp/vyckes/pen/QWaQVMb) link.
+By combining different forms of flexbox, `:hover` and some small tricks, we can create a nice responsive bar chart. The only downside is you need to bind the values via the `style` attribute in the HTML templates. This should not be an issue in most modern frameworks. But, it is still something to be aware of. Curious about the live example? Then visit [this codepen.io](https://codepen.io/thecrinkles/pen/QWaQVMb) link.

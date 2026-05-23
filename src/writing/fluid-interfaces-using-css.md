@@ -17,7 +17,7 @@ This article is archived and replaced by a [newer article](writing/a-different-a
 
 Responsiveness should be a core feature of any website. Screen-sizes are both growing and shrinking. This makes that responsiveness now goes beyond composition and layout. We need to adjust the sizes of text and elements and the surrounding spacing. Most achieve this by adding media-queries. But with various pages, elements, and breakpoints, adding media-queries become unmaintainable.
 
-When refactoring [interrupted.dev](https://interrupted.dev) I wanted to remove the dependency on media-queries. But, I wanted sizing and spacing adjust based on the screen size. I needed _fluidity_ on my website. By utilizing CSS variables and the CSS `calc` function, I could achieve this. Check out how!
+When refactoring [crinkles.dev](https://crinkles.dev) I wanted to remove the dependency on media-queries. But, I wanted sizing and spacing adjust based on the screen size. I needed _fluidity_ on my website. By utilizing CSS variables and the CSS `calc` function, I could achieve this. Check out how!
 
 ## Fluid sizing and spacing
 
@@ -99,4 +99,4 @@ All can have their own set of calculations for fluidity. These can be separate d
 
 ## Conclusion
 
-When refactoring [interrupted.dev](https://interrupted.dev) I wanted to reduce the number of media-queries, but maintain responsiveness. I wanted to reduce the CSS footprint of the website. But above all, I wanted to make my CSS more maintainable. Adding fluidity for font-sizes, element sizes, and spacing contributed to achieving this goal. Want to see this fluidity in action? Just open this article on your laptop or PC, and slowly resize the browser window.
+When refactoring [crinkles.dev](https://crinkles.dev) I wanted to reduce the number of media-queries, but maintain responsiveness. I wanted to reduce the CSS footprint of the website. But above all, I wanted to make my CSS more maintainable. Adding fluidity for font-sizes, element sizes, and spacing contributed to achieving this goal. Want to see this fluidity in action? Just open this article on your laptop or PC, and slowly resize the browser window.

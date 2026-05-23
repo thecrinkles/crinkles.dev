@@ -1,12 +1,13 @@
 .pagination {
-  --pagination-padding: var(--token-size-2);
+  --pagination-padding: var(--p-size-2);
 
   width: 100%;
   display: grid;
+  grid-area: pagination;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid var(--surface-2);
   margin-inline: auto;
-  margin-top: var(--token-size-5);
+  margin-top: var(--p-size-5);
 }
 
 .pagination > * {
@@ -50,7 +51,7 @@
 
 @media only screen and (max-width: 670px) {
   .pagination {
-    --pagination-padding: var(--token-size-0);
+    --pagination-padding: var(--p-size-0);
     grid-template-columns: 1fr;
   }
 

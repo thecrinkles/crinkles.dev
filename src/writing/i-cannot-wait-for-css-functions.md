@@ -8,7 +8,7 @@ description: >-
   In my quest to apply as much cool CSS tricks as possible, I encountered an issue that navigated me towards a new and exciting CSSWG draft.
 ---
 
-Some of you know by now that I am a sucker for nice CSS tricks. A few weeks back I came across another [beauty](https://bsky.app/profile/devongovett.bsky.social/post/3lcedcdj4qk2y) (or [another](https://lea.verou.me/blog/2024/contrast-color/)). In short, the snippet below automatically determines if `color` needs to be black, or white, based on the background color (set with `--contrast-bg`). I liked this trick so much, that I added the _utility class_ below to [Feo.css](https://feo.interrupted.dev/utilities/contrast/).
+Some of you know by now that I am a sucker for nice CSS tricks. A few weeks back I came across another [beauty](https://bsky.app/profile/devongovett.bsky.social/post/3lcedcdj4qk2y) (or [another](https://lea.verou.me/blog/2024/contrast-color/)). In short, the snippet below automatically determines if `color` needs to be black, or white, based on the background color (set with `--contrast-bg`). I liked this trick so much, that I added the _utility class_ below to [Feo.css](https://feo.crinkles.dev/utilities/contrast/).
 
 ```css
 .contrast {

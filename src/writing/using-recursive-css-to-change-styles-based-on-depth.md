@@ -40,7 +40,7 @@ Instead of the bull's eye, let's try to make something like the visual element b
 
 ![Visualization of a horizontal bar, where segments get darker the more they go into the center](/img/recursive-example.png)
 
-To see a live example, check this [codepen](https://codepen.io/kpnnkmp/vyckes/pen/YzgJqVE).
+To see a live example, check this [codepen](https://codepen.io/thecrinkles/pen/YzgJqVE).
 
 ## The starting point in HTML
 
@@ -104,7 +104,7 @@ We now have our depth, compared to a parent, stored in a custom property. We can
 }
 ```
 
-There you have it! A background color that becomes darker the deeper you go, just like the image at the start of the article (or posted again below). If you don't believe it, just look at [this codepen](https://codepen.io/kpnnkmp/vyckes/pen/YzgJqVE) for the results (when you apply a little more CSS, you know height and width etc.).
+There you have it! A background color that becomes darker the deeper you go, just like the image at the start of the article (or posted again below). If you don't believe it, just look at [this codepen](https://codepen.io/thecrinkles/pen/YzgJqVE) for the results (when you apply a little more CSS, you know height and width etc.).
 
 ![Visualization of a horizontal bar, where segments get darker the more they go into the center](/img/recursive-example.png)
 

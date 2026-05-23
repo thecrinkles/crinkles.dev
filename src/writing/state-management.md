@@ -46,7 +46,7 @@ My own approach is a mixture of different patterns for different purposes. For _
 For things like application state or meta state, it highly depends on the complexity of the challenge. If it is something simple, a small _reactive_ store like a _signal_ or a flat _proxy_ suffices. However, it the challenge becomes more complex I will choice one of two routes:
 
 1. If there are many actual 'states' I would model everything in a _reactive_ [state machine](/writing/the-case-for-state-machines).
-2. If the goal is data manipulation in many ways, I would go for a _reactive_ _proxy_ that allows me to define a state API. These are functions defining how I can interact with the state (e.g. the [chifferobe](https://github.com/kpnnkmp/chifferobe) package).
+2. If the goal is data manipulation in many ways, I would go for a _reactive_ _proxy_ that allows me to define a state API. These are functions defining how I can interact with the state (e.g. the [chifferobe](https://github.com/thecrinkles/chifferobe) package).
 
 The common theme in my approach is reactivity. Even an "SWR-like" library is reactive. The thing is, in front-end development we always want something to _change_ when our state changes.
 

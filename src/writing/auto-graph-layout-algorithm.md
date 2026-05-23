@@ -106,5 +106,5 @@ Solving the automatic (or magical) layout of a directed graph (or state machine)
 - Optimize how mutations and which mutations are applied. Check only adjacent ranks to improve the performance for example. This can worsen the result though.
 
 ::: info
-I've created a JavaScript package called [DIGL](https://github.com/kpnnkmp/digl) that implements the described algorithm. It is framework agnostic and can be used in the front-end or back-end.
+I've created a JavaScript package called [DIGL](https://github.com/thecrinkles/digl) that implements the described algorithm. It is framework agnostic and can be used in the front-end or back-end.
 :::

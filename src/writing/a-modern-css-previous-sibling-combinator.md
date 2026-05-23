@@ -123,7 +123,7 @@ Now if we replace this with `.item:has(+ .item:hover)` we can get the effect we 
 
 ## Wrapping up
 
-By using `:has()` we can create the opposite of the `adjacent-sibling combinator”. This opens new doors in creating stunning and powerful new visual effects, with pure CSS. Like the magnifier effect of the MacOS dock. The full code can be seen below, and a live example can be found on [codepen](https://codepen.io/kpnnkmp/vyckes/pen/GRaowXz).
+By using `:has()` we can create the opposite of the `adjacent-sibling combinator”. This opens new doors in creating stunning and powerful new visual effects, with pure CSS. Like the magnifier effect of the MacOS dock. The full code can be seen below, and a live example can be found on [codepen](https://codepen.io/thecrinkles/pen/GRaowXz).
 
 ```css
 .item:hover {

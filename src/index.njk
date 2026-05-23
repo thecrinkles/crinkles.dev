@@ -2,28 +2,22 @@
 layout: base
 ---
 
-<h1 class="--title">Hi, I'm Kevin Pennekamp!</h1>
+<h1 class="--title">Hello, I'm Kevin.</h1>
 
 <section class="--side flex --column | mb-1">
-  <div class="card text-center size-1">
-    <p>
-      A front-end engineer specialized in
-      <span class="tag bold">CSS</span>, and
-      <span class="tag bold">security</span>. A weird combination,
-      <i>I know</i>. <span class="tag bold">interrupted.dev</span> is my digital
-      corner of the internet.
-    </p>
-  </div>
+  <p class="card">
+    I am a front-end engineer specialized in CSS, and security. A weird combination, <i>I know</i>. crinkles.dev is my   digital corner of the internet, where I <a href="/writing">write</a> about various things that interest me.
+  </p>
 </section>
 
 
 <section class="--main">
-  <h2 class="mb-0">Recent posts</h2>
-  <div class="flex --column --gap-00 | mb-3">
+  <h2 class="mb-0 section-header">recent-posts</h2>
+  <div class="flex --column --gap--1 | mb-3">
     {% set posts = collections.posts | head(3) %} {% include
     "components/post-list.njk" %}
   </div>
-  <a href="/writing" class="size-00 | btn | self-start">Read more articles</a>
+  <a href="/writing" class="size--1 | btn | self-start">Read more articles</a>
 </section>
 
 <div class="--sticker flex --row --center">{% include "svg/sticker-laptop.svg" %}</div>

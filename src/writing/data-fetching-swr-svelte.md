@@ -71,7 +71,7 @@ export const config = {
 ```
 
 ::: info
-I am using the [cogwheel >v3.0.0](https://github.com/kpnnkmp/cogwheel) package definitions for the state machine. Similar configurations can be created for XState or other libraries.
+I am using the [cogwheel >v3.0.0](https://github.com/thecrinkles/cogwheel) package definitions for the state machine. Similar configurations can be created for XState or other libraries.
 :::
 
 ## Enhancing the global cache

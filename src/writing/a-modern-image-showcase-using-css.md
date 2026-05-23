@@ -9,7 +9,7 @@ description: >-
   My newest favorite way to create adaptable and flexible layouts is by using grid template areas. Especially combined with other modern CSS solutions it becomes extremely powerful. In this article, I use it to create an adaptable picture showcase that can handle many different configurations.
 ---
 
-I am a big fan of [Andy Bell's "Be the browser's mentor, not its micromanager](https://bell.bz/be-the-browsers-mentor-not-its-micromanager/). This is one of my central principles when implementing UIs using HTML and CSS. I transferred this idea into various [layout patterns](https://feo.interrupted.dev/layouts/) in my own CSS library [Feo.css](https://feo.interrupted.dev/). But sometimes (more than I like to admit) we all need to create precise layouts, especially in marketing-heavy websites, or complex web applications.
+I am a big fan of [Andy Bell's "Be the browser's mentor, not its micromanager](https://bell.bz/be-the-browsers-mentor-not-its-micromanager/). This is one of my central principles when implementing UIs using HTML and CSS. I transferred this idea into various [layout patterns](https://feo.crinkles.dev/layouts/) in my own CSS library [Feo.css](https://feo.crinkles.dev/). But sometimes (more than I like to admit) we all need to create precise layouts, especially in marketing-heavy websites, or complex web applications.
 
 ## The picture showcase
 
@@ -162,4 +162,4 @@ To make it simple, we are going to adapt the UI to one big and two small items. 
 
 ## Wrapping up
 
-And voila! We are done. We now have an adaptable picture showcase that can work with different configurations and screen sizes. We have learned how to combine grid template areas and how they allow us to quickly adapt to various different use cases. Especially when combined with `:has` and media queries. Curious to see if all of this really works. Head to this [codepen](https://codepen.io/kpnnkmp/vyckes/pen/xbKPjza) to see for yourself.
+And voila! We are done. We now have an adaptable picture showcase that can work with different configurations and screen sizes. We have learned how to combine grid template areas and how they allow us to quickly adapt to various different use cases. Especially when combined with `:has` and media queries. Curious to see if all of this really works. Head to this [codepen](https://codepen.io/thecrinkles/pen/xbKPjza) to see for yourself.

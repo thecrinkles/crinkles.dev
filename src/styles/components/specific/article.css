@@ -1,39 +1,40 @@
 /* Main wrapper */
 article {
-  --layout-threshold: calc(47rem + 2 * var(--token-size-0));
+  --layout-threshold: calc(47rem + 2 * var(--p-size-0));
 
   container-type: inline-size;
   container-name: post;
   display: flex;
+  max-width: 47rem;
+  /*padding: var(--layout-padding);*/
   flex-direction: column;
-  padding: 0 var(--token-size-0);
 }
 
 /**
 * TEXT FLOW
 */
 article > * + * {
-  margin-block-start: var(--token-size-2);
+  margin-block-start: var(--p-size-2);
 }
 
 article * + h2 {
-  margin-block-start: var(--token-size-3);
+  margin-block-start: var(--p-size-3);
 }
 
 article h2 + p {
-  margin-block-start: var(--token-size-00);
+  margin-block-start: var(--p-size--1);
 }
 
 article h3 + p {
-  margin-block-start: var(--token-size-000);
+  margin-block-start: var(--p-size--2);
 }
 
 /**
 * HEADERS
 */
 article h1 {
-  font-size: var(--token-size-4);
-  margin-bottom: var(--token-size-000);
+  font-size: var(--p-size-4);
+  margin-bottom: var(--p-size--2);
 }
 
 article :where(h2, h3) {
@@ -93,7 +94,7 @@ article img {
 article blockquote {
   display: block;
   position: relative;
-  padding: 0 var(--token-size-1);
+  padding: 0 var(--p-size-1);
   color: var(--text-2);
   font-style: italic;
 }
@@ -111,10 +112,10 @@ article blockquote::before {
 article blockquote cite {
   display: block;
   width: 100%;
-  font-size: var(--token-size-00);
+  font-size: var(--p-size--1);
   font-style: italic;
   text-align: right;
-  margin-top: var(--token-size-0);
+  margin-top: var(--p-size-0);
   color: var(--quote-color);
 }
 
@@ -127,7 +128,7 @@ article blockquote cite {
 }
 
 :where(ul, ol):not([class]) li {
-  margin-left: var(--token-size-1);
+  margin-left: var(--p-size-1);
   padding-left: 0.5em;
 }
 
@@ -150,15 +151,19 @@ ol:not([class]) {
  * CODE BLOCKS
  */
 pre {
-  border: none;
-  box-shadow: var(--card-shadow);
-  background-color: var(--token-neutral-4);
-  color: var(--token-neutral-0);
+  --border-color: var(--card-border);
+
+  background-color: var(--p-neutral-4);
+  color: var(--p-neutral-0);
+}
+
+code {
   font-weight: 400;
+  font-family: var(--monospace);
 }
 
 pre code {
-  padding: var(--token-size-0);
+  padding: var(--p-size-0);
 }
 
 :not(pre) > code {
@@ -169,34 +174,34 @@ pre code {
 .token.punctuation,
 .token.comment,
 .token.operator {
-  color: var(--token-neutral-2);
+  color: var(--p-neutral-2);
   font-weight: 300;
 }
 
 /** SYNTAX */
 .token.keyword,
 .token.tag {
-  color: var(--token-neutral-2);
+  color: var(--p-neutral-2);
 }
 
 /** To overwrite the above colors */
 .token.attr-value {
-  color: var(--token-neutral-0);
+  color: var(--p-neutral-0);
 }
 
 .token.attr-name,
 .token.selector {
-  color: var(--code-primary);
+  color: var(--color-code-primary);
 }
 
 .token.property,
 .token.function {
-  color: var(--code-secondary);
+  color: var(--color-code-secondary);
 }
 
 .token.string,
 .token.number {
-  color: var(--code-tertiary);
+  color: var(--color-code-tertiary);
 }
 
 .token.function,
@@ -212,15 +217,15 @@ pre code {
   }
 
   article pre {
-    border-top: 2px solid var(--card-border);
-    border-bottom: 2px solid var(--card-border);
-    box-shadow: none;
+    border: none !important;
+    outline: 2px solid var(--card-border);
+    box-shadow: none !important;
   }
 }
 
 /** smaller headers on smaller screens */
 @container post (inline-size < 40rem) {
   article h1 {
-    font-size: var(--token-size-3);
+    font-size: var(--p-size-3);
   }
 }

@@ -1,15 +1,13 @@
 footer {
-  padding: var(--token-size-2) var(--token-size-2) var(--token-size-5);
-  font-size: var(--token-size-00);
+  position: relative;
+  padding-block: var(--layout-space);
+  font-family: var(--monospace);
+  font-size: var(--size-small);
   inset: 0;
   top: unset;
   border-top: 1px solid var(--surface-2);
-  color: var(--footer-color);
   width: 100%;
-  max-width: min(
-    calc(100% - 2 * var(--token-size-2)),
-    calc(var(--token-bp-5) - 2 * var(--token-size-2))
-  );
+  max-width: var(--layout-width);
   margin-inline: auto;
 }
 
@@ -20,7 +18,8 @@ footer .signature {
 }
 
 footer .signature svg {
-  height: 2em;
+  height: 1.75em;
+  margin-bottom: var(--space--2);
 }
 
 footer .signature svg:hover {
@@ -28,22 +27,17 @@ footer .signature svg:hover {
 }
 
 footer .quote {
-  font-size: var(--token-size-1);
   width: 100%;
-  text-align: center;
+  font-family: var(--monospace);
+}
+
+footer .code {
+  font-weight: bold;
+  color: var(--header-color);
 }
 
 footer .socials svg path {
   fill: var(--text-0);
-}
-
-footer .icon {
-  font-size: var(--token-size-00);
-  color: var(--text-0);
-}
-
-footer a {
-  --anchor-color: var(--token-brand-0);
 }
 
 @media only screen and (max-width: 628px) {

@@ -1,10 +1,11 @@
 <footer id="site-footer" class="flex --column --gap-0">
   <div class="switcher --threshold-2 --gap-0">
-    <div class="signature">{% include "svg/signature.svg" %}</div>
-    <span class="quote | italic bold">"read to learn, try to know"</span>
-    <div class="socials | flex --column --end">
+    <div class="flex --column --start">
+      <span class="quote"><span class="code">~/</span><span class="code">{</span><span class="text-glitch">crinkles</span><span class="code">}</span>
+    </div>
+    <div class="flex --column --end">
+      <span>© {% year %} Kevin Pennekamp</span>
       {% include "partials/socials.njk" %}
-      <span class="mt-000">© {% year %} Kevin Pennekamp</span>
     </div>
   </div>
 </footer>

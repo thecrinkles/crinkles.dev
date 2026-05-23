@@ -137,7 +137,7 @@ You can see that we multiply the parameters with `1px` on the left-hand side. Th
 }
 ```
 
-As you can see, no need for `clamp()`. We start at the minimum font-size value with calculating. And due to the use of `min()` we ensure we do not exceed our maximum screen size. In my view, a more maintainable way to create fluid custom properties. Full example can be found [here](https://github.com/kpnnkmp/interrupted.dev/blob/dbd3ec87496d7f313d3f5e8337fd8606c33597f6/src/styles/_base/tokens.css#L29).
+As you can see, no need for `clamp()`. We start at the minimum font-size value with calculating. And due to the use of `min()` we ensure we do not exceed our maximum screen size. In my view, a more maintainable way to create fluid custom properties. Full example can be found [here](https://github.com/thecrinkles/crinkles.dev/blob/dbd3ec87496d7f313d3f5e8337fd8606c33597f6/src/styles/_base/tokens.css#L29).
 
 ## Wrapping up
 

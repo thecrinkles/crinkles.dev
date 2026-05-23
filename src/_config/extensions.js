@@ -1,5 +1,5 @@
 import browserslist from "browserslist";
-import { bundleAsync, browserslistToTargets } from "lightningcss";
+import { browserslistToTargets, bundleAsync } from "lightningcss";
 
 const targets = browserslistToTargets(browserslist("> 0.5% and not dead"));
 
@@ -15,6 +15,7 @@ export function css(config) {
           filename: inputPath,
           minify: true,
           nesting: true,
+          drafts: { customMedia: true },
           targets,
         });
         return code;

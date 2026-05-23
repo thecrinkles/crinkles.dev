@@ -8,7 +8,7 @@ description: >-
   Updating my graph layout algorithm based on new requirements and requests from the community
 ---
 
-In July 2021 I wrote an article about an [auto-layout algorithm](/writing/auto-graph-layout-algorithm) I needed for the visual state machine editor. I published the implementation as a package called [DIGL](https://github.com/kpnnkmp/digl). I never expected it to have any success. In reality, it became my first package that got some community interaction. But with community interaction, come new use cases on how to use the package. Some examples:
+In July 2021 I wrote an article about an [auto-layout algorithm](/writing/auto-graph-layout-algorithm) I needed for the visual state machine editor. I published the implementation as a package called [DIGL](https://github.com/thecrinkles/digl). I never expected it to have any success. In reality, it became my first package that got some community interaction. But with community interaction, come new use cases on how to use the package. Some examples:
 
 - Improve the performance of complex graphs
 - Make it work for multiple disconnected graphs
@@ -58,7 +58,7 @@ The original library required you to identify the source node of the graph yours
 nodes.filter((n) => !edges.find((e) => e.target === n.id));
 ```
 
-This works well for most cases. But, as pointed out to a user from the library in [this issue](https://github.com/kpnnkmp/digl/issues/21), it has some flaws. Whenever even one graph is a full loop, i.e. each node is a target once or more, it will not produce a correct result. In the issue, there were two graphs, one simple graphs with a clear source. And a graph that was a big loop. With the above method all nodes from the big loop were left out of the final result. This means a different solution has to be found.
+This works well for most cases. But, as pointed out to a user from the library in [this issue](https://github.com/thecrinkles/digl/issues/21), it has some flaws. Whenever even one graph is a full loop, i.e. each node is a target once or more, it will not produce a correct result. In the issue, there were two graphs, one simple graphs with a clear source. And a graph that was a big loop. With the above method all nodes from the big loop were left out of the final result. This means a different solution has to be found.
 
 1. Start looking for all definitive sources with the above snippet.
 2. Get all possible paths per source. This can be used to create the initial ranking per source, as described earlier.

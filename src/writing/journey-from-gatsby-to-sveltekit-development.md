@@ -25,7 +25,7 @@ For the last few weeks or months, I was getting restless about everything: my wo
 
 ## Working with (S)CSS in SvelteKit
 
-I am a big fan of CSS and have a strong [opinion](https://feo.interrupted.dev) on how it should be applied to websites/projects. My setup allows me to extract general layout patterns and combine them with general utility-first CSS. When I read about the 'scoped' styles of Svelte I got a bit anxious. Would my way of working deviate too much from Svelte(Kit)?
+I am a big fan of CSS and have a strong [opinion](https://feo.crinkles.dev) on how it should be applied to websites/projects. My setup allows me to extract general layout patterns and combine them with general utility-first CSS. When I read about the 'scoped' styles of Svelte I got a bit anxious. Would my way of working deviate too much from Svelte(Kit)?
 
 But quickly it hit me. The combination could work perfectly. It could allow me to create global `layout` and `utility` CSS, and use the 'scoped' CSS of Svelte to add styles specific to components or pages. The styles defined in the Svelte component could replace the entire `block` directory of my framework. This means that components would look something like shown below. On the `div` instead of the `header` tag, you see various utility classes applied, but also the defined `.inner` class.
 
@@ -117,5 +117,5 @@ With a few more of these alterations (lazy loading of images and anchor tags on 
 Up until this moment, the development experience (DX) of Svelte and SvelteKit has been tremendous. Don't get me wrong, I loved Gatsby the first time I used it. But after working with Svelte(Kit) I found its DX inferior to SvelteKit. For UI components that do not require (a lot of) state management, Svelte is also superior to React. But when moving to SvelteKit, you loose the community and plugins of Gatsby. This makes Gatsby superior for less tech-savvy people, or when you want to move quicker and do not want to control each detail. In my [next post](/writing/journey-from-gatsby-to-sveltekit-deployment) I will tell you all about getting the new website live!
 
 ::: info
-If you are curious about the result, check the code on the open [GitHub repository](https://github.com/kpnnkmp/interrupted.dev).
+If you are curious about the result, check the code on the open [GitHub repository](https://github.com/thecrinkles/crinkles.dev).
 :::

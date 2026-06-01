@@ -1,4 +1,4 @@
-@layer tokens, global, layout, components, utilities, blog;
+@layer tokens, global, layout, components, utilities;
 
 /** Import external resources */
 @import "../../node_modules/feo-css/feo.min.css";
@@ -8,11 +8,12 @@
 @import "tokens/fonts.css" layer(tokens);
 @import "tokens/primitives.css" layer(tokens);
 @import "tokens/semantic.css" layer(tokens);
-@import "tokens/specific.css" layer(tokens);
 
 /** Global css */
 @import "global.css" layer(global);
-@import "tokens.css" layer(global);
+
+/** layout */
+@import "layout/page-shell.css" layer(layout);
 
 /** components */
 @import "components/primitives/button.css" layer(components);
@@ -25,16 +26,12 @@
 @import "components/specific/footer.css" layer(components);
 @import "components/specific/header.css" layer(components);
 @import "components/specific/info-box.css" layer(components);
-@import "components/specific/main.css" layer(components);
+@import "components/specific/section-header.css" layer(components);
+@import "blog/dock-hover.css" layer(components);
+@import "blog/showcase.css" layer(components);
 
 /** utilities */
 @import "utilities/colors.css" layer(utilities);
-@import "utilities/box-shadow.css" layer(utilities);
-@import "utilities/font.css" layer(utilities);
 @import "utilities/wiggle.css" layer(utilities);
 @import "utilities/glitch.css" layer(utilities);
 @import "utilities/blink.css" layer(utilities);
-
-/** Blog specific CSS for examples */
-@import "blog/dock-hover.css" layer(blog);
-@import "blog/showcase.css" layer(blog);

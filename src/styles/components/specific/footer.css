@@ -2,6 +2,7 @@ footer {
   position: relative;
   padding-block: var(--layout-space);
   font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
   font-size: var(--size-small);
   inset: 0;
   top: unset;
@@ -29,6 +30,7 @@ footer .signature svg:hover {
 footer .quote {
   width: 100%;
   font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
 }
 
 footer .code {
@@ -40,7 +42,7 @@ footer .socials svg path {
   fill: var(--text-0);
 }
 
-@media only screen and (max-width: 628px) {
+@media (--bp-footer-stack) {
   footer .signature {
     align-items: center;
   }

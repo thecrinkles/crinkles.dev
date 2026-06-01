@@ -1,7 +1,12 @@
 .section-header {
+  --section-header-gap: var(--space-md);
+  --section-header-size: 0.9em;
+  --section-header-prefix-color: var(--text-1);
+
   font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
   color: var(--header-color);
-  font-size: 0.9em;
+  font-size: var(--section-header-size);
   text-transform: lowercase;
   font-weight: bold;
 
@@ -14,11 +19,11 @@
 
 .section-header::before {
   content: "~/";
-  color: var(--text-1);
+  color: var(--section-header-prefix-color);
   font-weight: normal;
 }
 
 p + .section-header,
 ul + .section-header {
-  margin-top: var(--p-size-1);
+  margin-top: var(--section-header-gap);
 }

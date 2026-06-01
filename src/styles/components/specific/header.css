@@ -20,6 +20,12 @@ header a.logo:is(:hover, :focus) {
 }
 
 header .logo span {
+  --mono: "MONO" 0.5;
+  --wght: "wght" 600;
+  --slnt: "slnt" -10;
+  --casl: "CASL" 0.15;
+  --crsv: "CRSV" 1;
+
   text-decoration: underline;
   text-decoration-color: hsl(from var(--logo-text) h s l / var(--p));
   text-decoration-thickness: 0.625ch;
@@ -27,9 +33,7 @@ header .logo span {
   text-decoration-skip-ink: none;
   transition: all 200ms;
   font-family: var(--monospace);
-  font-style: italic;
-  letter-spacing: -0.05em;
-  /*font-size: 0.95em;*/
+  font-variation-settings: var(--font-vars-logo);
 }
 
 header .logo svg {

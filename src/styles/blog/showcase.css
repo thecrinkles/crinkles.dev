@@ -74,7 +74,7 @@
     "a a c e";
 }
 
-@media only screen and (max-width: 500px) {
+@media (--bp-showcase-compact) {
   .showcase {
     height: 120px;
   }

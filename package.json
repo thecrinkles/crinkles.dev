@@ -22,12 +22,12 @@
     "browserslist": "^4.28.2",
     "husky": "^9.1.7",
     "lightningcss": "^1.32.0",
-    "lint-staged": "^16.4.0",
-    "markdown-it": "^14.1.1",
+    "lint-staged": "^17.0.5",
+    "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-container": "^4.0.0",
     "posthtml": "^0.16.7",
-    "prettier": "3.8.1",
+    "prettier": "3.8.3",
     "sharp": "^0.34.5",
     "sharp-ico": "^0.1.5"
   },
@@ -48,6 +48,6 @@
   },
   "dependencies": {
     "@11ty/font-awesome": "^1.0.1",
-    "feo-css": "^6.0.0-beta.10"
+    "feo-css": "6.0.0-beta.11"
   }
 }

@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "Maple Mono";
   font-style: normal;
   font-display: swap;
@@ -27,5 +27,13 @@
   src: url("/fonts/MapleMono-BoldItalic.ttf.woff2") format("woff2-variations");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
+}*/
+
+@font-face {
+  font-family: "Recursive";
+  src: url("/fonts/recursive-subset.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: oblique -15deg 0deg;
   font-display: swap;
 }

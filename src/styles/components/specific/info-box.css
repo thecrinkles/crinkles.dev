@@ -6,9 +6,17 @@
 
 .info,
 .archive {
-  padding: var(--p-size-0);
-  background-color: var(--surface-1);
-  font-size: 0.9em;
+  --info-box-padding: var(--space-sm);
+  --info-box-background: var(--surface-raised);
+  --info-box-font-size: var(--size-callout);
+  --info-box-badge-text: var(--text-on-accent);
+  --info-box-badge-background: var(--fill-accent);
+  --info-box-badge-padding-inline: 6px;
+  --info-box-badge-offset: -0.675em;
+
+  padding: var(--info-box-padding);
+  background-color: var(--info-box-background);
+  font-size: var(--info-box-font-size);
   position: relative;
 }
 
@@ -24,12 +32,12 @@
 .archive::before {
   position: absolute;
   display: block;
-  top: -0.675em;
-  font-size: var(--p-size--1);
-  color: var(--info-text);
-  padding: 0px 6px;
-  background-color: var(--info-background);
-  border-radius: var(--radius);
+  top: var(--info-box-badge-offset);
+  font-size: var(--size-label);
+  color: var(--info-box-badge-text);
+  padding: 0 var(--info-box-badge-padding-inline);
+  background-color: var(--info-box-badge-background);
+  border-radius: var(--radius-default);
 }
 
 .info::before {

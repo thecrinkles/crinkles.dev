@@ -1,10 +1,16 @@
 .card {
-  --border-color: var(--card-border);
+  --card-padding: var(--space-lg);
+  --card-max-width: var(--content-width-module);
+  --card-background: var(--surface-raised);
+  --card-border-color: var(--stroke-accent);
+  --card-shadow: var(--elevation-accent-1);
 
-  background-color: var(--surface-1);
-  padding: var(--p-size-2) var(--p-size-2);
+  background-color: var(--card-background);
+  padding: var(--card-padding);
   position: relative;
-  border-radius: var(--radius);
+  border-radius: var(--radius-default);
+  border: 1px solid var(--card-border-color);
+  box-shadow: var(--card-shadow);
   width: 100%;
-  max-width: var(--card-width, var(--p-bp-3));
+  max-width: var(--card-width, var(--card-max-width));
 }

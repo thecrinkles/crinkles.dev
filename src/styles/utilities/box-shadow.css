@@ -1,7 +1,0 @@
-.card,
-article pre {
-  border: 1px solid var(--border-color);
-  box-shadow:
-    0 4px 0 var(--border-color),
-    0 8px 16px hsl(from var(--border-color) h s l / 16%);
-}

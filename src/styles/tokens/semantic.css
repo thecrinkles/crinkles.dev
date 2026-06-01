@@ -8,38 +8,96 @@
   --surface-0: light-dark(var(--p-neutral-0), var(--p-neutral-5));
   --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
-
+  --surface-raised: var(--surface-1);
+  --surface-inverse: var(--p-neutral-4);
   --color-divider: var(--surface-2);
+  --text-accent: var(--p-green-2);
+  --text-on-accent: var(--p-neutral-5);
+  --text-inverse: var(--p-neutral-0);
+  --stroke-accent: var(--p-green-2);
+  --stroke-accent-soft: var(--p-green-0);
+  --fill-accent: var(--p-orange-0);
+  --elevation-accent-1:
+    0 4px 0 var(--stroke-accent),
+    0 8px 16px hsl(from var(--stroke-accent-soft) h s l / 16%);
+  --canvas: var(--p-green-2);
+  --logo-color-start: var(--p-green-1);
+  --logo-color-end: var(--p-green-2);
+  --logo-text: var(--p-orange-0);
+  --link-color: var(--text-accent);
+  --list-color: var(--text-accent);
+  --quote-color: var(--text-accent);
+  --header-color: var(--text-accent);
+  --inline-code-color: var(--text-accent);
 
   /**
    * TYPOGRAPHY
    */
-  --sans-serif:
-    Seravek, "Inter", "Segoe UI", source-sans-pro, system-ui, sans-serif;
-  --monospace: "Maple Mono", ui-monospace, monospace;
+  --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;
+  --monospace: "Recursive", ui-monospace, monospace;
+
+  /* FONT-WEIGHT */
+  --font-bold: 700;
+
+  --font-vars-default: "MONO" 0, "CASL" 0.15, "slnt" 0, "CRSV" 0;
+  --font-vars-header: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 1;
+  --font-vars-code: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+  --font-vars-logo: "MONO" 0.5, "CASL" 0.3, "slnt" -10, "wght" 600, "CRSV" 1;
+
   /* FONT-SIZES */
   --size-small: var(--p-size--1);
   --size-base: var(--p-size-0);
   --size-header: var(--p-size-0);
   --size-title: var(--p-size-3);
+  --size-title-lg: var(--p-size-4);
   --size-code: var(--p-size--1);
+  --size-label: var(--p-size--1);
+  --size-callout: 0.9em;
 
   /**
    * LAYOUT (SPACING, WIDTH, HEIGHT)
    */
   --layout-space: var(--p-size-2);
   --layout-width: min(100%, calc(var(--p-bp-5) - 2 * var(--layout-space)));
-
   --space--2: var(--p-size--2);
+  --space-2xs: var(--p-size--2);
+  --space-xs: var(--p-size--1);
+  --space-sm: var(--p-size-0);
+  --space-md: var(--p-size-1);
+  --space-lg: var(--p-size-2);
+  --space-xl: var(--p-size-3);
+  --space-2xl: var(--p-size-4);
+  --space-3xl: var(--p-size-5);
+  --content-width-reading: 47rem;
+  --content-width-module: var(--p-bp-3);
 
   /*
    *BORDERS
    */
-  --radius: var(--p-size--2);
+  --radius-default: var(--p-radius--2);
 }
 
 @media (--bp-4) {
   :root {
     --layout-space: var(--p-size-0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-accent: var(--p-green-1);
+    --text-on-accent: var(--p-neutral-5);
+    --stroke-accent: var(--p-orange-0);
+    --stroke-accent-soft: var(--p-orange-0);
+    --fill-accent: var(--p-orange-0);
+    --canvas: var(--p-orange-0);
+    --logo-color-start: var(--p-green-0);
+    --logo-color-end: var(--p-green-1);
+    --logo-text: var(--p-green-2);
+    --link-color: var(--text-accent);
+    --list-color: var(--fill-accent);
+    --quote-color: var(--fill-accent);
+    --header-color: var(--fill-accent);
+    --inline-code-color: var(--fill-accent);
   }
 }

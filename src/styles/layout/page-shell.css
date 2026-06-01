@@ -12,21 +12,32 @@ main[data-layout="base"],
 main[data-layout="page"],
 main[data-layout="post"],
 main[data-layout="paginated"] {
-  --size: 175px;
-  --factor: 2;
-  --gap: var(--p-size-4);
+  --page-shell-sticker-size: 175px;
+  --page-shell-sticker-factor: 2;
+  --page-shell-gap: var(--space-2xl);
+  --page-shell-row-gap: var(--space-lg);
+  --page-shell-main-width: var(--content-width-module);
 
   display: grid;
-  row-gap: var(--p-size-2);
-  column-gap: var(--gap);
+  row-gap: var(--page-shell-row-gap);
+  column-gap: var(--page-shell-gap);
   grid-template-areas:
     "title sticker"
     "main sticker"
     "main side"
     "pagination pagination";
   grid-template-columns:
-    min(var(--p-bp-3), calc(100% - var(--factor) * var(--size) - var(--gap)))
-    minmax(calc(var(--factor) * var(--size)), 1fr);
+    min(
+      var(--page-shell-main-width),
+      calc(
+        100% - var(--page-shell-sticker-factor) * var(--page-shell-sticker-size) -
+          var(--page-shell-gap)
+      )
+    )
+    minmax(
+      calc(var(--page-shell-sticker-factor) * var(--page-shell-sticker-size)),
+      1fr
+    );
   grid-template-rows: auto auto 1fr;
   padding-block: var(--layout-space);
 }
@@ -54,9 +65,9 @@ main[data-layout="paginated"] {
   padding-bottom: 0;
 }
 
-/** utilities */
+/** Layout hooks used by page templates */
 .--sticker > svg {
-  width: var(--size);
+  width: var(--page-shell-sticker-size);
   margin-inline: auto;
 }
 
@@ -82,9 +93,9 @@ main[data-layout="paginated"] {
 }
 
 /** Media queries*= */
-@media only screen and (max-width: 870px) {
+@media (--bp-page-shell-stack) {
   main[data-layout] {
-    --size: 225px;
+    --page-shell-sticker-size: 225px;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;

@@ -1,5 +1,8 @@
 .pagination {
-  --pagination-padding: var(--p-size-2);
+  --pagination-padding: var(--space-lg);
+  --pagination-margin-top: var(--space-3xl);
+  --pagination-hover-background: var(--link-color);
+  --pagination-hover-text: var(--surface-0);
 
   width: 100%;
   display: grid;
@@ -7,7 +10,7 @@
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid var(--surface-2);
   margin-inline: auto;
-  margin-top: var(--p-size-5);
+  margin-top: var(--pagination-margin-top);
 }
 
 .pagination > * {
@@ -26,13 +29,13 @@
 
 .pagination .newer[data-exists="true"]:hover,
 .pagination .older[data-exists="true"]:hover {
-  background-color: var(--link-color);
-  color: var(--surface-0);
+  background-color: var(--pagination-hover-background);
+  color: var(--pagination-hover-text);
 }
 
 .pagination .newer[data-exists="true"]:hover a,
 .pagination .older[data-exists="true"]:hover a {
-  color: var(--surface-0);
+  color: var(--pagination-hover-text);
 }
 
 .pagination > * a {
@@ -49,9 +52,9 @@
   align-self: flex-end;
 }
 
-@media only screen and (max-width: 670px) {
+@media (--bp-pagination-stack) {
   .pagination {
-    --pagination-padding: var(--p-size-0);
+    --pagination-padding: var(--space-sm);
     grid-template-columns: 1fr;
   }
 

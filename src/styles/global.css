@@ -6,6 +6,7 @@ body {
   z-index: 1;
   padding-inline: var(--layout-space);
   font-family: var(--sans-serif);
+  font-variation-settings: var(--font-vars-default);
 }
 
 a:not([class]) {
@@ -23,6 +24,18 @@ a:not([class]):is(:hover, :focus) {
   text-decoration-thickness: 0.625ch;
   text-underline-offset: -0.35ch;
   text-decoration-skip-ink: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans-serif);
+  font-variation-settings: var(--font-vars-header);
+  font-weight: var(--font-bold);
+}
+
+i {
+  font-variation-settings: "CRSV" 1;
 }
 
 ::selection {

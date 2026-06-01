@@ -6,6 +6,15 @@
  */
 
 .btn {
+  --button-font-size: var(--size-small);
+  --button-padding-inline: var(--space-2xs);
+  --button-padding-block: 0.5em;
+  --button-border-width: 2px;
+  --button-text: var(--text-accent);
+  --button-background: transparent;
+  --button-border-color: var(--stroke-accent);
+  --button-shadow: var(--elevation-accent-1);
+
   display: inline-block;
   position: relative;
   top: 0;
@@ -13,18 +22,18 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: var(--p-size--1);
+  font-size: var(--button-font-size);
   font-weight: bold;
   color: var(--button-text);
   background: var(--button-background);
-  border: 2px solid var(--button-border);
-  padding: 0.5em var(--p-size--2);
-  border-radius: var(--radius);
+  border: var(--button-border-width) solid var(--button-border-color);
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--radius-default);
   transition: all 0.2s;
 }
 
 .btn:is(:hover, :focus) {
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--button-shadow);
   transform: scale(1.05);
 }
 

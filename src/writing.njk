@@ -1,23 +1,19 @@
 ---
 title: Stuff I write about
 sticker: svg/sticker-book.svg
-layout: paginated
-width: 5
+layout: page
 eleventyExcludeFromCollections: true
-pagination:
-  data: collections.posts
-  size: 5
-  alias: posts
 ---
 
 <section class="--main">
+  {% set posts = collections.posts %}
   {% include "components/post-list.njk" %}
 </section>
 
 <aside class="--side flex --column --center">
-  <div class="card | flex --column --center --gap-1">
+  <div class="card | flex --column --center">
     <h2>Categories</h2>
-    {% set tags = collections.posts | getAllTags %} {% include
-    "components/tag-list.njk" %}
+    {% set tags = collections.posts | getAllTags %}
+    {% include "components/tag-list.njk" %}
   </div>
 </aside>

@@ -8,7 +8,7 @@
   display: grid;
   grid-area: pagination;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--surface-2);
+  border-top: var(--bw-default) solid var(--surface-2);
   margin-inline: auto;
   margin-top: var(--pagination-margin-top);
 }
@@ -67,6 +67,6 @@
   }
 
   .pagination .newer[data-exists="true"] + .older[data-exists="true"] {
-    border-top: 1px solid var(--surface-2);
+    border-top: var(--bw-default) solid var(--surface-2);
   }
 }

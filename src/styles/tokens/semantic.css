@@ -63,6 +63,7 @@
   --space-none: 0;
   --space-layout: var(--p-size-2);
   --space-gap-list: var(--p-size--2);
+  --space-small: var(--p-size--2);
   --space-default: var(--p-size-0);
   --space-large: var(--p-size-2);
   --space-huge: var(--p-size-4);
@@ -73,9 +74,13 @@
   --layout-main-content: var(--p-bp-3);
   --layout-article: 47rem;
 
-  /** BORDER-RADIUS */
-  --radius--1: var(--p-radius-1);
-  --radius-0: var(--p-radius-2);
+  /** BOX-SHADOW */
+  --shadow-y: var(--p--2);
+  --shadow-blur: var(--p-size-2);
+
+  /** BORDER-WIDTH */
+  --bw-default: 1px;
+  --bw-effect: 2px;
 
   /** OPACITY */
   --opacity-background-glow: 10%;

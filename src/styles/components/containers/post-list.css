@@ -1,0 +1,7 @@
+.post-list {
+  max-width: var(--p-bp-3);
+
+  & > li > p {
+    margin-top: var(--p-size--2);
+  }
+}

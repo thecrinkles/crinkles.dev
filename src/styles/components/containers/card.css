@@ -2,14 +2,14 @@
   --card-width: ;
   --card-bg: var(--surface-1);
   --card-padding: var(--space-large);
-  --line-inset: calc(-0.75 * var(--space-default));
+  --line-inset: calc(0.75 * var(--space-default));
   --line-color: var(--accent);
-  --line-thickness: 2px;
+  --line-thickness: var(--bw-effect);
 
   background-color: var(--card-bg);
   padding: var(--card-padding);
   position: relative;
-  box-shadow: 0 0 var(--size-header)
+  box-shadow: 0 var(--shadow-y) var(--shadow-blur)
     hsl(from var(--line-color) h s l / var(--opacity-background-glow));
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
@@ -20,20 +20,38 @@
     pointer-events: none;
     position: absolute;
 
-    border-color: hsl(from var(--line-color) h s l / var(--opacity-effect));
     border-style: solid;
     border-width: var(--line-thickness);
   }
 
-  &::before {
-    inset-block: calc(var(--line-thickness) * -1);
-    inset-inline: var(--line-inset);
-    border-width: var(--line-thickness) 0;
+  &::after {
+    inset-inline: calc(var(--line-thickness) * -1);
+    inset-block: calc(var(--line-inset) * -1);
+    border-width: 0 var(--line-thickness);
+    border-color: var(--line-color);
+    border-image: linear-gradient(
+        to bottom,
+        transparent,
+        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
+        transparent
+      )
+      1;
   }
 
-  &::after {
-    inset-block: var(--line-inset);
-    inset-inline: calc(var(--line-thickness) * -1);
-    border-width: 0 var(--line-thickness);
+  &::before {
+    inset-inline: calc(var(--line-inset) * -1);
+    inset-block: calc(var(--line-thickness) * -1);
+    border-width: var(--line-thickness) 0;
+    border-image: linear-gradient(
+        to left,
+        transparent,
+        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
+        transparent
+      )
+      1;
+  }
+
+  h2 {
+    margin-bottom: var(--space-large);
   }
 }

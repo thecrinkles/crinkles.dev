@@ -9,3 +9,11 @@
 .--gap-default {
   --layout-gap: var(--space-default);
 }
+
+.--gap-large {
+  --layout-gap: var(--space-large);
+}
+
+.--gap-huge {
+  --layout-gap: var(--space-huge);
+}

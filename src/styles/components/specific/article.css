@@ -5,7 +5,7 @@ article {
     var(--article-max-width) + 2 * var(--space-default)
   );
   --article-flow-space: var(--space-large);
-  --article-heading-gap: var(--space-larger);
+  --article-heading-gap: var(--space-huge);
   --article-heading-lead-gap: var(--space-xs);
   --article-subheading-lead-gap: var(--space-defaultall);
   --article-title-size: var(--size-title);
@@ -27,6 +27,7 @@ article {
   container-type: inline-size;
   container-name: post;
   display: flex;
+  width: 100%;
   max-width: var(--article-max-width);
   flex-direction: column;
 }
@@ -40,6 +41,10 @@ article > * + * {
 
 article * + h2 {
   margin-block-start: var(--article-heading-gap);
+}
+
+article h2 + :where(ul, ol) {
+  margin-block-start: 0.4em;
 }
 
 article h2 + p {

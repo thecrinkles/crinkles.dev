@@ -1,7 +1,5 @@
 :root {
-  /**
-   * COLORS
-   */
+  /** COLORS */
   --text-0: light-dark(var(--p-neutral-5), var(--p-neutral-0));
   --text-1: light-dark(var(--p-neutral-4), var(--p-neutral-1));
   --text-2: light-dark(var(--p-neutral-3), var(--p-neutral-2));
@@ -33,9 +31,7 @@
   --header-color: var(--text-accent);
   --inline-code-color: var(--text-accent);
 
-  /**
-   * TYPOGRAPHY
-   */
+  /** FONT-FAMILIES */
   --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;
   --monospace: "Recursive", ui-monospace, monospace;
 
@@ -49,7 +45,7 @@
   --font-vars-code: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
   --font-vars-logo: "MONO" 0.5, "CASL" 0.5, "slnt" 0, "wght" 600, "CRSV" 1;
 
-  /* FONT-SIZES */
+  /** FONT-SIZES */
   --size-body: var(--p-size-0);
   --size-title: var(--p-size-4);
   --size-header: var(--p-size-2);
@@ -71,17 +67,20 @@
   --space-large: var(--p-size-2);
   --space-huge: var(--p-size-4);
 
-  /** LAYOUT WIDTH */
+  /** LAYOUT */
   --layout-small: var(--p-bp-1);
   --layout-width: min(100%, calc(var(--p-bp-5) - 2 * var(--space-layout)));
   --layout-main-content: var(--p-bp-3);
   --layout-article: 47rem;
 
-  /*
-   *BORDERS
-   */
+  /** BORDER-RADIUS */
   --radius--1: var(--p-radius-1);
   --radius-0: var(--p-radius-2);
+
+  /** OPACITY */
+  --opacity-background-glow: 10%;
+  --opacity-light: 30%;
+  --opacity-effect: 60%;
 }
 
 @media (--bp-layout) {

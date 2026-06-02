@@ -9,7 +9,8 @@
   background-color: var(--card-bg);
   padding: var(--card-padding);
   position: relative;
-  box-shadow: 0 0 var(--size-header) hsl(from var(--line-color) h s l / 10%);
+  box-shadow: 0 0 var(--size-header)
+    hsl(from var(--line-color) h s l / var(--opacity-background-glow));
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
 
@@ -19,7 +20,7 @@
     pointer-events: none;
     position: absolute;
 
-    border-color: hsl(from var(--line-color) h s l / 70%);
+    border-color: hsl(from var(--line-color) h s l / var(--opacity-effect));
     border-style: solid;
     border-width: var(--line-thickness);
   }

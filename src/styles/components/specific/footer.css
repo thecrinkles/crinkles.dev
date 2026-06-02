@@ -31,11 +31,20 @@ footer .quote {
   width: 100%;
   font-family: var(--monospace);
   font-variation-settings: var(--font-vars-code);
-}
 
-footer .code {
-  font-weight: var(--fw-bold);
-  color: var(--header-color);
+  &::before,
+  &::after {
+    font-weight: var(--fw-bold);
+    color: var(--header-color);
+  }
+
+  &::before {
+    content: "~\/{";
+  }
+
+  &::after {
+    content: "}";
+  }
 }
 
 footer .socials svg path {

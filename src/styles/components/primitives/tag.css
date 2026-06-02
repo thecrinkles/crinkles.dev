@@ -1,37 +1,13 @@
-/**
- * TAG
- *
- * --tag-color: text color and hover background color
- * --tag-hash-color: color of the # char
- */
+.tag-list {
+  font-size: var(--size-small);
 
-.tag:not(.token) {
-  --tag-color: var(--link-color);
-  --tag-hash-color: var(--tag-color);
-  --tag-font-size: var(--size-small);
-  color: inherit;
-  font-family: var(--monospace);
-  font-variation-settings: var(--font-vars-code);
+  a::before {
+    content: "#";
+    font-size: 0.9em;
+    color: var(--link-color);
+  }
 
-  transition: all 300ms;
-  font-size: var(--tag-font-size);
-}
-
-.tag:not(.token)[data-selected="true"] {
-  font-weight: var(--fw-bold);
-}
-
-.tag:not(.token)::before {
-  content: "#";
-  font-size: 0.9em;
-  transition: color 300ms;
-  color: var(--tag-hash-color);
-}
-
-a.tag:not(.token) {
-  text-decoration-color: var(--link-color);
-}
-
-a.tag:not(.token):hover {
-  color: var(--tag-color);
+  a[data-selected="true"] {
+    font-weight: var(--fw-bold);
+  }
 }

@@ -6,8 +6,8 @@
   z-index: -1;
   background: linear-gradient(
     var(--surface-0),
-    var(--canvas),
-    var(--canvas),
+    var(--canvas-color),
+    var(--canvas-color),
     var(--surface-0)
   );
   opacity: 0.25;

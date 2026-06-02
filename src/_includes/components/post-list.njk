@@ -9,8 +9,6 @@
       <p class="text-1">{{ post.data.description }}</p>
       <div class="italic text-2 size-small | flex --row --gap-list">
         <time date="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
-        {% if post.data.update %} <span class="tag size-small">updated!</span> {% endif %}
-        {% if post.data.link %} <span class="tag size-small">external</span> {% endif %}
       </div>
     </li>
   {% endfor %}

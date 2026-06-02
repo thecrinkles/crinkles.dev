@@ -10,25 +10,25 @@ body {
   font-size: var(--size-body);
 }
 
-a:not([class]) {
+a {
   color: inherit;
   transition: all 200ms;
   text-decoration-color: hsl(
     from var(--link-color) h s l / var(--opacity-effect)
   );
   text-decoration-skip-ink: auto;
-}
 
-a:not([class]):not(:is(:hover, :focus)) {
-  text-decoration-color: hsl(
-    from var(--link-color) h s l / var(--opacity-effect)
-  );
-}
+  &:not(:is(:hover, :focus)) {
+    text-decoration-color: hsl(
+      from var(--link-color) h s l / var(--opacity-effect)
+    );
+  }
 
-a:not([class]):is(:hover, :focus) {
-  text-decoration-thickness: 0.625ch;
-  text-underline-offset: -0.35ch;
-  text-decoration-skip-ink: none;
+  &:is(:hover, :focus) {
+    text-decoration-thickness: 0.625ch;
+    text-underline-offset: -0.35ch;
+    text-decoration-skip-ink: none;
+  }
 }
 
 h1,
@@ -37,6 +37,7 @@ h3 {
   font-family: var(--sans-serif);
   font-variation-settings: var(--font-vars-header);
   font-weight: var(--fw-bold);
+  color: var(--title-color);
 }
 
 h1 {

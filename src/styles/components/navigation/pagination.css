@@ -7,7 +7,7 @@
   display: grid;
   grid-area: pagination;
   grid-template-columns: 1fr 1fr;
-  border-top: var(--bw-default) solid var(--surface-2);
+  border-top: var(--bw-default) solid var(--divider-color);
   margin-inline: auto;
   margin-top: var(--space-huge);
 }
@@ -30,7 +30,7 @@
 
 .pagination .newer[data-exists="true"]:hover,
 .pagination .older[data-exists="true"]:hover {
-  --pagination-bg: var(--accent);
+  --pagination-bg: var(--accent-color);
   --pagination-text: var(--surface-0);
 }
 
@@ -69,6 +69,6 @@
   }
 
   .pagination .newer[data-exists="true"] + .older[data-exists="true"] {
-    border-top: var(--bw-default) solid var(--surface-2);
+    border-top: var(--bw-default) solid var(--divider-color);
   }
 }

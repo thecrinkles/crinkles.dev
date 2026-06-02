@@ -4,18 +4,18 @@ layout: base
 
 <h1 class="--title">Hello, I'm Kevin.</h1>
 
-<section class="--side flex --column | mb-1">
+<section class="--side flex --column">
   <p class="card">
-    I am a front-end engineer specialized in CSS, and security. A weird combination, <i>I know</i>. crinkles.dev is my   digital corner of the internet, where I <a href="/writing">write</a> about various things that interest me.
+    I am a front-end engineer specialized in CSS, and security. A weird combination, <i>I know</i>. crinkles.dev is my digital corner of the internet, where I <a href="/writing">write</a> and build thoughtful software with character
   </p>
 </section>
 
 
-<section class="--main">
-  <h2 class="mb-0 section-header">recent-posts</h2>
-  <div class="flex --column --gap--1 | mb-3">
-    {% set posts = collections.posts | head(3) %} {% include
-    "components/post-list.njk" %}
+<section class="--main flex --column --gap-default">
+  <h2 class="section-header">Recent posts</h2>
+  <div class="flex --column --gap-default">
+    {% set posts = collections.posts | head(3) %}
+    {% include "components/post-list.njk" %}
   </div>
   <a href="/writing" class="size-small | btn | self-start">Read more articles</a>
 </section>

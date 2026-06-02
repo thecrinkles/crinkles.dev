@@ -1,17 +1,17 @@
-<ul role="list" class="hover-group | flex --column --gap-4 | maxw-3">
+<ul role="list" class="post-list hover-group | flex --column --gap-huge">
   {% for post in posts %}
-    <li class="flex --column --gap-none | click-area" role="listitem">
+    <li class="flex --column | click-area" role="listitem">
       <h3>
         <a href="{{ post.page.url }}">
           {{ post.data.title }}
         </a>
       </h3>
-      <span class="italic text-2 size-small | flex --row | mb--2">
-        <time class="mr--1" date="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
+      <p class="text-1">{{ post.data.description }}</p>
+      <div class="italic text-2 size-small | flex --row --gap-list">
+        <time date="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
         {% if post.data.update %} <span class="tag size-small">updated!</span> {% endif %}
         {% if post.data.link %} <span class="tag size-small">external</span> {% endif %}
-      </span>
-      <span class="text-1">{{ post.data.description }}</span>
+      </div>
     </li>
   {% endfor %}
 </ul>

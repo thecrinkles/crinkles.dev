@@ -18,10 +18,10 @@
 
 /** components */
 @import "components/primitives/button.css" layer(components);
-@import "components/primitives/icon.css" layer(components);
 @import "components/primitives/tag.css" layer(components);
 @import "components/containers/card.css" layer(components);
 @import "components/containers/page.css" layer(components);
+@import "components/containers/post-list.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
@@ -35,6 +35,7 @@
 /** utilities */
 @import "utilities/colors.css" layer(utilities);
 @import "utilities/wiggle.css" layer(utilities);
+@import "utilities/font-family.css" layer(utilities);
 @import "utilities/glitch.css" layer(utilities);
 @import "utilities/size.css" layer(utilities);
 @import "utilities/blink.css" layer(utilities);

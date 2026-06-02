@@ -1,0 +1,4 @@
+.monospace {
+  font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
+}

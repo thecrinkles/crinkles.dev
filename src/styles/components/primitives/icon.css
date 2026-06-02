@@ -1,7 +1,0 @@
-.icon {
-  color: var(--link-color);
-  width: 1.5em;
-  /* padding: 4px; */
-  object-fit: contain;
-  aspect-ratio: 1 / 1;
-}

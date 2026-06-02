@@ -11,7 +11,7 @@ pagination:
     - writing
 permalink: /tags/{{ tag | slugify }}/
 eleventyComputed:
-  title: All articles tagged '{{ tag }}'
+  title: "Category: '{{ tag }}'"
 ---
 
 {% set selected = tag %}
@@ -21,7 +21,7 @@ eleventyComputed:
 </section>
 
 <aside class="--side flex --column --center">
-  <div class="card | flex --column --center --gap-1">
+  <div class="card | flex --column --center">
     <h2>Categories</h2>
     {% set tags = collections.posts | getAllTags %} {% include
     "components/tag-list.njk" %}

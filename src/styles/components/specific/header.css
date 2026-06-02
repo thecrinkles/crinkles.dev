@@ -45,7 +45,6 @@ header .logo path {
   transition: all 500ms;
 }
 
-header .logo:is(:hover, :focus) span,
 header .logo:is(:hover, :focus) svg {
   --opacit: 0.3;
   animation: wiggle 0.5s;

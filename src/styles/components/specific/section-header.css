@@ -1,29 +1,20 @@
 .section-header {
   --section-header-gap: var(--space-md);
-  --section-header-size: 0.9em;
-  --section-header-prefix-color: var(--text-1);
 
-  font-family: var(--monospace);
-  font-variation-settings: var(--font-vars-code);
   color: var(--header-color);
-  font-size: var(--section-header-size);
-  text-transform: lowercase;
-  font-weight: var(--fw-bold);
-
+  font-size: var(--size-subheader);
   text-decoration: underline;
   text-decoration-color: hsl(from var(--accent) h s l / var(--opacity-light));
   text-decoration-thickness: 0.625ch;
   text-underline-offset: -0.35ch;
   text-decoration-skip-ink: none;
+
+  &::after {
+    content: ".";
+  }
 }
 
-.section-header::before {
-  content: "~/";
-  color: var(--section-header-prefix-color);
-  font-weight: var(--fw-regular);
-}
-
-p + .section-header,
-ul + .section-header {
-  margin-top: var(--section-header-gap);
+* + .section-header,
+* + .section-header {
+  margin-top: var(--space-huge);
 }

@@ -7,11 +7,11 @@
   --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
-  --accent-color: light-dark(var(--p-green-2), var(--p-orange-0));
-  --link-color: light-dark(var(--p-orange-1), var(--p-green-1));
+  --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --link-color: light-dark(var(--p-green-2), var(--p-green-1));
   --title-color: var(--text-0);
   --header-color: light-dark(var(--p-orange-2), var(--p-orange-0));
-  --button-color: light-dark(var(--p-green-2), var(--p-orange-0));
+  --button-color: light-dark(var(--p-neutral-3), var(--p-orange-0));
   --divider-color: var(--surface-2);
   --canvas-color: var(--accent-color);
   --glow-color: hsl(
@@ -78,7 +78,7 @@
   /** OPACITY */
   --opacity-background-glow: 10%;
   --opacity-light: 25%;
-  --opacity-effect: 60%;
+  --opacity-effect: 50%;
 }
 
 @media (--bp-layout) {

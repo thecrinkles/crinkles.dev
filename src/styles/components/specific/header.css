@@ -2,7 +2,7 @@ header {
   --p: 70%;
 
   margin-inline: auto;
-  padding-block: var(--layout-space);
+  padding-block: var(--space-layout);
   width: 100%;
   max-width: var(--layout-width);
 }

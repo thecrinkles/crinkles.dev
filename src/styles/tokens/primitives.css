@@ -39,12 +39,21 @@
   --p-size-5: calc(var(--p-size-0) * pow(var(--p-size-scale), 5));
 
   /** RADIUS */
-  --p-radius-scale: 0.25;
-  --p-radius-0: var(--p-size-0, 1rem);
-  --p-radius--3: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * -3));
-  --p-radius--2: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * -2));
-  --p-radius--1: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * -1));
-  --p-radius-1: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * 1));
-  --p-radius-2: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * 2));
-  --p-radius-3: calc(var(--p-radius-0) * (1 + var(--p-radius-scale) * 3));
+  --p-radius-scale: 0.25rem;
+  --p-radius-0: 0;
+  --p-radius-1: calc(var(--p-radius-scale) * 1);
+  --p-radius-2: calc(var(--p-radius-scale) * 2);
+  --p-radius-3: calc(var(--p-radius-scale) * 3);
+  --p-radius-4: calc(var(--p-radius-scale) * 4);
+  --p-radius-5: calc(var(--p-radius-scale) * 5);
+  --p-radius-6: calc(var(--p-radius-scale) * 6);
+  --p-radius-7: calc(var(--p-radius-scale) * 7);
+  --p-radius-8: calc(var(--p-radius-scale) * 8);
+
+  /** FONT-WEIGHT */
+  --p-fw-3: 300;
+  --p-fw-4: 400;
+  --p-fw-5: 500;
+  --p-fw-6: 600;
+  --p-fw-7: 700;
 }

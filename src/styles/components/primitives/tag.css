@@ -8,7 +8,7 @@
 .tag:not(.token) {
   --tag-color: var(--link-color);
   --tag-hash-color: var(--tag-color);
-  --tag-font-size: var(--size-label);
+  --tag-font-size: var(--size-small);
   color: inherit;
   font-family: var(--monospace);
   font-variation-settings: var(--font-vars-code);
@@ -18,7 +18,7 @@
 }
 
 .tag:not(.token)[data-selected="true"] {
-  font-weight: bold;
+  font-weight: var(--fw-bold);
 }
 
 .tag:not(.token)::before {

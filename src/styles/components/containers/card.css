@@ -1,16 +1,38 @@
 .card {
-  --card-padding: var(--space-lg);
-  --card-max-width: var(--content-width-module);
-  --card-background: var(--surface-raised);
-  --card-border-color: var(--stroke-accent);
-  --card-shadow: var(--elevation-accent-1);
+  --card-width: ;
+  --card-bg: var(--surface-1);
+  --card-padding: var(--space-large);
+  --line-inset: calc(-0.75 * var(--space-default));
+  --line-color: var(--accent);
+  --line-thickness: 2px;
 
-  background-color: var(--card-background);
+  background-color: var(--card-bg);
   padding: var(--card-padding);
   position: relative;
-  border-radius: var(--radius-default);
-  border: 1px solid var(--card-border-color);
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 0 var(--size-header) hsl(from var(--line-color) h s l / 10%);
   width: 100%;
-  max-width: var(--card-width, var(--card-max-width));
+  max-width: var(--card-width, var(--layout-main-content));
+
+  &::before,
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+
+    border-color: hsl(from var(--line-color) h s l / 70%);
+    border-style: solid;
+    border-width: var(--line-thickness);
+  }
+
+  &::before {
+    inset-block: calc(var(--line-thickness) * -1);
+    inset-inline: var(--line-inset);
+    border-width: var(--line-thickness) 0;
+  }
+
+  &::after {
+    inset-block: var(--line-inset);
+    inset-inline: calc(var(--line-thickness) * -1);
+    border-width: 0 var(--line-thickness);
+  }
 }

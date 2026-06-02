@@ -8,7 +8,7 @@
   color: var(--header-color);
   font-size: var(--section-header-size);
   text-transform: lowercase;
-  font-weight: bold;
+  font-weight: var(--fw-bold);
 
   text-decoration: underline;
   text-decoration-color: hsl(from var(--header-color) h s l / 30%);
@@ -20,7 +20,7 @@
 .section-header::before {
   content: "~/";
   color: var(--section-header-prefix-color);
-  font-weight: normal;
+  font-weight: var(--fw-regular);
 }
 
 p + .section-header,

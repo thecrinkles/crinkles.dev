@@ -33,7 +33,7 @@
 @font-face {
   font-family: "Recursive";
   src: url("/fonts/recursive-subset.woff2") format("woff2");
-  font-weight: 400 700;
+  font-weight: 300 700;
   font-style: oblique -15deg 0deg;
   font-display: swap;
 }

@@ -1,6 +1,6 @@
 footer {
   position: relative;
-  padding-block: var(--layout-space);
+  padding-block: var(--space-layout);
   font-family: var(--monospace);
   font-variation-settings: var(--font-vars-code);
   font-size: var(--size-small);
@@ -20,7 +20,7 @@ footer .signature {
 
 footer .signature svg {
   height: 1.75em;
-  margin-bottom: var(--space--2);
+  margin-bottom: var(--space-defaultall);
 }
 
 footer .signature svg:hover {
@@ -34,21 +34,10 @@ footer .quote {
 }
 
 footer .code {
-  font-weight: bold;
+  font-weight: var(--fw-bold);
   color: var(--header-color);
 }
 
 footer .socials svg path {
   fill: var(--text-0);
-}
-
-@media (--bp-footer-stack) {
-  footer .signature {
-    align-items: center;
-  }
-
-  footer .socials {
-    justify-items: center;
-    align-items: center;
-  }
 }

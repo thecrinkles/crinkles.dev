@@ -6,9 +6,8 @@
 
 .info,
 .archive {
-  --info-box-padding: var(--space-sm);
-  --info-box-background: var(--surface-raised);
-  --info-box-font-size: var(--size-callout);
+  --info-box-padding: var(--space-default);
+  --info-box-background: var(--surface-1);
   --info-box-badge-text: var(--text-on-accent);
   --info-box-badge-background: var(--fill-accent);
   --info-box-badge-padding-inline: 6px;
@@ -16,7 +15,6 @@
 
   padding: var(--info-box-padding);
   background-color: var(--info-box-background);
-  font-size: var(--info-box-font-size);
   position: relative;
 }
 
@@ -33,11 +31,11 @@
   position: absolute;
   display: block;
   top: var(--info-box-badge-offset);
-  font-size: var(--size-label);
+  font-size: var(--size-small);
   color: var(--info-box-badge-text);
   padding: 0 var(--info-box-badge-padding-inline);
   background-color: var(--info-box-badge-background);
-  border-radius: var(--radius-default);
+  border-radius: var(--radius-0);
 }
 
 .info::before {

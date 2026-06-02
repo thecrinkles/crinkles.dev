@@ -1,0 +1,3 @@
+.--threshold-small {
+  --layout-threshold: var(--layout-small);
+}

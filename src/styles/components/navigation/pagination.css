@@ -30,7 +30,7 @@
 
 .pagination .newer[data-exists="true"]:hover,
 .pagination .older[data-exists="true"]:hover {
-  --pagination-bg: var(--accent-color);
+  --pagination-bg: var(--link-color);
   --pagination-text: var(--surface-0);
 }
 

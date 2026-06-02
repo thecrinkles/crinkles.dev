@@ -7,7 +7,7 @@
   --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
-  --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --accent-color: light-dark(var(--p-green-2), var(--p-orange-0));
   --link-color: light-dark(var(--p-orange-1), var(--p-green-1));
   --title-color: var(--text-0);
   --header-color: light-dark(var(--p-orange-2), var(--p-orange-0));

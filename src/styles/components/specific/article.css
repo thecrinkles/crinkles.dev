@@ -55,11 +55,11 @@ article {
     }
 
     &:hover {
-      color: var(--accent-color);
+      color: var(--header-color);
 
       a {
         opacity: 1;
-        color: var(--accent-color);
+        color: var(--header-color);
       }
     }
   }

@@ -7,18 +7,18 @@
   --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
-  --accent-color: light-dark(var(--p-green-2), var(--p-orange-0));
-  --link-color: light-dark(var(--p-green-2), var(--p-green-1));
+  --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --link-color: light-dark(var(--p-orange-1), var(--p-green-1));
   --title-color: var(--text-0);
-  --header-color: var(--accent-color);
-  --button-color: var(--accent-color);
+  --header-color: light-dark(var(--p-orange-2), var(--p-orange-0));
+  --button-color: light-dark(var(--p-green-2), var(--p-orange-0));
   --divider-color: var(--surface-2);
   --canvas-color: var(--accent-color);
   --glow-color: hsl(
     from var(--accent-color) h s l / var(--opacity-background-glow)
   );
 
-  --code-inline: var(--accent-color);
+  --code-inline: light-dark(var(--p-orange-2), var(--p-orange-0));
   --code-default: var(--p-neutral-0);
   --code-muted: var(--p-neutral-2);
   --code-primary: var(--p-orange-0);
@@ -26,10 +26,10 @@
   --code-tertiary: var(--p-yellow-0);
   --code-bg: var(--p-neutral-4);
 
-  --logo-color-start: light-dark(var(--p-green-1), var(--p-green-0));
-  --logo-color-end: light-dark(var(--p-green-2), var(--p-green-1));
+  --logo-color-start: light-dark(var(--p-orange-0), var(--p-orange-0));
+  --logo-color-end: light-dark(var(--p-orange-1), var(--p-orange-1));
   --logo-color-border: light-dark(var(--p-neutral-5), transparent);
-  --logo-text: light-dark(var(--p-orange-0), var(--p-green-2));
+  --logo-text: light-dark(var(--p-orange-1), var(--p-orange-2));
 
   /** FONT-FAMILIES */
   --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;
@@ -77,7 +77,7 @@
 
   /** OPACITY */
   --opacity-background-glow: 10%;
-  --opacity-light: 30%;
+  --opacity-light: 25%;
   --opacity-effect: 60%;
 }
 

@@ -14,8 +14,7 @@ header.main-header {
     transition: all 200ms;
 
     &:is(:hover, :focus) {
-      color: var(--link-color);
-
+      --p: var(--opacity-light);
       svg {
         animation: wiggle 0.5s;
       }

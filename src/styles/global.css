@@ -13,12 +13,16 @@ body {
 a:not([class]) {
   color: inherit;
   transition: all 200ms;
-  text-decoration-color: hsl(from var(--link-color) h s l / 55%);
+  text-decoration-color: hsl(
+    from var(--link-color) h s l / var(--opacity-effect)
+  );
   text-decoration-skip-ink: auto;
 }
 
 a:not([class]):not(:is(:hover, :focus)) {
-  text-decoration-color: hsl(from var(--link-color) h s l / 55%);
+  text-decoration-color: hsl(
+    from var(--link-color) h s l / var(--opacity-effect)
+  );
 }
 
 a:not([class]):is(:hover, :focus) {
@@ -47,7 +51,8 @@ h3 {
   font-size: var(--size-subheader);
 }
 
-i {
+i,
+.italic {
   font-variation-settings: "CRSV" 1;
 }
 

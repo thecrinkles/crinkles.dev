@@ -1,5 +1,5 @@
 header {
-  --p: 70%;
+  --p: var(--opacity-effect);
 
   margin-inline: auto;
   padding-block: var(--space-layout);
@@ -47,7 +47,7 @@ header .logo path {
 
 header .logo:is(:hover, :focus) span,
 header .logo:is(:hover, :focus) svg {
-  --p: 0.3;
+  --opacit: 0.3;
   animation: wiggle 0.5s;
 }
 

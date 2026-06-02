@@ -11,7 +11,7 @@
   font-weight: var(--fw-bold);
 
   text-decoration: underline;
-  text-decoration-color: hsl(from var(--header-color) h s l / 30%);
+  text-decoration-color: hsl(from var(--accent) h s l / var(--opacity-light));
   text-decoration-thickness: 0.625ch;
   text-underline-offset: -0.35ch;
   text-decoration-skip-ink: none;

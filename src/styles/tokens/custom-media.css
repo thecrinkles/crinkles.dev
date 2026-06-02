@@ -1,6 +1,4 @@
 /* site breaking */
 @custom-media --bp-showcase-compact (width < 500px);
-@custom-media --bp-footer-stack (width < 628px);
-@custom-media --bp-pagination-stack (width < 670px);
-@custom-media --bp-4 (width < 820px);
-@custom-media --bp-page-shell-stack (width < 870px);
+@custom-media --bp-pagination (width < 670px);
+@custom-media --bp-layout (width < 840px);

@@ -12,7 +12,7 @@
 .dock-hover--adjacent > * {
   flex-grow: 1;
   height: 75px;
-  border-radius: 4px;
+  border-radius: var(--radius--1);
   background-color: var(--link-color);
   box-shadow: var(--box-shadow);
   transition: transform 400ms;

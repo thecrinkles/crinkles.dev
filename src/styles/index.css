@@ -13,13 +13,15 @@
 @import "global.css" layer(global);
 
 /** layout */
-@import "layout/page-shell.css" layer(layout);
+@import "layout/gap-util.css" layer(layout);
+@import "layout/threshold-util.css" layer(layout);
 
 /** components */
 @import "components/primitives/button.css" layer(components);
 @import "components/primitives/icon.css" layer(components);
 @import "components/primitives/tag.css" layer(components);
 @import "components/containers/card.css" layer(components);
+@import "components/containers/page.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
@@ -34,4 +36,5 @@
 @import "utilities/colors.css" layer(utilities);
 @import "utilities/wiggle.css" layer(utilities);
 @import "utilities/glitch.css" layer(utilities);
+@import "utilities/size.css" layer(utilities);
 @import "utilities/blink.css" layer(utilities);

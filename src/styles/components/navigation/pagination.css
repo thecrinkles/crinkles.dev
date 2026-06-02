@@ -1,6 +1,6 @@
 .pagination {
-  --pagination-padding: var(--space-lg);
-  --pagination-margin-top: var(--space-3xl);
+  --pagination-padding: var(--space-large);
+  --pagination-margin-top: var(--space-huge);
   --pagination-hover-background: var(--link-color);
   --pagination-hover-text: var(--surface-0);
 
@@ -40,7 +40,7 @@
 
 .pagination > * a {
   align-self: flex-start;
-  font-weight: bold;
+  font-weight: var(--fw-bold);
 }
 
 .pagination > *:last-child a {
@@ -52,9 +52,9 @@
   align-self: flex-end;
 }
 
-@media (--bp-pagination-stack) {
+@media (--bp-pagination) {
   .pagination {
-    --pagination-padding: var(--space-sm);
+    --pagination-padding: var(--space-default);
     grid-template-columns: 1fr;
   }
 

@@ -4,9 +4,10 @@ body {
   color: var(--text-0);
   background-color: var(--surface-0);
   z-index: 1;
-  padding-inline: var(--layout-space);
+  padding-inline: var(--space-layout);
   font-family: var(--sans-serif);
   font-variation-settings: var(--font-vars-default);
+  font-size: var(--size-body);
 }
 
 a:not([class]) {
@@ -31,7 +32,19 @@ h2,
 h3 {
   font-family: var(--sans-serif);
   font-variation-settings: var(--font-vars-header);
-  font-weight: var(--font-bold);
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--size-title);
+}
+
+h2 {
+  font-size: var(--size-header);
+}
+
+h3 {
+  font-size: var(--size-subheader);
 }
 
 i {

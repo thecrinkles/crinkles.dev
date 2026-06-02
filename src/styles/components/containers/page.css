@@ -12,15 +12,12 @@ main[data-layout="base"],
 main[data-layout="page"],
 main[data-layout="post"],
 main[data-layout="paginated"] {
-  --page-shell-sticker-size: 175px;
-  --page-shell-sticker-factor: 2;
-  --page-shell-gap: var(--space-2xl);
-  --page-shell-row-gap: var(--space-lg);
-  --page-shell-main-width: var(--content-width-module);
+  --sticker-size: 175px;
+  --sidebar-width: 275px;
 
   display: grid;
-  row-gap: var(--page-shell-row-gap);
-  column-gap: var(--page-shell-gap);
+  row-gap: var(--space-huge);
+  column-gap: var(--space-huge);
   grid-template-areas:
     "title sticker"
     "main sticker"
@@ -28,18 +25,12 @@ main[data-layout="paginated"] {
     "pagination pagination";
   grid-template-columns:
     min(
-      var(--page-shell-main-width),
-      calc(
-        100% - var(--page-shell-sticker-factor) * var(--page-shell-sticker-size) -
-          var(--page-shell-gap)
-      )
+      var(--layout-main-content),
+      calc(100% - var(--sidebar-width) - var(--space-huge))
     )
-    minmax(
-      calc(var(--page-shell-sticker-factor) * var(--page-shell-sticker-size)),
-      1fr
-    );
+    minmax(var(--sidebar-width), 1fr);
   grid-template-rows: auto auto 1fr;
-  padding-block: var(--layout-space);
+  padding-block: var(--space-layout);
 }
 
 main[data-layout="base"] {
@@ -67,7 +58,7 @@ main[data-layout="paginated"] {
 
 /** Layout hooks used by page templates */
 .--sticker > svg {
-  width: var(--page-shell-sticker-size);
+  width: var(--sticker-size);
   margin-inline: auto;
 }
 
@@ -93,9 +84,10 @@ main[data-layout="paginated"] {
 }
 
 /** Media queries*= */
-@media (--bp-page-shell-stack) {
+@media (--bp-layout) {
   main[data-layout] {
-    --page-shell-sticker-size: 225px;
+    --sticker-size: 225px;
+
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;

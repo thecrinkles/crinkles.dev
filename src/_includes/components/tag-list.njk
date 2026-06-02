@@ -1,11 +1,11 @@
 <ul
   role="list"
   aria-label="List of all tags"
-  class="hover-group-grow | cluster --gap-list --justify-center | monospace"
+  class="tag-list | cluster --gap-list --justify-center | monospace"
 >
   {% for tag in tags %}
   <li>
-    <a href="/tags/{{ tag }}/" class="tag" data-selected="{{tag === selected}}">{{ tag }}</a>
+    <a href="/tags/{{ tag }}/" data-selected="{{tag === selected}}">{{ tag }}</a>
   </li>
   {% endfor %}
 </ul>

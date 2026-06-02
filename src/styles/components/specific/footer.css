@@ -6,7 +6,7 @@ footer {
   font-size: var(--size-small);
   inset: 0;
   top: unset;
-  border-top: var(--bw-default) solid var(--surface-2);
+  border-top: var(--bw-default) solid var(--divider-color);
   width: 100%;
   max-width: var(--layout-width);
   margin-inline: auto;
@@ -19,7 +19,7 @@ footer {
     &::before,
     &::after {
       font-weight: var(--fw-bold);
-      color: var(--header-color);
+      color: var(--accent-color);
     }
 
     &::before {

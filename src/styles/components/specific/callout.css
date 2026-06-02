@@ -1,18 +1,23 @@
 .callout {
-  --callout-bg: var(--accent);
+  --callout-bg: var(--accent-color);
+  --callout-text: var(--surface-0);
 
   padding: var(--space-default);
   background-color: var(--surface-1);
   position: relative;
 
-  ::before {
+  &::before {
     content: "<aside />";
+    font-family: var(--monospace);
+    font-variation-settings: var(--font-vars-code);
+    font-size: var(--size-small);
+    font-style: regular;
     position: absolute;
     display: block;
     top: -0.675em;
-    font-size: var(--size-small);
     padding: 0 6px;
     background-color: var(--callout-bg);
+    color: var(--callout-text);
   }
 
   a,

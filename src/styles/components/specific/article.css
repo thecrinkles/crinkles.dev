@@ -55,11 +55,11 @@ article {
     }
 
     &:hover {
-      color: var(--accent);
+      color: var(--accent-color);
 
       a {
         opacity: 1;
-        color: var(--accent);
+        color: var(--accent-color);
       }
     }
   }
@@ -73,7 +73,7 @@ article {
       margin-left: var(--space-large);
 
       &::marker {
-        color: var(--accent);
+        color: var(--accent-color);
         font-weight: var(--fw-bold);
       }
     }
@@ -96,7 +96,7 @@ article {
     font-style: italic;
 
     &::before {
-      background: var(--accent);
+      background: var(--accent-color);
       content: "";
       height: calc(100% + 1px);
       left: 0;
@@ -112,7 +112,7 @@ article {
       font-style: italic;
       text-align: right;
       margin-top: var(--space-small);
-      color: var(--accent);
+      color: var(--accent-color);
     }
   }
 
@@ -122,6 +122,7 @@ article {
     transform: translateX(-50%);
     width: 100vw;
     max-width: var(--article-full-bleed-width);
+    box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
   }
 
   /** code + codeblocks */
@@ -143,7 +144,7 @@ article {
   }
 
   :not(pre) > code {
-    color: var(--accent);
+    color: var(--code-inline);
   }
 }
 
@@ -172,7 +173,9 @@ article .token.selector {
 }
 
 article .token.property,
-article .token.function {
+article .token.function,
+article .token.rule,
+article .token.atrule {
   color: var(--code-secondary);
 }
 
@@ -182,6 +185,8 @@ article .token.number {
 }
 
 article .token.function,
+article .token.rule,
+article .token.atrule,
 article .token.comment,
 article .token.keyword {
   font-style: italic;

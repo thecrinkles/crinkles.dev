@@ -3,14 +3,13 @@
   --card-bg: var(--surface-1);
   --card-padding: var(--space-large);
   --line-inset: calc(0.75 * var(--space-default));
-  --line-color: var(--accent);
+  --line-color: var(--accent-color);
   --line-thickness: var(--bw-effect);
 
   background-color: var(--card-bg);
   padding: var(--card-padding);
   position: relative;
-  box-shadow: 0 var(--shadow-y) var(--shadow-blur)
-    hsl(from var(--line-color) h s l / var(--opacity-background-glow));
+  box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
 

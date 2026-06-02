@@ -7,7 +7,8 @@
 
 .btn {
   --button-padding: var(--space-small) var(--space-default);
-  --button-text: var(--accent);
+  --button-text: var(--button-color);
+  --button-border: var(--button-color);
   --button-bg: var(--surface-0);
 
   display: inline-block;
@@ -16,7 +17,7 @@
   font-size: var(--size-small);
   font-weight: var(--fw-bold);
   color: var(--button-text);
-  border: var(--bw-effect) solid var(--accent);
+  border: var(--bw-effect) solid var(--button-border);
   background-color: var(--button-bg);
 
   padding: var(--button-padding);
@@ -24,11 +25,10 @@
 }
 
 .btn:is(:hover, :focus) {
-  --button-bg: var(--accent);
+  --button-bg: var(--button-color);
   --button-text: var(--surface-0);
 
-  box-shadow: 0 var(--shadow-y) var(--shadow-blur)
-    hsl(from var(--button-bg) h s l / var(--opacity-background-glow));
+  box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
   transform: scale(1.05);
 }
 

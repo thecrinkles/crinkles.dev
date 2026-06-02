@@ -14,7 +14,7 @@ In July 2021 I wrote an article about an [auto-layout algorithm](/writing/auto-g
 - Make it work for multiple disconnected graphs
 - Make it work for graphs with more than one starting node
 
-::: info
+::: callout
 A _rank_ is a list of nodes, a _ranking_ is a list of ranks, and a _graph_ is a list of rankings.
 :::
 

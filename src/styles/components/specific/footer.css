@@ -10,43 +10,24 @@ footer {
   width: 100%;
   max-width: var(--layout-width);
   margin-inline: auto;
-}
 
-footer .signature {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-}
+  .quote {
+    width: 100%;
+    font-family: var(--monospace);
+    font-variation-settings: var(--font-vars-code);
 
-footer .signature svg {
-  height: 1.75em;
-  margin-bottom: var(--space-defaultall);
-}
+    &::before,
+    &::after {
+      font-weight: var(--fw-bold);
+      color: var(--header-color);
+    }
 
-footer .signature svg:hover {
-  animation: wiggle 0.5s;
-}
+    &::before {
+      content: "~\/{";
+    }
 
-footer .quote {
-  width: 100%;
-  font-family: var(--monospace);
-  font-variation-settings: var(--font-vars-code);
-
-  &::before,
-  &::after {
-    font-weight: var(--fw-bold);
-    color: var(--header-color);
+    &::after {
+      content: "}";
+    }
   }
-
-  &::before {
-    content: "~\/{";
-  }
-
-  &::after {
-    content: "}";
-  }
-}
-
-footer .socials svg path {
-  fill: var(--text-0);
 }

@@ -10,7 +10,7 @@ description: >-
   Fluid interfaces allow you scale elements of your website based on on the available space, without using media-queries
 ---
 
-::: info
+::: callout
 _Update 02-03-2023_\
 This article is archived and replaced by a [newer article](writing/a-different-approach-to-fluid-typography-and-layouts/).
 :::
@@ -43,7 +43,7 @@ size = min + (max - min) × ratio
 
 ## Calculating the ratio with `calc`
 
-::: info
+::: callout
 `rem` values correspond to the `px` font-size set on the `html` tag. This font-size can be changed by a user by changing his or her browser settings. For accessibility reasons, it is recommended to work as much as possible with `rem` (or `em`) values
 :::
 
@@ -60,7 +60,7 @@ To implement this concept, you need CSS variables and the `calc` function. Altho
 
 With the base values known, we can start calculating the ratio. Here we find the quirks we need to handle. We need to use the `min` CSS function to calculate the `--area` value we can determine the ratio with. But, this function always needs values with units for comparison. Thus we multiply our `--max` with the `--unit`.
 
-::: info
+::: callout
 When multiplying using `calc`, at least one value needs to be unitless. At least the right-hand side of a division needs to be unitless. Adding and subtracting need all values to be unitless, or have (varying) units.
 :::
 

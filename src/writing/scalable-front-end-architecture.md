@@ -10,7 +10,7 @@ description: >-
   A modern architecture for digital enterprises build on existing ideas, but let you scale quickly
 ---
 
-::: info
+::: callout
 **March 2020**: updated the 'application backbone' chapter to reflect reality better.
 **November 2019**: the original article from August 2019 is updated to highlight its link with MVC/MVVM. Also, the parts around the core layer have been redone.
 :::

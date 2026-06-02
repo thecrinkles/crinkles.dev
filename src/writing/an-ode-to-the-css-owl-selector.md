@@ -10,7 +10,7 @@ description: One off the most beautiful CSS selectors is the Lobotomized Owl Sel
 
 ![The owl selector](/img/owl-selector.png "The owl selector")
 
-::: info
+::: callout
 In the beginning of 2022 I've updated this article with the sections 'Owls v.s. flex-boxes' and 'What about performance'.
 :::
 
@@ -32,7 +32,7 @@ The `* + *` is an elegant solution when using `margin-top`. The `margin-top` is 
 
 ![The owl selector applied](/img/owl-layout.png "The owl selector applied")
 
-::: info
+::: callout
 These days most browsers also support logical operators, that are more considerate towards different users (e.g. left-to-right readers). Instead of using `margin-top`, you can use `margin-block-start` to be more inclusive.
 :::
 
@@ -40,7 +40,7 @@ These days most browsers also support logical operators, that are more considera
 
 The owl selector is a wonderful example showing how complex parsing CSS selectors can be. It shows the real power of CSS. Why? Because it works nested. In any programming language, this can become complex fast. The nested nature of the selector can is comparable to [recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>). Before diving into the recursive solution, let's look at the pseudo-code for a flat list of elements. Now instead of pseudo-implementing `* + *`, lets look at something like `img + p`. This means that in our implementation we need check the typing of the first and second element.
 
-::: info
+::: callout
 The below pseudo-code examples do _not_ represent how browsers evaluate CSS selectors. They are just examples to show how the mental models apply in other languages.
 :::
 

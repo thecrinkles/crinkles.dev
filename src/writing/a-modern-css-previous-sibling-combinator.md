@@ -14,7 +14,7 @@ I like the hover effect on the MacOS dock. The so-called magnifier effect. When 
 
 Let's try to recreate this effect in only CSS!
 
-::: info contrast
+::: callout contrast
 This article has some live examples embedded created with plain HTML. As such, they will not work in RSS readers. The examples rely on `:hover`, meaning they do not properly work on devices with touch interfaces.
 :::
 

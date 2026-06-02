@@ -64,7 +64,7 @@ This is the so called _RAM pattern_: repeat, auto, minmax. With `repeat()` we sa
 
 The magic starts when replacing the fixed number with `auto-fit` or `auto-fill`. With both options, we let the browser determine the amount of available columns on the screen. When using `auto-fill` and `minmax(20rem, 1fr)` on a screen of `90rem` the browser creates four columns. The `auto-fit` option creates a maximum of four columns in this example. When there are only two elements to put in the grid `auto-fit` reduces the number of columns to two. This gives you great flexibility in responsive layouts, without using media-queries.
 
-::: info
+::: callout
 Did you know that you can set a `grid-column: span 2` attribute on your elements? When doing so, they will span two columns. So not all elements have to be the same size. The downside is that there will always be at least two columns, and any potential gaps in the grid are not filled.
 :::
 
@@ -76,7 +76,7 @@ You often see big card layouts with an image and content next to each other, spa
 
 Does this not sound like a familiar problem? Well, it is. It is almost the same as the _auto-scaling grid-layout_ I already described. There is one small addition. We need to add `grid-template-rows: auto 1fr` to the `grid` class example. The `auto` value accommodates the vertical orientation with a changed ratio. This assumes that the images have a landscape orientation. As there are only two child elements (the image and the content) CSS grids handle the rest.
 
-::: info
+::: callout
 In CSS grids, row and column definitions are ignored when there are not enough elements. In the above example, when there are only enough elements to fill the first row, the `1fr` definition of the second row is ignored.
 :::
 

@@ -4,18 +4,18 @@ layout: base
 
 <article class="center">
     {% if archived %}
-    <div class="archive">
+    <aside class="archive">
         This post is out-of-date, or I do not agree 100% with its content anymore. It will not be updated, but remains to exist to not break links.
-    </div>
+    </aside>
     {% endif %}
-    <div class="flex --column --center | mb-2">
+    <header class="flex --column --center">
         <h1 class="text-center">{{ title }}</h1>
-        <div class="flex --row --center --gap-1 | size-small">
+        <div class="flex --row --center --gap-list | size-small">
             <time class="text-2 italic">{{ date | readableDate }}</time>
             {% if update %}<time class="text-2 italic">(Updated on: {{ update | readableDate }})</time>{% endif %}
             {% include "components/tag-list.njk" %}
         </div>
-    </div>
+    </header>
     {{ content | safe }}
 </article>
 

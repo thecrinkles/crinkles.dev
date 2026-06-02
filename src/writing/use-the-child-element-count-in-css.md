@@ -10,7 +10,7 @@ description: >-
 
 Recently I shared a nice [CSS trick](/writing/a-nth-child-css-trick/) allowing you to use a CSS custom property indicating the index of an element. Now I want to share with you a trick for doing the reverse. A trick that allows you to use the child-element count on your parent selector. Let’s dive in!
 
-::: info
+::: callout
 This trick uses the new `:has` selector in CSS. The majority of browsers support this selector at the time of writing. Except for Firefox and Samsung browsers. In Firefox, this CSS feature is behind a feature flag in the advanced settings.
 :::
 

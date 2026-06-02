@@ -46,7 +46,7 @@ Now we can start defining our bars. Each of the bars is a vertical stack of sect
 
 Now we only need to determine the height of each of the bars. Ideally, I would have liked to use a `data-*` attribute. Reading values in CSS from these attributes can be done using the `attr()` function, as it only works with string values, and. But unfortunately, that will not work.
 
-::: info
+::: callout
 The `attr()` function can only work with string values. This means it only has value for the `content` attribute in CSS.
 :::
 
@@ -70,7 +70,7 @@ As you can see in both the HTML snippet above and the CSS snippet below, we are 
 
 As we are looking at a stacked bar chart, we need to add sections to each of the bars. We already know that a bar is set up as a vertical flexbox. To ensure each section fills up the space of the bar corresponding to their value. If we have three sections with values `10`, `20`, and `30`, we can achieve the result to set `flex-grow` to this value. In summary, `flex-grow: var(--value)`. Like with the height of the bar, we need to inject the value through the `style=“--value: 30;”` tag.
 
-::: info
+::: callout
 If the value is small compared to the other sections, other CSS attributes, such as padding, might impact the correct distribution.
 :::
 
@@ -93,7 +93,7 @@ Stacked bar charts visualize different series of data. Each nth section of a bar
 
 A nifty little trick that I learned is setting a `--nth-child` custom property in the root of your styling, as shown below. This makes it possible to use these values with the `calc()` function.
 
-::: info
+::: callout
 You might think using `:nth-child(n)` would allow you to achieve the same, without all the custom properties. Unfortunately, the `n` is not useable in the `calc()` function.
 :::
 
@@ -107,7 +107,7 @@ You might think using `:nth-child(n)` would allow you to achieve the same, witho
 ...
 ```
 
-::: info
+::: callout
 If you have different types of children within a parent, you can use `:nth-of-type`. This does target HTML tags. If you only use `<div />` it will make no difference.
 :::
 

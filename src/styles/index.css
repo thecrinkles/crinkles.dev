@@ -25,9 +25,9 @@
 @import "components/navigation/pagination.css" layer(components);
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
+@import "components/specific/callout.css" layer(components);
 @import "components/specific/footer.css" layer(components);
 @import "components/specific/header.css" layer(components);
-@import "components/specific/info-box.css" layer(components);
 @import "components/specific/section-header.css" layer(components);
 @import "blog/dock-hover.css" layer(components);
 @import "blog/showcase.css" layer(components);

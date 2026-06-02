@@ -15,7 +15,7 @@ For the last few weeks or months, I was getting restless about everything: my wo
 
 [React](https://reactjs.org) is a JavaScript library that makes it easy to write UIs. As it is a library, your code plus the library is shipped to the browser and executed there. Also, you have to write your HTML (or JSX) inside the `return` of a function, while other lifecycle information is also encapsulated inside that function. [Gatsby](https://www.gatsbyjs.com/) is a _static site generation (SSG)_ solution build on top of React, and was used in the previous version of this website. An easy next step would be migrating to [Next.js](https://nextjs.org/), a _static-site rendering (SSR)_ solution build on React. But then I came across the news of the SvelteKit public beta.
 
-::: info
+::: callout
 **SSG vs. SSR**: in both cases the server is responsible to pre-render the requested HTML page (in contrast to client-side rendering (CSR)). With SSG this happens at _build_ time: all possible pages get pre-rendered. With SSR this happens at _runtime_: upon a page visit, the HTML gets pre-rendered using a template.
 :::
 
@@ -116,6 +116,6 @@ With a few more of these alterations (lazy loading of images and anchor tags on 
 
 Up until this moment, the development experience (DX) of Svelte and SvelteKit has been tremendous. Don't get me wrong, I loved Gatsby the first time I used it. But after working with Svelte(Kit) I found its DX inferior to SvelteKit. For UI components that do not require (a lot of) state management, Svelte is also superior to React. But when moving to SvelteKit, you loose the community and plugins of Gatsby. This makes Gatsby superior for less tech-savvy people, or when you want to move quicker and do not want to control each detail. In my [next post](/writing/journey-from-gatsby-to-sveltekit-deployment) I will tell you all about getting the new website live!
 
-::: info
+::: callout
 If you are curious about the result, check the code on the open [GitHub repository](https://github.com/thecrinkles/crinkles.dev).
 :::

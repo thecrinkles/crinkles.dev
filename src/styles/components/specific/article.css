@@ -1,28 +1,10 @@
 /* Main wrapper */
 article {
   --article-max-width: var(--layout-article);
+  --article-padding: var(--space-default);
   --article-full-bleed-width: calc(
-    var(--article-max-width) + 2 * var(--space-default)
+    var(--article-max-width) + 2 * var(--article-padding)
   );
-  --article-flow-space: var(--space-large);
-  --article-heading-gap: var(--space-huge);
-  --article-heading-lead-gap: var(--space-xs);
-  --article-subheading-lead-gap: var(--space-defaultall);
-  --article-title-size: var(--size-title);
-  --article-title-gap: var(--space-defaultall);
-  --article-blockquote-padding: var(--space-md);
-  --article-cite-size: var(--size-small);
-  --article-cite-gap: var(--space-default);
-  --article-list-indent: var(--space-md);
-  --article-code-padding: var(--space-default);
-  --article-code-background: var(--surface-inverse);
-  --article-code-text: var(--text-inverse);
-  --article-code-muted: var(--text-2);
-  --article-code-border-color: var(--stroke-accent);
-  --article-code-shadow: var(--elevation-accent-1);
-  --article-code-accent-primary: var(--logo-color-end);
-  --article-code-accent-secondary: var(--fill-accent);
-  --article-code-accent-tertiary: var(--stroke-accent-soft);
 
   container-type: inline-size;
   container-name: post;
@@ -30,223 +12,179 @@ article {
   width: 100%;
   max-width: var(--article-max-width);
   flex-direction: column;
-}
 
-/**
-* TEXT FLOW
-*/
-article > * + * {
-  margin-block-start: var(--article-flow-space);
-}
+  /** General flow */
+  header {
+    margin-bottom: var(--space-large);
+  }
 
-article * + h2 {
-  margin-block-start: var(--article-heading-gap);
-}
+  > * + * {
+    margin-block-start: var(--space-large);
+  }
 
-article h2 + :where(ul, ol) {
-  margin-block-start: 0.4em;
-}
+  > * + h2 {
+    margin-block-start: var(--space-huge);
+  }
 
-article h2 + p {
-  margin-block-start: var(--article-heading-lead-gap);
-}
+  > :is(h2, h3) + * {
+    margin-block-start: var(--space-small);
+  }
 
-article h3 + p {
-  margin-block-start: var(--article-subheading-lead-gap);
-}
+  /** header links */
+  > :is(h2, h3) {
+    position: relative;
+    transition: color 300ms;
+    outline: none;
 
-/**
-* HEADERS
-*/
-article h1 {
-  font-size: var(--article-title-size);
-  margin-bottom: var(--article-title-gap);
-}
+    a {
+      transition: all 300ms;
+      cursor: pointer;
+      color: var(--text-2);
+      font-weight: var(--fw-regular);
+      opacity: 0.4;
+      text-decoration: none;
 
-article :where(h2, h3) {
-  position: relative;
-  transition: color 300ms;
-  outline: none;
-}
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+      }
+    }
 
-article :where(h2 a, h3 a) {
-  transition: all 300ms;
-  cursor: pointer;
-  color: var(--text-2);
-  font-weight: var(--fw-regular);
-  opacity: 0.4;
-  text-decoration: none;
-}
+    &:hover {
+      color: var(--accent);
 
-article h2:has(a):hover {
-  color: var(--header-color);
-}
+      a {
+        opacity: 1;
+        color: var(--accent);
+      }
+    }
+  }
 
-article h2 a::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-}
+  /** lists */
+  :where(ul, ol):not([class]) {
+    list-style: outside;
+    padding-left: 0;
 
-article h2:hover a {
-  opacity: 1;
-}
+    > li {
+      margin-left: var(--space-large);
 
-/**
-* GENERAL STYLING OF ELEMENTS
-*/
-article :where(img, pre, .info, .archive, .cp_embed_wrapper) {
-  border-radius: var(--radius-0);
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  max-width: var(--article-full-bleed-width);
-}
+      &::marker {
+        color: var(--accent);
+        font-weight: var(--fw-bold);
+      }
+    }
+  }
 
-/**
- * IMAGES
- */
-article img {
-  box-shadow: var(--box-shadow);
-}
+  ul:not([class]) li {
+    list-style-type: "✦  ";
+  }
 
-/**
- * BLOCK QUOTES
- */
-article blockquote {
-  display: block;
-  position: relative;
-  padding: 0 var(--article-blockquote-padding);
-  color: var(--text-2);
-  font-style: italic;
-}
+  ol:not([class]) {
+    list-style: decimal outside;
+  }
 
-article blockquote::before {
-  background: var(--quote-color);
-  content: "";
-  height: calc(100% + 1px);
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 5px;
-}
+  /** quotes */
+  blockquote {
+    display: block;
+    position: relative;
+    padding: 0 var(--space-default);
+    color: var(--text-2);
+    font-style: italic;
 
-article blockquote cite {
-  display: block;
-  width: 100%;
-  font-size: var(--article-cite-size);
-  font-style: italic;
-  text-align: right;
-  margin-top: var(--article-cite-gap);
-  color: var(--quote-color);
-}
+    &::before {
+      background: var(--accent);
+      content: "";
+      height: calc(100% + 1px);
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
 
-/**
- * LISTS
- */
-article :where(ul, ol):not([class]) {
-  list-style: outside;
-  padding-left: 0;
-}
+    > cite {
+      display: block;
+      width: 100%;
+      font-size: var(--size-small);
+      font-style: italic;
+      text-align: right;
+      margin-top: var(--space-small);
+      color: var(--accent);
+    }
+  }
 
-article :where(ul, ol):not([class]) li {
-  margin-left: var(--article-list-indent);
-  padding-left: 0.5em;
-}
+  /** special elemenst */
+  :where(img, pre, .callout, .cp_embed_wrapper) {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: var(--article-full-bleed-width);
+  }
 
-article :where(ul, ol):not([class]) li::marker {
-  color: var(--list-color);
-  font-size: 0.825em;
-  font-weight: var(--fw-bold);
-}
+  /** code + codeblocks */
+  code {
+    font-weight: var(--fw-regular);
+    font-family: var(--monospace);
+    font-variation-settings: var(--font-vars-code);
+  }
 
-article ul:not([class]) li {
-  list-style-type: "✦  ";
-  padding-left: 0.5em;
-}
+  pre {
+    background-color: var(--code-bg);
+    color: var(--code-default);
+    border-radius: 0;
 
-article ol:not([class]) {
-  list-style: decimal outside;
-}
+    code {
+      padding: var(--article-padding);
+      font-size: var(--size-small);
+    }
+  }
 
-/**
- * CODE BLOCKS
- */
-article pre {
-  background-color: var(--article-code-background);
-  color: var(--article-code-text);
-  border: 1px solid var(--article-code-border-color);
-  box-shadow: var(--article-code-shadow);
-}
-
-article code {
-  font-weight: var(--fw-regular);
-  font-family: var(--monospace);
-  font-variation-settings: var(--font-vars-code);
-}
-
-article pre code {
-  padding: var(--article-code-padding);
-}
-
-article :not(pre) > code {
-  color: var(--inline-code-color);
+  :not(pre) > code {
+    color: var(--accent);
+  }
 }
 
 /** SYNTAX */
 article .token.punctuation,
 article .token.comment,
 article .token.operator {
-  color: var(--article-code-muted);
+  color: var(--code-muted);
   font-weight: var(--fw-light);
 }
 
 /** SYNTAX */
 article .token.keyword,
 article .token.tag {
-  color: var(--article-code-muted);
+  color: var(--code-muted);
 }
 
 /** To overwrite the above colors */
 article .token.attr-value {
-  color: var(--article-code-text);
+  color: var(--code-default);
 }
 
 article .token.attr-name,
 article .token.selector {
-  color: var(--article-code-accent-primary);
+  color: var(--code-primary);
 }
 
 article .token.property,
 article .token.function {
-  color: var(--article-code-accent-secondary);
+  color: var(--code-secondary);
 }
 
 article .token.string,
 article .token.number {
-  color: var(--article-code-accent-tertiary);
+  color: var(--code-tertiary);
 }
 
 article .token.function,
 article .token.comment,
 article .token.keyword {
   font-style: italic;
-}
-
-/** discard rounded corners on full width */
-@container post (inline-size < 47rem) {
-  article :where(img, pre, .info, .archive, .cp_embed_wrapper) {
-    border-radius: 0;
-  }
-
-  article pre {
-    border: none !important;
-    outline: 2px solid var(--article-code-border-color);
-    box-shadow: none !important;
-  }
 }
 
 /** smaller headers on smaller screens */

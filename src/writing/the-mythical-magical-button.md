@@ -68,7 +68,7 @@ Can we make a button that separates the CSS for `data-variant` and `data-style`?
 
 Well, the answer is yes! We can write CSS where changing _one custom property_ allows for all this.
 
-::: info
+::: callout
 To be clear. We need less buttons. You should start out with “variants + states”, where the starting variants are: primary, secondary, danger, outline, and ghost. This allows us to make the last method I discussed more lean and understandable (e.g. `[data-variant=“”]:hover`). This is my preferred way.
 :::
 
@@ -109,7 +109,7 @@ button[data-variant="primary"] {
 
 And that is it. You only need to change one custom property when adding a new variant, and then everything will work. This is what I was talking about. But we have a lot more work to do to make that happen.
 
-::: info
+::: callout
 Almost no color works well as a `--variant` for light and dark mode. The filled style usually works fine. But the outlined and ghost buttons cause issues in these setups. Make sure to always check your contrasts!
 :::
 

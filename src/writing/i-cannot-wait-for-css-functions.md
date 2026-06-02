@@ -84,7 +84,7 @@ Mixins could be another way to achieve the same result but differently.
 
 Both would be a much more convenient implementation in a CSS framework/library than remembering the very specific snippet for contrast. Unfortunately, we will have to wait a few years before browsers will adopt this draft.
 
-::: info
+::: callout
 For more information about this draft, check this article from [CSS Tricks](https://css-tricks.com/css-functions-and-mixins-module-notes/).
 :::
 

@@ -8,28 +8,19 @@
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
   --accent: var(--p-green-2);
-
-  --surface-inverse: var(--p-neutral-4);
-  --color-divider: var(--surface-2);
-  --text-accent: var(--p-green-2);
-  --text-on-accent: var(--p-neutral-5);
-  --text-inverse: var(--p-neutral-0);
-  --stroke-accent: var(--p-green-2);
-  --stroke-accent-soft: var(--p-green-0);
-  --fill-accent: var(--p-orange-0);
-  --elevation-accent-1:
-    0 4px 0 var(--stroke-accent),
-    0 8px 16px hsl(from var(--stroke-accent-soft) h s l / 16%);
   --canvas: var(--p-green-2);
+
+  --code-default: var(--p-neutral-0);
+  --code-muted: var(--p-neutral-2);
+  --code-primary: var(--p-orange-0);
+  --code-secondary: var(--p-green-0);
+  --code-tertiary: var(--p-yellow-0);
+  --code-bg: var(--p-neutral-4);
+
   --logo-color-start: var(--p-green-1);
   --logo-color-end: var(--p-green-2);
   --logo-color-border: var(--p-neutral-5);
   --logo-text: var(--p-orange-0);
-  --link-color: var(--text-accent);
-  --list-color: var(--text-accent);
-  --quote-color: var(--text-accent);
-  --header-color: var(--text-accent);
-  --inline-code-color: var(--text-accent);
 
   /** FONT-FAMILIES */
   --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;
@@ -52,13 +43,6 @@
   --size-subheader: var(--p-size-1);
   --size-small: var(--p-size--1);
 
-  /**
-   * LAYOUT (SPACING, WIDTH, HEIGHT)
-   */
-  --space-xs: var(--p-size-small);
-  --space-md: var(--p-size-1);
-  --space-xl: var(--p-size-3);
-
   /** SPACING */
   --space-none: 0;
   --space-layout: var(--p-size-2);
@@ -75,8 +59,8 @@
   --layout-article: 47rem;
 
   /** BOX-SHADOW */
-  --shadow-y: var(--p--2);
-  --shadow-blur: var(--p-size-2);
+  --shadow-y: 8px;
+  --shadow-blur: var(--p-size-1);
 
   /** BORDER-WIDTH */
   --bw-default: 1px;
@@ -97,16 +81,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: var(--p-orange-0);
+    --canvas: var(--p-orange-0);
+    --logo-color-start: var(--p-green-0);
+    --logo-color-end: var(--p-green-1);
+    --logo-color-border: transparent;
 
     --text-accent: var(--p-green-1);
     --text-on-accent: var(--p-neutral-5);
     --stroke-accent: var(--p-orange-0);
     --stroke-accent-soft: var(--p-orange-0);
     --fill-accent: var(--p-orange-0);
-    --canvas: var(--p-orange-0);
-    --logo-color-start: var(--p-green-0);
-    --logo-color-end: var(--p-green-1);
-    --logo-color-border: transparent;
     --logo-text: var(--p-green-2);
     --link-color: var(--text-accent);
     --list-color: var(--fill-accent);

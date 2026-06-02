@@ -9,7 +9,7 @@ description: >-
   Understanding how to make better technology, framework, and library decisions in front-end development
 ---
 
-::: info
+::: callout
 _Update August 2023_: When archiving older articles, like [this](/writing/ux-engineering-alignment), I have decided to combine some findings from that article into this one.
 :::
 
@@ -66,7 +66,7 @@ Out of nowhere the build pipeline of a big project broke (>1.5 years). After loo
 
 As this issue impacts our ability to push updates to production, a solution needs to be found. But, in the build abstraction package, we use h as a slow cycle time. It could be months before a fix would be pushed. (disclaimer: now, after 9 months it is not updated properly, and is flagged as not maintained anymore). A temporary fix was found with limited impact. The permanent fix was to replace the entire abstraction, including all underlying dependencies. This required manual verification of develop, test and production builds to ensure they were still working. It took the entire team weeks to verify everything.
 
-::: info
+::: callout
 Unit tests use only a part of the build setup, if at all. End-to-end tests hardly cover 100% of all functionalities. To ensure that such a crucial step as code compilation does not break anything, manual verification is your only option.
 :::
 

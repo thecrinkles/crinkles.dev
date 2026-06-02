@@ -9,7 +9,7 @@ description: >-
   State management is one of the most complicated, and opinionated topics in modern and JavaScript-focused front-end development. Let's make it easier.
 ---
 
-::: info
+::: callout
 **Update June 2023**: added a section outlining what my current approach is.
 :::
 

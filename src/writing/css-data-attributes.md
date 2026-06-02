@@ -29,7 +29,7 @@ Now assume the case where you use an existing UI library for your buttons. Most 
 }
 ```
 
-::: info
+::: callout
 This definition has a higher specificity compared to the `.ui-btn`. It will override any styles defined in the default `.ui-btn` class.
 :::
 
@@ -79,7 +79,7 @@ But one of the biggest advantages of `data-*` has not yet been discussed: state 
 }
 ```
 
-::: info
+::: callout
 A state machine is a machine that can be in one state at any given time. The machine can change from one state to another, based on transitions. A statechart allows for nesting, delays, automatic transitions, and parallel regions in state machines.
 :::
 

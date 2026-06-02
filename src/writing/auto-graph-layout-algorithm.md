@@ -48,7 +48,7 @@ The example below visualizes a result when following these steps. You can see th
 
 The above visualization shows that ranking nodes following these steps can produce readable results. But, improvements can be achieved. As this is a so-called ['NP-hard'](https://en.wikipedia.org/wiki/NP-hardness) problem, there is no perfect solution possible. But, by following a certain sequence of steps, several times until we hit a boundary condition, we can approach a (local) optimum. Or you know, the minimum number of crossing edges. This is called a heuristic.
 
-::: info
+::: callout
 A heuristic is a practical problem-solving approach that is not guaranteed to be optimal, perfect, or rational. It is enough for an (intermediate) goal.
 :::
 
@@ -105,6 +105,6 @@ Solving the automatic (or magical) layout of a directed graph (or state machine)
 - Allow for nodes to move between ranks during the optimization step. This is a helpful improvement when you have a graph with a fixed start and end node, but a big variation in the length of paths.
 - Optimize how mutations and which mutations are applied. Check only adjacent ranks to improve the performance for example. This can worsen the result though.
 
-::: info
+::: callout
 I've created a JavaScript package called [DIGL](https://github.com/thecrinkles/digl) that implements the described algorithm. It is framework agnostic and can be used in the front-end or back-end.
 :::

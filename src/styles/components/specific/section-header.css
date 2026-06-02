@@ -1,6 +1,4 @@
 .section-header {
-  --section-header-gap: var(--space-md);
-
   color: var(--header-color);
   font-size: var(--size-subheader);
   text-decoration: underline;

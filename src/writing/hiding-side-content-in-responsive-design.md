@@ -66,7 +66,7 @@ As said, this is a very specific trick, that has a few gotchas.
 
 Although the use case is limited and the gotchas add more limitations, it does have some usage.
 
-::: info
+::: callout
 _Update 28-02-2023_\
 This trick also works if we want to reverse horizontal and vertical. If there is no `width` on the horizontal orientation, the content gets hidden. In vertical orientation, it can fill the available space, or have a fixed `height`.
 :::

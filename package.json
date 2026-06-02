@@ -18,6 +18,7 @@
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@netlify/blobs": "^10.7.9",
     "@types/markdown-it": "^14.1.2",
     "browserslist": "^4.28.2",
     "husky": "^9.1.7",

@@ -1,3 +1,6 @@
 [build]
-  command = "yarn build"
+  command = "pnpm build"
   publish = "_site/"
+
+[build.rollupOptions]
+  external = ["@netlify/blobs"]

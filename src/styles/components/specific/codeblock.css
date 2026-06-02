@@ -1,0 +1,93 @@
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-default);
+  border-radius: 0;
+
+  code {
+    padding: var(--article-padding);
+    font-size: var(--size-small);
+  }
+  --line-inset: calc(0.75 * var(--space-default));
+  --line-color: var(--accent-color);
+  --line-thickness: var(--bw-effect);
+  &::before,
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+
+    border-style: solid;
+    border-width: var(--line-thickness);
+  }
+
+  &::after {
+    inset-inline: calc(var(--line-thickness) * -1);
+    inset-block: calc(var(--line-inset) * -1);
+    border-width: 0 var(--line-thickness);
+    border-color: var(--line-color);
+    border-image: linear-gradient(
+        to bottom,
+        transparent,
+        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
+        transparent
+      )
+      1;
+  }
+
+  &::before {
+    inset-inline: calc(var(--line-inset) * -1);
+    inset-block: calc(var(--line-thickness) * -1);
+    border-width: var(--line-thickness) 0;
+    border-image: linear-gradient(
+        to left,
+        transparent,
+        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
+        transparent
+      )
+      1;
+  }
+}
+
+/** SYNTAX */
+code .token.punctuation,
+code .token.comment,
+code .token.operator {
+  color: var(--code-muted);
+  font-weight: var(--fw-light);
+}
+
+/** SYNTAX */
+code .token.keyword,
+code .token.tag {
+  color: var(--code-muted);
+}
+
+/** To overwrite the above colors */
+code .token.attr-value {
+  color: var(--code-default);
+}
+
+code .token.attr-name,
+code .token.selector {
+  color: var(--code-primary);
+}
+
+code .token.property,
+code .token.function,
+code .token.rule,
+code .token.atrule {
+  color: var(--code-secondary);
+}
+
+code .token.string,
+code .token.number {
+  color: var(--code-tertiary);
+}
+
+code .token.function,
+code .token.rule,
+code .token.atrule,
+code .token.comment,
+code .token.keyword {
+  font-style: italic;
+}

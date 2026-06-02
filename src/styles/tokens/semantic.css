@@ -68,8 +68,8 @@
   --layout-article: 47rem;
 
   /** BOX-SHADOW */
-  --shadow-y: 8px;
-  --shadow-blur: var(--p-size-1);
+  --shadow-y: 0px;
+  --shadow-blur: var(--p-size-3);
 
   /** BORDER-WIDTH */
   --bw-default: 1px;

@@ -26,6 +26,7 @@
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
 @import "components/specific/callout.css" layer(components);
+@import "components/specific/codeblock.css" layer(components);
 @import "components/specific/footer.css" layer(components);
 @import "components/specific/header.css" layer(components);
 @import "components/specific/section-header.css" layer(components);

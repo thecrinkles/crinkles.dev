@@ -83,6 +83,10 @@ main[data-layout="paginated"] {
   grid-area: pagination;
 }
 
+.--full-width {
+  grid-column: 1 / -1;
+}
+
 /** Media queries*= */
 @media (--bp-layout) {
   main[data-layout] {

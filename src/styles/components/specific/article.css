@@ -132,64 +132,9 @@ article {
     font-variation-settings: var(--font-vars-code);
   }
 
-  pre {
-    background-color: var(--code-bg);
-    color: var(--code-default);
-    border-radius: 0;
-
-    code {
-      padding: var(--article-padding);
-      font-size: var(--size-small);
-    }
-  }
-
   :not(pre) > code {
     color: var(--code-inline);
   }
-}
-
-/** SYNTAX */
-article .token.punctuation,
-article .token.comment,
-article .token.operator {
-  color: var(--code-muted);
-  font-weight: var(--fw-light);
-}
-
-/** SYNTAX */
-article .token.keyword,
-article .token.tag {
-  color: var(--code-muted);
-}
-
-/** To overwrite the above colors */
-article .token.attr-value {
-  color: var(--code-default);
-}
-
-article .token.attr-name,
-article .token.selector {
-  color: var(--code-primary);
-}
-
-article .token.property,
-article .token.function,
-article .token.rule,
-article .token.atrule {
-  color: var(--code-secondary);
-}
-
-article .token.string,
-article .token.number {
-  color: var(--code-tertiary);
-}
-
-article .token.function,
-article .token.rule,
-article .token.atrule,
-article .token.comment,
-article .token.keyword {
-  font-style: italic;
 }
 
 /** smaller headers on smaller screens */

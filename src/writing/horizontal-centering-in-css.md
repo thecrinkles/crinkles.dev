@@ -23,7 +23,7 @@ The _center_ layout pattern allows you to horizontally center elements on the sc
 
 This solution creates a three-column grid. The outer columns act as the padding and overflow of the layout. By giving them a minimum width via `minmax(1rem, 1fr)`, you ensure small padding exists on small screens. The center column takes the space required for the content but is capped at the maximum width. You can achieve this with `minmax(auto, 60ch)`. This gives the combined implementation as displayed below.
 
-::: info
+::: callout
 The used examples make use of CSS custom properties. This allows for adjustable layouts based on utility classes. Examples can be found in [Feo CSS](https://feo.crinkles.dev/center).
 :::
 

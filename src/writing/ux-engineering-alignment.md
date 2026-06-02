@@ -11,7 +11,7 @@ description: >-
 
 Almost two years ago I wrote my [first blog post](/writing/ux-design-process-for-engineers) on this website about the alignment between UX and engineering. I got my inspiration based on a conference talk of [Steph Troeth](https://twitter.com/sniffles) on the [CSS Day of 2019](https://cssday.nl/2019). Since that time, I have learned a lot by working with UX designers. Although my initial ideas did not change, I did get a more complete picture of what the alignment between UX and engineering should and could be.
 
-::: info
+::: callout
 Everything is described from an engineering point of view. It can very well be that it is incorrect when looking from a UX point of view. If so, let me know!
 :::
 

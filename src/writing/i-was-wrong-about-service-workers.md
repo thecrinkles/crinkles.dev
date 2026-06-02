@@ -11,7 +11,7 @@ description: >-
 
 For years I have seen services workers as this magical concept for making progressive web apps. Or, you would use them to run very heavy operations parallel. Both cases I don't need. Not in my personal life, not in my professional life. **I was wrong**.
 
-::: info
+::: callout
 For those wondering, you don't use service workers for heavy operations. Web workers are for heavy background operations. My perception on service workers was wrong here as well, all along.
 :::
 

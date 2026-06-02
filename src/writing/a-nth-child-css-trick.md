@@ -80,6 +80,6 @@ This would create twenty different CSS selectors, all with a different value for
 
 That was it. That was my latest CSS trick.
 
-::: info
+::: callout
 Check also my latest trick [Use the child-element count in CSS](/writting/use-the-child-element-count-in-css/).
 :::

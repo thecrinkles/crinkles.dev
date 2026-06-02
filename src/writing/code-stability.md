@@ -25,7 +25,7 @@ Most of our time spent during development is around unstable code. We focus on i
 
 A good way to understand the stability of your code, is to look at the _dependency graph_. This is a visual representation of how various components and functions are connected. Lets look an an example. In this example we are looking at an "activities" page that has a few small things going on. First of all we see that it shows a table with the available data. Next there is also a possible to search. And lastly we can create a new activity.
 
-::: info
+::: callout
 Everything _black_ is an UI component, _purple_ are actions (e.g. API calls), and _green_ are model-related (e.g. validation/transformation).
 :::
 

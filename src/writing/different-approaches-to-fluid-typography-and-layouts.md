@@ -23,7 +23,7 @@ The generated code is hard to read and manage. At least, I find it hard to read.
 }
 ```
 
-::: info
+::: callout
 Why not let the font size and spacing values scale with the screen? Why use the `min` and `max` values? Good question! The reason is _reliability_. Mainly on very large screens. It becomes hard to guarantee a reliable experience on all different screen sizes, especially around the edges. By controlling the values, we can achieve reliability much easier.
 :::
 
@@ -61,7 +61,7 @@ b = f1 - a * s1
 
 But these are the mathematical formula. There are some _gotchas_ when implementing this in the `clamp()` function or in CSS in general. In mathematics, To make everything work with `calc()`, small tweaks and implementation details are needed.
 
-::: info
+::: callout
 The CSS `calc()` function has several gotchas to take into consideration:
 
 - Its output is always in `px`

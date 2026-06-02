@@ -1,66 +1,64 @@
-header {
+header.main-header {
   --p: var(--opacity-effect);
 
   margin-inline: auto;
   padding-block: var(--space-layout);
   width: 100%;
   max-width: var(--layout-width);
-}
 
-header a.logo {
-  --layout-gap: 0.4em;
+  a.logo {
+    --layout-gap: 0.4em;
 
-  text-decoration: none;
-  color: var(--text-0);
-  transition: all 200ms;
-}
+    text-decoration: none;
+    color: var(--text-0);
+    transition: all 200ms;
 
-header a.logo:is(:hover, :focus) {
-  color: var(--link-color);
-}
+    &:is(:hover, :focus) {
+      color: var(--link-color);
 
-header .logo span {
-  --mono: "MONO" 0.5;
-  --wght: "wght" 600;
-  --slnt: "slnt" -10;
-  --casl: "CASL" 0.15;
-  --crsv: "CRSV" 1;
+      svg {
+        animation: wiggle 0.5s;
+      }
+    }
 
-  text-decoration: underline;
-  text-decoration-color: hsl(from var(--logo-text) h s l / var(--p));
-  text-decoration-thickness: 0.625ch;
-  text-underline-offset: -0.35ch;
-  text-decoration-skip-ink: none;
-  transition: all 200ms;
-  font-family: var(--monospace);
-  font-variation-settings: var(--font-vars-logo);
-}
+    span {
+      --mono: "MONO" 0.5;
+      --wght: "wght" 600;
+      --slnt: "slnt" -10;
+      --casl: "CASL" 0.15;
+      --crsv: "CRSV" 1;
 
-header .logo svg {
-  transition: transform 500ms;
-  height: 1.5rem;
-}
+      text-decoration: underline;
+      text-decoration-color: hsl(from var(--logo-text) h s l / var(--p));
+      text-decoration-thickness: 0.625ch;
+      text-underline-offset: -0.35ch;
+      text-decoration-skip-ink: none;
+      transition: all 200ms;
+      font-family: var(--monospace);
+      font-variation-settings: var(--font-vars-logo);
+    }
 
-header .logo path {
-  transition: all 500ms;
-}
+    svg {
+      transition: transform 500ms;
+      height: 1.5rem;
+    }
 
-header .logo:is(:hover, :focus) svg {
-  --opacit: 0.3;
-  animation: wiggle 0.5s;
-}
+    path {
+      transition: all 500ms;
+    }
+  }
 
-header nav a {
-  background-image: linear-gradient(var(--link-color), var(--link-color));
-  background-size: 0% 0.1em;
-  background-position-y: 100%;
-  background-position-x: 0%;
-  background-repeat: no-repeat;
-  transition: background-size 0.15s ease-in-out;
-  text-decoration: 1px solid var(--surface-2);
-}
+  nav a {
+    background-image: linear-gradient(var(--link-color), var(--link-color));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.15s ease-in-out;
+    text-decoration: 1px solid var(--surface-2);
+  }
 
-header nav a:hover,
-header nav a[aria-current="page"] {
-  background-size: 100% 0.1em;
+  nav a:is(:hover, [aria-current="page"]) {
+    background-size: 100% 0.1em;
+  }
 }

@@ -11,7 +11,7 @@ description: >-
 
 Some time ago I came across a very [interesting question](https://twitter.com/sebastienlorber/status/1499768302788354053) on Twitter. Is it possible to implement dark mode with progressive enhancement, i.e. without JavaScript? The one asking the question suggested `:has`, but that selector is not very well supported yet. But in the replies I found an answer focused on existing browser APIs for HTML and CSS. I was dying to try it out for myself, to see if we can make it work.
 
-::: info
+::: callout
 Progressive enhancement is a design philosophy that provides a baseline of essential content and functionality to as many users as possible while delivering the best possible experience only to users who can run all the required code. In practice, this means relying as much as possible on HTML and CSS, and less on JavaScript.
 :::
 

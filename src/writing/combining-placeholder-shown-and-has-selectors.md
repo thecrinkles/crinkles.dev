@@ -70,7 +70,7 @@ With this HTML structure we can use the new `:has` to create the desired result.
 
 That is one complex CSS selector, but it works! It says: _"If you have an input field where the placeholder is not visible, show the `<label>`"_.
 
-::: info
+::: callout
 The `:has` selector is not yet turned on by default on Firefox as of the writing of this article. Chrome-based and Safari-based browsers have `:has` support since halfway through 2022.
 :::
 

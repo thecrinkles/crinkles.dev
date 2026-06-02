@@ -30,7 +30,7 @@ div > div > div > ... > div {
 
 This definitely sparked my interest. With the addition of `:has`, CSS becomes so much more powerful. And by default CSS can apply styles recursively, [in some forms](/writing/an-ode-to-the-css-owl-selector/), perfectly already. So this was a challenge I was willing to take on. And I found a solution! Well, sort of.
 
-::: info
+::: callout
 Before we get started, I want to make one thing clear. I really, really, have no clue what real-life use-case this trick would have. Going for a non-recursive solution feels more _maintainable_. But it is still cool nonetheless.
 :::
 
@@ -114,6 +114,6 @@ I actually don’t know. Sure you can create a bull’s eye effect with it, or h
 
 But it is still cool to explore the edges of CSS. Who knows? One small addition to the language could open up a whole new set of tricks (`:has` certainly did). Only by exploring the edges, you will find them.
 
-::: info
+::: callout
 If you are limited to two styles, it is possible to solve this problem with `@container style(...)`. However, this is not supported in FireFox and Safari at the moment this article is published.
 :::

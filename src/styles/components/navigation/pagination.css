@@ -1,8 +1,7 @@
 .pagination {
   --pagination-padding: var(--space-large);
-  --pagination-margin-top: var(--space-huge);
-  --pagination-hover-background: var(--link-color);
-  --pagination-hover-text: var(--surface-0);
+  --pagination-bg: var(--surface-0);
+  --pagination-text: var(--text-0);
 
   width: 100%;
   display: grid;
@@ -10,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
   border-top: var(--bw-default) solid var(--surface-2);
   margin-inline: auto;
-  margin-top: var(--pagination-margin-top);
+  margin-top: var(--space-huge);
 }
 
 .pagination > * {
@@ -22,6 +21,8 @@
 
 .pagination .newer[data-exists="true"],
 .pagination .older[data-exists="true"] {
+  background-color: var(--pagination-bg);
+  color: var(--pagination-text);
   transition: all 0.3s ease;
   padding: var(--pagination-padding);
   height: 100%;
@@ -29,8 +30,8 @@
 
 .pagination .newer[data-exists="true"]:hover,
 .pagination .older[data-exists="true"]:hover {
-  background-color: var(--pagination-hover-background);
-  color: var(--pagination-hover-text);
+  --pagination-bg: var(--accent);
+  --pagination-text: var(--surface-0);
 }
 
 .pagination .newer[data-exists="true"]:hover a,
@@ -55,6 +56,7 @@
 @media (--bp-pagination) {
   .pagination {
     --pagination-padding: var(--space-default);
+
     grid-template-columns: 1fr;
   }
 

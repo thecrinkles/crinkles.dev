@@ -40,7 +40,7 @@ But throughout the years, CSS gave us custom properties to solve the initial poi
 }
 ```
 
-::: info
+::: callout
 You can see this approach in its full glory in my SCSS framework [Feo CSS](https://github.com/thecrinkles/feo-css).
 :::
 
@@ -124,6 +124,6 @@ Would I recommend this move to everybody? No. It is highly dependent on your way
 
 I enjoyed the entire migration and tend to stick with it. CSS has become powerful enough to not require different tools or languages anymore. The resulting code is maintainable and risk-free of breaking tools.
 
-::: info
+::: callout
 If you are curious about the actual changes, compare [Feo CSS](https://github.com/thecrinkles/feo-css) and the [/styles](https://github.com/thecrinkles/crinkles.dev/tree/main/src/styles) directory of this website. The previous version of this website used Feo CSS before the migration.
 :::

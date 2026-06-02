@@ -22,7 +22,7 @@ A second solution would refresh when you hit a `401` HTTP error (unauthorized) f
 
 My proposed solution is to proactively refresh the token. We know when it expires. Before each request, we can check if the token is expired. When this happens, we can send refresh the token before we execute the original request. The user experience is less decreased compared to the previous solution. But this solution still has an issue. It cannot handle many requests at the same time that need refreshing. By introducing a `queue` and an extra check, this can be solved. All requests that need to be sent out while the application is refreshing are put in the queue. Once refreshing is complete, the queue is emptied.
 
-::: info
+::: callout
 There are other solutions, mostly reactive, that solve the same problem. You could use web-workers to refresh the token when it is needed, instead of checking it before each request. Or you can store all invoked requests during a refresh in a queue. However, due to their reactive nature, you are not able to sequence requests that depend on each other responses.
 :::
 

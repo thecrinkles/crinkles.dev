@@ -10,7 +10,7 @@ description: >-
 
 Two of the quirkiest and most fun CSS tricks I have discovered have to do with _counting_. Or more specifically, changing styles based on the [number of child elements](/writing/use-the-child-element-count-in-css) or [the index of a child element](/writing/a-nth-child-css-trick). Recently I had to implement some styling details related to those tricks. But not quite. The previous tricks encouraged me to look for a CSS-only solution. And I found it!
 
-::: info
+::: callout
 This trick uses the new `:has` selector in CSS. The majority of browsers support this selector at the time of writing. But, Firefox only recently added this feature in the stable releases.
 :::
 

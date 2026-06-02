@@ -70,7 +70,7 @@ export const config = {
 };
 ```
 
-::: info
+::: callout
 I am using the [cogwheel >v3.0.0](https://github.com/thecrinkles/cogwheel) package definitions for the state machine. Similar configurations can be created for XState or other libraries.
 :::
 
@@ -159,6 +159,6 @@ Another way to go to the `invalid` state is automatic. We can say, for instance,
 
 With this implementation, we have a data fetching mechanism supported by state machines with all types of bells and whistles. We can see in what state the fetching is, we avoid many requests, and we can invalidate cache. It gives us the ability to have a uniform and mutate implementation across our Svelte apps.
 
-::: info
+::: callout
 As far as I know, this implementation will not work in SvelteKit, as the `cache` will not be shared between pages.
 :::

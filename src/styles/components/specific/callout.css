@@ -1,0 +1,23 @@
+.callout {
+  --callout-bg: var(--accent);
+
+  padding: var(--space-default);
+  background-color: var(--surface-1);
+  position: relative;
+
+  ::before {
+    content: "<aside />";
+    position: absolute;
+    display: block;
+    top: -0.675em;
+    font-size: var(--size-small);
+    padding: 0 6px;
+    background-color: var(--callout-bg);
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+    text-decoration-color: var(--text-0);
+  }
+}

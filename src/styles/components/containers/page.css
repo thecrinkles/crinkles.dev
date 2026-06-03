@@ -30,7 +30,7 @@ main[data-layout="paginated"] {
     )
     minmax(var(--sidebar-width), 1fr);
   grid-template-rows: auto auto 1fr;
-  padding-block: var(--space-layout);
+  padding-block: var(--space-huge);
 }
 
 main[data-layout="base"] {

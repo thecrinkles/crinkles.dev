@@ -8,6 +8,7 @@ body {
   font-family: var(--sans-serif);
   font-variation-settings: var(--font-vars-default);
   font-size: var(--size-body);
+  overflow-x: hidden;
 }
 
 a {

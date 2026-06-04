@@ -13,7 +13,7 @@
   --header-color: light-dark(var(--p-orange-2), var(--p-orange-0));
   --button-color: light-dark(var(--p-neutral-3), var(--p-orange-0));
   --divider-color: var(--surface-2);
-  --canvas-color: var(--accent-color);
+  --canvas-color: light-dark(var(--p-green-2), var(--p-orange-0));
   --glow-color: hsl(from var(--accent-color) h s l / var(--opacity-background-glow));
 
   --code-inline: light-dark(var(--p-orange-2), var(--p-orange-0));

@@ -1,11 +1,11 @@
 <header class="main-header | repel">
-  <a href="/" aria-label="Logo that redirects to the homepage" class="logo flex --row --center">
+  <a href="/" class="logo flex --row --center">
     {% include "svg/signature.svg" %}
     <span>crinkles</span>
   </a>
 
   <nav aria-label="Main site navigation">
-    <ul class="hover-group-grow | cluster --gap-default" role="list">
+    <ul class="hover-group-grow | cluster --gap-default">
       <li><a href="/" {% if page.url == '/' %} aria-current="page"{% endif %}>home</a></li>
       <li><a href="/writing" {% if page.url.includes('/writing/') %}aria-current="page"{% endif %}>blog</a></li>
       <li><a href="/about" {% if page.url == '/about/' %}aria-current="page"{% endif %}>about</a></li>

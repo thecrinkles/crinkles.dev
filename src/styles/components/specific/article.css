@@ -2,9 +2,7 @@
 article {
   --article-max-width: var(--layout-article);
   --article-padding: var(--space-default);
-  --article-full-bleed-width: calc(
-    var(--article-max-width) + 2 * var(--article-padding)
-  );
+  --article-full-bleed-width: calc(var(--article-max-width) + 2 * var(--article-padding));
 
   container-type: inline-size;
   container-name: post;
@@ -85,6 +83,11 @@ article {
 
   ol:not([class]) {
     list-style: decimal outside;
+  }
+
+  /** text */
+  :where(p, li, blockquote) {
+    text-wrap: pretty;
   }
 
   /** quotes */

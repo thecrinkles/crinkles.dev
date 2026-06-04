@@ -14,18 +14,14 @@ body {
 a {
   color: inherit;
   transition: all 200ms;
-  text-decoration-color: hsl(
-    from var(--link-color) h s l / var(--opacity-effect)
-  );
+  text-decoration-color: hsl(from var(--link-color) h s l / var(--opacity-effect));
   text-decoration-skip-ink: auto;
 
   &:not(:is(:hover, :focus)) {
-    text-decoration-color: hsl(
-      from var(--link-color) h s l / var(--opacity-effect)
-    );
+    text-decoration-color: hsl(from var(--link-color) h s l / var(--opacity-effect));
   }
 
-  &:is(:hover, :focus) {
+  &:is(:hover, :focus, [aria-current="page"]) {
     text-decoration-thickness: 0.625ch;
     text-underline-offset: -0.35ch;
     text-decoration-skip-ink: none;

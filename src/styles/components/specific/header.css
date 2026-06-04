@@ -9,7 +9,7 @@ header.main-header {
   a.logo {
     --layout-gap: 0.4em;
 
-    text-decoration: none;
+    text-decoration-thickness: none;
     color: var(--text-0);
     transition: all 200ms;
 
@@ -47,17 +47,11 @@ header.main-header {
     }
   }
 
-  nav a {
-    background-image: linear-gradient(var(--link-color), var(--link-color));
-    background-size: 0% 0.1em;
-    background-position-y: 100%;
-    background-position-x: 0%;
-    background-repeat: no-repeat;
-    transition: background-size 0.15s ease-in-out;
-    text-decoration: 1px solid var(--surface-2);
+  nav a:not(:is([aria-current="page"], :hover, :focus)) {
+    text-decoration-color: transparent;
   }
 
-  nav a:is(:hover, [aria-current="page"]) {
-    background-size: 100% 0.1em;
+  nav a::is([aria-current="page"], :hover, :focus) {
+    text-decoration-color: revert;
   }
 }

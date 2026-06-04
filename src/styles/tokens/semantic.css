@@ -14,9 +14,7 @@
   --button-color: light-dark(var(--p-neutral-3), var(--p-orange-0));
   --divider-color: var(--surface-2);
   --canvas-color: var(--accent-color);
-  --glow-color: hsl(
-    from var(--accent-color) h s l / var(--opacity-background-glow)
-  );
+  --glow-color: hsl(from var(--accent-color) h s l / var(--opacity-background-glow));
 
   --code-inline: light-dark(var(--p-orange-2), var(--p-orange-0));
   --code-default: var(--p-neutral-0);
@@ -78,7 +76,7 @@
   /** OPACITY */
   --opacity-background-glow: 10%;
   --opacity-light: 25%;
-  --opacity-effect: 50%;
+  --opacity-effect: 45%;
 }
 
 @media (--bp-layout) {

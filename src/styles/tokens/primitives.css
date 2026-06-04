@@ -29,14 +29,14 @@
 
   /** SPACING & SIZES */
   --p-size-scale: 1.25;
-  --p-size-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-  --p-size--2: calc(var(--p-size-0) * pow(var(--p-size-scale), -2));
-  --p-size--1: calc(var(--p-size-0) * pow(var(--p-size-scale), -1));
-  --p-size-1: calc(var(--p-size-0) * pow(var(--p-size-scale), 1));
-  --p-size-2: calc(var(--p-size-0) * pow(var(--p-size-scale), 2));
-  --p-size-3: calc(var(--p-size-0) * pow(var(--p-size-scale), 3));
-  --p-size-4: calc(var(--p-size-0) * pow(var(--p-size-scale), 4));
-  --p-size-5: calc(var(--p-size-0) * pow(var(--p-size-scale), 5));
+  --p-size-0: round(down, clamp(1rem, 0.913rem + 0.4348vw, 1.25rem), 0.5px);
+  --p-size--2: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), -2)), 0.5px);
+  --p-size--1: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), -1)), 0.5px);
+  --p-size-1: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), 1)), 0.5px);
+  --p-size-2: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), 2)), 0.5px);
+  --p-size-3: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), 3)), 0.5px);
+  --p-size-4: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), 4)), 0.5px);
+  --p-size-5: round(down, calc(var(--p-size-0) * pow(var(--p-size-scale), 5)), 0.5px);
 
   /** RADIUS */
   --p-radius-scale: 0.25rem;

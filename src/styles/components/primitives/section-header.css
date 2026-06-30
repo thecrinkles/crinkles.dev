@@ -1,5 +1,5 @@
 .section-header {
-  --header-opacity: light-dark(var(--opacity-light), var(--opacity-effect));
+  --header-opacity: light-dark(1, var(--opacity-effect));
 
   font-size: var(--size-subheader);
   text-decoration: underline;
@@ -11,9 +11,4 @@
   &::after {
     content: ".";
   }
-}
-
-* + .section-header,
-* + .section-header {
-  margin-top: var(--space-huge);
 }

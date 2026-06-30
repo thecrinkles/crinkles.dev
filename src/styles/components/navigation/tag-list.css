@@ -1,14 +1,17 @@
 .tag-list {
+  --tag-list-row-gap: 0.5ch; /* optical: tighter than the spacing scale */
+  --tag-prefix-size: 0.9em;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: var(--space-gap-list);
-  row-gap: 0.5ch;
+  row-gap: var(--tag-list-row-gap);
   font-size: var(--size-small);
 
   a::before {
     content: "#";
-    font-size: 0.9em;
+    font-size: var(--tag-prefix-size);
     color: var(--link-color);
   }
 

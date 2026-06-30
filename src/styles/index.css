@@ -15,24 +15,28 @@
 /** layout */
 @import "layout/gap-util.css" layer(layout);
 @import "layout/threshold-util.css" layer(layout);
+@import "layout/prose-flow.css" layer(layout);
 
 /** components */
 @import "components/primitives/button.css" layer(components);
+@import "components/primitives/corners.css" layer(components);
+@import "components/primitives/section-header.css" layer(components);
 @import "components/containers/card.css" layer(components);
 @import "components/containers/page.css" layer(components);
 @import "components/containers/post-list.css" layer(components);
-@import "components/containers/tag-list.css" layer(components);
+@import "components/navigation/header.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
+@import "components/navigation/tag-list.css" layer(components);
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
 @import "components/specific/callout.css" layer(components);
 @import "components/specific/codeblock.css" layer(components);
 @import "components/specific/footer.css" layer(components);
-@import "components/specific/header.css" layer(components);
 @import "components/specific/metadata.css" layer(components);
-@import "components/specific/section-header.css" layer(components);
-@import "blog/dock-hover.css" layer(components);
-@import "blog/showcase.css" layer(components);
+
+/** blog-post-only styles (not part of the app design system) */
+@import "components/specific/blog/dock-hover.css" layer(components);
+@import "components/specific/blog/showcase.css" layer(components);
 
 /** utilities */
 @import "utilities/colors.css" layer(utilities);

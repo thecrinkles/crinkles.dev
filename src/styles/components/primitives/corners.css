@@ -1,0 +1,52 @@
+/**
+ * CORNERS
+ *
+ * Decorative L-shaped accent brackets at a box's four corners, drawn on a
+ * pseudo-element so they sit just outside the edge. Applied to the explicit
+ * opt-in targets below; add the `corners` class to opt any other box in.
+ *
+ * API (override on the consuming element):
+ *   --corner-color      bracket color
+ *   --corner-thickness  line thickness
+ *   --corner-arm        length of each arm
+ */
+:where(.card, pre, .corners) {
+  --corner-color: var(--accent-color);
+  --corner-thickness: var(--bw-effect);
+  --corner-arm: var(--space-default);
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: calc(var(--corner-thickness) * -2);
+    pointer-events: none;
+
+    /* eight strips: two arms per corner */
+    background-image:
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0);
+    background-repeat: no-repeat;
+    background-size:
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm);
+    background-position:
+      top left,
+      top left,
+      top right,
+      top right,
+      bottom left,
+      bottom left,
+      bottom right,
+      bottom right;
+  }
+}

@@ -2,53 +2,20 @@
   --card-width: 46ch;
   --card-bg: var(--surface-1);
   --card-padding: var(--space-large);
-  --corner-color: var(--accent-color);
-  --corner-thickness: var(--bw-effect);
-  --corner-arm: var(--space-default);
 
   background-color: var(--card-bg);
   padding: var(--card-padding);
   position: relative;
-  box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
+  box-shadow: var(--shadow-default);
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
+
+  /* corner brackets via the `corners` primitive */
 
   h2 {
     font-size: var(--size-small);
     text-transform: uppercase;
     color: var(--text-2);
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: calc(var(--corner-thickness) * -2);
-    pointer-events: none;
-
-    background-image:
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0);
-    background-repeat: no-repeat;
-    background-size:
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm);
-    background-position:
-      top left,
-      top left,
-      top right,
-      top right,
-      bottom left,
-      bottom left,
-      bottom right,
-      bottom right;
   }
 }
 @media (--bp-layout) {

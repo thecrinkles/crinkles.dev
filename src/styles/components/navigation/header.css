@@ -1,10 +1,8 @@
 header.main-header {
-  --p: var(--opacity-effect);
+  /* centering owned by the `center` layout primitive */
+  --layout-threshold: var(--layout-width);
 
-  margin-inline: auto;
   padding-block: var(--space-layout);
-  width: 100%;
-  max-width: var(--layout-width);
 
   .logo {
     --layout-gap: 0.4em;
@@ -21,8 +19,8 @@ header.main-header {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 2px;
-        height: 2px;
+        bottom: var(--bw-effect);
+        height: var(--bw-effect);
         background: var(--logo-text);
         transform: scaleX(0);
         transform-origin: left;
@@ -54,9 +52,5 @@ header.main-header {
 
   nav a:not(:is([aria-current="page"], :hover, :focus)) {
     text-decoration-color: transparent;
-  }
-
-  nav a::is([aria-current="page"], :hover, :focus) {
-    text-decoration-color: revert;
   }
 }

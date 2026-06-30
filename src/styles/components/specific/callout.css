@@ -1,6 +1,8 @@
 .callout {
   --callout-bg: var(--accent-color);
   --callout-text: var(--surface-0);
+  --callout-label-offset: -0.675em; /* optical: lift label onto the top edge */
+  --callout-label-padding: 0 6px;
 
   padding: var(--space-default);
   background-color: var(--surface-1);
@@ -13,8 +15,8 @@
     font-size: var(--size-small);
     position: absolute;
     display: block;
-    top: -0.675em;
-    padding: 0 6px;
+    top: var(--callout-label-offset);
+    padding: var(--callout-label-padding);
     background-color: var(--callout-bg);
     color: var(--callout-text);
   }

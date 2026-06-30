@@ -1,15 +1,13 @@
 footer {
+  /* centering owned by the `center` layout primitive */
+  --layout-threshold: var(--layout-width);
+
   position: relative;
   padding-block: var(--space-layout);
   font-family: var(--monospace);
   font-variation-settings: var(--font-vars-code);
   font-size: var(--size-small);
-  inset: 0;
-  top: unset;
   border-top: var(--bw-default) solid var(--divider-color);
-  width: 100%;
-  max-width: var(--layout-width);
-  margin-inline: auto;
 
   .quote {
     width: 100%;

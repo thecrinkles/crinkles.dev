@@ -1,0 +1,24 @@
+/**
+ * PROSE-FLOW
+ *
+ * Type-aware vertical rhythm for long-form content: a base gap between
+ * siblings, a larger gap before headings, a tighter gap after them. A spatial
+ * primitive — owns sibling spacing so the prose components don't have to.
+ */
+.prose-flow {
+  header {
+    margin-bottom: var(--space-large);
+  }
+
+  > * + * {
+    margin-block-start: var(--space-large);
+  }
+
+  > * + h2 {
+    margin-block-start: var(--space-huge);
+  }
+
+  > :is(h2, h3) + * {
+    margin-block-start: var(--space-small);
+  }
+}

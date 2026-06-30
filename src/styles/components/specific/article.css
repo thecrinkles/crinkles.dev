@@ -3,6 +3,8 @@ article {
   --article-max-width: var(--layout-article);
   --article-padding: var(--space-default);
   --article-full-bleed-width: calc(var(--article-max-width) + 2 * var(--article-padding));
+  --article-link-opacity: var(--opacity-light);
+  --article-quote-bar: 5px; /* decorative blockquote accent bar width */
 
   container-type: inline-size;
   container-name: post;
@@ -11,22 +13,7 @@ article {
   max-width: var(--article-max-width);
   flex-direction: column;
 
-  /** General flow */
-  header {
-    margin-bottom: var(--space-large);
-  }
-
-  > * + * {
-    margin-block-start: var(--space-large);
-  }
-
-  > * + h2 {
-    margin-block-start: var(--space-huge);
-  }
-
-  > :is(h2, h3) + * {
-    margin-block-start: var(--space-small);
-  }
+  /* vertical rhythm owned by the `prose-flow` layout primitive */
 
   /** header links */
   > :is(h2, h3) {
@@ -39,7 +26,7 @@ article {
       cursor: pointer;
       color: var(--text-2);
       font-weight: var(--fw-regular);
-      opacity: 0.4;
+      opacity: var(--article-link-opacity);
       text-decoration: none;
 
       &::after {
@@ -105,7 +92,7 @@ article {
       left: 0;
       position: absolute;
       top: 0;
-      width: 5px;
+      width: var(--article-quote-bar);
     }
 
     > cite {
@@ -125,7 +112,7 @@ article {
     transform: translateX(-50%);
     width: 100vw;
     max-width: var(--article-full-bleed-width);
-    box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
+    box-shadow: var(--shadow-default);
   }
 
   /** code + codeblocks */

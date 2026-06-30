@@ -21,6 +21,10 @@
   }
 
   .text-glitch {
+    /* chromatic-aberration fringe colors, intrinsic to the glitch effect */
+    --glitch-fringe-1: red;
+    --glitch-fringe-2: blue;
+
     display: inline-block;
     animation: text-glitch;
     animation-timing-function: linear;
@@ -81,14 +85,14 @@
   @keyframes text-glitch {
     0% {
       text-shadow:
-        -0.05em 0.05em 0 red,
-        0.05em -0.05em 0 blue;
+        -0.05em 0.05em 0 var(--glitch-fringe-1),
+        0.05em -0.05em 0 var(--glitch-fringe-2);
       transform: translate(0.125em);
     }
     4% {
       text-shadow:
-        0.05em -0.05em 0 red,
-        -0.05em 0.05em 0 blue;
+        0.05em -0.05em 0 var(--glitch-fringe-1),
+        -0.05em 0.05em 0 var(--glitch-fringe-2);
     }
     8%,
     100% {

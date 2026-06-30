@@ -1,13 +1,13 @@
-:root {
-  --elevation-showcase: var(--card-shadow);
-}
-
 .showcase,
 .showcase--mobile {
+  --showcase-height: 200px; /* decorative fixed preview height */
+  --showcase-gap: 0.5rem;
+  --showcase-elevation: var(--shadow-default);
+
   display: grid;
   width: 100%;
-  height: 200px;
-  gap: 0.5rem;
+  height: var(--showcase-height);
+  gap: var(--showcase-gap);
   grid-template-areas: "a";
 }
 
@@ -20,7 +20,7 @@
 .showcase > *,
 .showcase--mobile > * {
   background: var(--surface-2);
-  box-shadow: var(--elevation-showcase);
+  box-shadow: var(--showcase-elevation);
   width: 100%;
   height: 100%;
 }
@@ -76,6 +76,6 @@
 
 @media (--bp-showcase-compact) {
   .showcase {
-    height: 120px;
+    --showcase-height: 120px;
   }
 }

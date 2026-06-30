@@ -1,46 +1,15 @@
 pre {
+  --codeblock-padding: var(--space-default);
+
   background-color: var(--code-bg);
   color: var(--code-default);
   border-radius: 0;
 
+  /* corner brackets via the `corners` primitive */
+
   code {
-    padding: var(--article-padding);
+    padding: var(--codeblock-padding);
     font-size: var(--size-small);
-  }
-  --corner-color: var(--accent-color);
-  --corner-thickness: var(--bw-effect);
-  --corner-arm: var(--space-default);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: calc(var(--corner-thickness) * -2);
-    pointer-events: none;
-
-    background-image:
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
-      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0);
-    background-repeat: no-repeat;
-    background-size:
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm),
-      var(--corner-arm) var(--corner-thickness),
-      var(--corner-thickness) var(--corner-arm);
-    background-position:
-      top left,
-      top left,
-      top right,
-      top right,
-      bottom left,
-      bottom left,
-      bottom right,
-      bottom right;
   }
 }
 

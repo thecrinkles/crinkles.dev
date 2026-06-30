@@ -1,20 +1,24 @@
 .dock-hover,
 .dock-hover--general,
 .dock-hover--adjacent {
+  --dock-hover-gap: 4px; /* optical: tighter than the smallest spacing step */
+  --dock-hover-item-height: 75px; /* decorative fixed bar height */
+  --dock-hover-bar-color: var(--link-color);
+
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: var(--dock-hover-gap);
 }
 
 .dock-hover > *,
 .dock-hover--general > *,
 .dock-hover--adjacent > * {
   flex-grow: 1;
-  height: 75px;
-  border-radius: var(--radius--1);
-  background-color: var(--link-color);
-  box-shadow: var(--box-shadow);
+  height: var(--dock-hover-item-height);
+  border-radius: var(--radius-small);
+  background-color: var(--dock-hover-bar-color);
+  box-shadow: var(--shadow-default);
   transition: transform 400ms;
 }
 

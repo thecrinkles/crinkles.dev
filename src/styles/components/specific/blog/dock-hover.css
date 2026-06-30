@@ -19,7 +19,7 @@
   border-radius: var(--radius-small);
   background-color: var(--dock-hover-bar-color);
   box-shadow: var(--shadow-default);
-  transition: transform 400ms;
+  transition: transform var(--duration-2);
 }
 
 .dock-hover > *:hover,

@@ -1,6 +1,6 @@
 {%- macro metadata(params) -%}
 
-<div class="metadata | flex --column {% if params.card %} | card {% endif %}">
+<div class="metadata | flex --column {% if params.card %} | card {% endif %}" data-variant="{{ 'card' if params.card else 'bare' }}">
   <h2>Currently</h2>
   <p class="size-small">Seeing how I feel about this AI thing and its impact on software development and security.</p>
 

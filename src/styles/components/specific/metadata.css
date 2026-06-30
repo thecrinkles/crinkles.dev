@@ -24,7 +24,7 @@
   .metadata {
     --meta-maxw: 100%;
 
-    &:not(.card) {
+    &[data-variant="bare"] {
       --meta-padding: 0;
 
       h2:first-of-type {

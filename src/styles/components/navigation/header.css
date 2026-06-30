@@ -24,7 +24,7 @@ header.main-header {
         background: var(--logo-text);
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 200ms ease;
+        transition: transform var(--duration-0) ease;
       }
 
       &:hover::after {
@@ -41,12 +41,12 @@ header.main-header {
     }
 
     svg {
-      transition: transform 500ms;
+      transition: transform var(--duration-3);
       height: 1rem;
     }
 
     path {
-      transition: all 500ms;
+      transition: all var(--duration-3);
     }
   }
 

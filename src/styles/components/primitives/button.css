@@ -17,7 +17,7 @@
   border-bottom: var(--bw-effect) solid var(--button-color);
 
   padding-block: var(--button-padding);
-  transition: all 0.2s;
+  transition: all var(--duration-0);
   line-height: 1;
 
   &::after {

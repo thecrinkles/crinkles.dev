@@ -13,7 +13,7 @@ body {
 
 a {
   color: inherit;
-  transition: all 200ms;
+  transition: all var(--duration-0);
   text-decoration-color: hsl(from var(--link-color) h s l / var(--opacity-effect));
   text-decoration-skip-ink: auto;
 

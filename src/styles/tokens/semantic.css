@@ -80,6 +80,12 @@
   --opacity-background-glow: 10%;
   --opacity-light: 25%;
   --opacity-effect: 45%;
+
+  /** MOTION (transition/animation durations; --duration-0 = default) */
+  --duration-0: 0.2s;
+  --duration-1: 0.3s;
+  --duration-2: 0.4s;
+  --duration-3: 0.5s;
 }
 
 @media (--bp-layout) {

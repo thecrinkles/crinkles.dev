@@ -23,7 +23,7 @@
 .pagination .older[data-exists="true"] {
   background-color: var(--pagination-bg);
   color: var(--pagination-text);
-  transition: all 0.3s ease;
+  transition: all var(--duration-1) ease;
   padding: var(--pagination-padding);
   height: 100%;
 }

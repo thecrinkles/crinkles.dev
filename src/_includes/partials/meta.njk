@@ -1,0 +1,37 @@
+{%- macro metadata(params) -%}
+
+<div class="metadata | flex --column {% if params.card %} | card {% endif %}">
+  <h2>Currently</h2>
+  <p class="size-small">Seeing how I feel about this AI thing and its impact on software development and security.</p>
+
+  <h2 class="divider">Elsewhere</h2>
+    <ul class="monospace size-small">
+      <li>
+        <a rel="me" href="https://github.com/thecrinkles" title="Link to my Github page">
+          github
+        </a>
+      </li>
+      <li>
+        <a rel="me" href="https://bsky.app/profile/crinkles.dev" title="Link to my Bluesky page">
+        		bsky
+     	</a>
+      </li>
+      <li>
+        <a rel="me" href="https://front-end.social/@crinkles" title="Link to my Mastodon page">
+        		mastodon
+     	</a>
+      </li>
+      <li>
+        <a href="{{ metadata.feed.path | url }}" title="RSS feed">
+          rss
+        </a>
+   	</li>
+   	<li>
+      <a href="/uses" title="/uses page">
+        /uses
+     	</a>
+    </li>
+  </ul>
+</div>
+
+{%- endmacro -%}

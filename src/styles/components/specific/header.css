@@ -6,30 +6,45 @@ header.main-header {
   width: 100%;
   max-width: var(--layout-width);
 
-  a.logo {
+  .logo {
     --layout-gap: 0.4em;
 
-    text-decoration-color: hsl(from var(--logo-text) h s l / var(--p));
-    text-decoration-thickness: 0.625ch;
-    text-underline-offset: -0.35ch;
-    text-decoration-skip-ink: none;
-    color: var(--text-0);
-    font-family: var(--monospace);
-    font-variation-settings: var(--font-vars-logo);
+    a {
+      color: var(--text-0);
+      position: relative;
+      font-family: var(--monospace);
+      font-variation-settings: var(--font-vars-logo);
+      text-decoration: none;
 
-    &:is(:hover, :focus) {
-      --p: var(--opacity-light);
-      text-decoration-thickness: 1ch;
-      text-underline-offset: -0.7ch;
-
-      svg {
-        animation: wiggle 0.5s;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        height: 2px;
+        background: var(--logo-text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 200ms ease;
       }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &:is(:hover, :focus) svg:first-child {
+      animation: wiggle 0.5s;
+    }
+
+    &:is(:hover, :focus) svg:last-of-type {
+      animation: wiggle-reverse 0.5s;
     }
 
     svg {
       transition: transform 500ms;
-      height: 1.5rem;
+      height: 1rem;
     }
 
     path {

@@ -4,20 +4,29 @@ layout: base
 
 <h1 class="--title">Hello, I'm Kevin.</h1>
 
-<section class="--side flex --column">
-  <p class="card">
-    I am a front-end engineer specializing in CSS and security. crinkles.dev is my corner of the internet, where I <a href="/writing">write</a> about software architecture, engineering, and the craft of building thoughtful software with character.
-  </p>
+<section class="--main | flex --column --gap-huge --start">
+  <section>
+    <p class="card maxw-small">
+      Front-end engineer specializing in CSS and security. I write about architecture and the craft of building thoughtful software. This is my <i>corner</i> of the internet.
+    </p>
+  </section>
 </section>
 
+<section class="--extra | flex --column --gap-default">
+  <div class="repel --center">
+    <h2 class="section-header">Recent posts</h2>
+    <a href="/writing" class="btn">All posts</a>
+  </div>
 
-<section class="--main flex --column --gap-default">
-  <h2 class="section-header">Recent posts</h2>
   <div class="flex --column --gap-default">
     {% set posts = collections.posts | head(3) %}
     {% include "components/post-list.njk" %}
   </div>
-  <a href="/writing" class="size-small | btn | self-start">Read more articles</a>
 </section>
 
-<div class="--sticker flex --row --center">{% include "svg/sticker-laptop.svg" %}</div>
+<section class="--sticker | flex --column --center">{% include "svg/sticker-laptop.svg" %}</section>
+
+<section class="--side | flex --column --center">
+  {%- from 'partials/meta.njk' import metadata %}
+  {{ metadata() }}
+</section>

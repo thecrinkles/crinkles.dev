@@ -20,10 +20,10 @@ eleventyComputed:
   "components/post-list.njk" %}
 </section>
 
-<aside class="--side flex --column --center">
-  <div class="card | flex --column --center">
+<aside class="--side">
+  <div class="card | flex --column --gap-default">
     <h2>Categories</h2>
-    {% set tags = collections.posts | getAllTags %} {% include
-    "components/tag-list.njk" %}
+    {% set tags = collections.posts | getAllTags %}
+    {% include "components/tag-list.njk" %}
   </div>
 </aside>

@@ -63,3 +63,7 @@ i,
   background: var(--text-0);
   text-decoration: none;
 }
+
+section {
+  width: 100%;
+}

@@ -73,11 +73,7 @@ sticker: svg/sticker-coffee.svg
   </ul>
 </article>
 
-<aside class="--side flex --column --center --gap-large">
-  <div class="card | flex --column --center">
-    <h2 class="text-center">You can find me here</h2>
-    {% include "partials/socials.njk" %}
-  </div>
-
-  <a href="/uses" class="btn">Or take a look at my /uses page.</a>
+<aside class="--side">
+  {%- from 'partials/meta.njk' import metadata %}
+  {{ metadata({ card: true }) }}
 </aside>

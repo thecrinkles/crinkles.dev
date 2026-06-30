@@ -1,7 +1,28 @@
 .post-list {
   max-width: var(--layout-main-content);
 
-  & > li > p {
-    margin-top: var(--space-small);
+  & > li {
+    --layout-threshold: calc(100px + var(--space-huge));
+    --layout-inline-size: 75%;
+
+    container-type: inline-size;
+
+    p {
+      margin-top: var(--space-small);
+    }
+
+    .meta {
+      padding-inline-end: var(--space-huge);
+    }
+
+    @container (inline-size < 40rem) {
+      .meta {
+        display: none;
+      }
+    }
+  }
+
+  time {
+    margin-top: 6px;
   }
 }

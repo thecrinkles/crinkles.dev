@@ -1,4 +1,9 @@
 .tag-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: var(--space-gap-list);
+  row-gap: 0.5ch;
   font-size: var(--size-small);
 
   a::before {

@@ -6,29 +6,29 @@
  */
 
 .btn {
-  --button-padding: var(--space-small) var(--space-default);
-  --button-text: var(--button-color);
+  --button-padding: 2px;
+  --button-text: var(--text-0);
   --button-border: var(--button-color);
-  --button-bg: var(--surface-0);
 
-  display: inline-block;
   text-decoration: none;
   text-align: center;
-  font-size: var(--size-small);
   font-weight: var(--fw-bold);
   color: var(--button-text);
-  border: var(--bw-effect) solid var(--button-border);
-  background-color: var(--button-bg);
+  border-bottom: var(--bw-effect) solid var(--button-color);
 
-  padding: var(--button-padding);
+  padding-block: var(--button-padding);
   transition: all 0.2s;
+  line-height: 1;
+
+  &::after {
+    content: "→";
+    margin-left: var(--space-small);
+  }
 }
 
 .btn:is(:hover, :focus) {
-  --button-bg: var(--button-color);
-  --button-text: var(--surface-0);
+  --button-text: var(--button-color);
 
-  box-shadow: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
   transform: scale(1.05);
 }
 

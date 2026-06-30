@@ -13,6 +13,9 @@ import { TEMPLATE_ENGINE } from "./src/_config/constants.js";
 export default async function (config) {
   // Handling assets (images, fonts, etc.)
   config.addPassthroughCopy({ "./public/": "/" });
+  // index.css bundles its @imports via LightningCSS; Eleventy can't see that
+  // dependency, so watch the styles dir to re-bundle when a partial changes.
+  config.addWatchTarget("./src/styles/");
   config.addPlugin(pluginRss);
   config.addPlugin(syntaxHighlight);
   config.addPlugin(fontAwesomePlugin);

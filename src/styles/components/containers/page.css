@@ -24,20 +24,18 @@ main[data-layout="paginated"] {
     "main side"
     "pagination pagination";
   grid-template-columns:
-    min(
-      var(--layout-main-content),
-      calc(100% - var(--sidebar-width) - var(--space-huge))
-    )
+    min(var(--layout-main-content), calc(100% - var(--sidebar-width) - var(--space-huge)))
     minmax(var(--sidebar-width), 1fr);
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
   padding-block: var(--space-huge);
 }
 
 main[data-layout="base"] {
   grid-template-areas:
     "title sticker"
-    "side sticker"
-    "main -";
+    "main sticker"
+    "extra side"
+    "pagination pagination";
 }
 
 main[data-layout="post"] {
@@ -46,7 +44,6 @@ main[data-layout="post"] {
   grid-template-areas:
     "main"
     "pagination";
-
   padding-left: 0;
   padding-right: 0;
 }
@@ -62,6 +59,10 @@ main[data-layout="paginated"] {
   margin-inline: auto;
 }
 
+:where(.--where, .--side, .--extra) {
+  width: 100%;
+}
+
 .--title {
   grid-area: title;
 }
@@ -72,10 +73,17 @@ main[data-layout="paginated"] {
 
 .--side {
   grid-area: side;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.--extra {
+  grid-area: extra;
 }
 
 .--sticker {
+  margin-block-start: var(--space-huge);
   grid-area: sticker;
 }
 
@@ -101,8 +109,9 @@ main[data-layout="paginated"] {
     grid-template-areas:
       "sticker"
       "title"
-      "side"
-      "main";
+      "main"
+      "extra"
+      "side";
   }
 
   main[data-layout="page"],
@@ -115,7 +124,7 @@ main[data-layout="paginated"] {
       "pagination";
   }
 
-  .--title {
-    text-align: center;
+  .--sticker {
+    margin-block-start: 0;
   }
 }

@@ -19,7 +19,7 @@ sticker: svg/sticker-tech.svg
   <h2 class="section-header">Productivity Software</h2>
   <ul>
     <li>
-      <b>Apple Reminders</b>: the core task manager that runs my life. I was a big fan (and still am) of Things3 by Cultered Code. But there are just a few things in Apple Reminders that give it an edge: Kanban, flags and the calendar integration. I do use it in combination with <a href="#">Remind Me Faster</a>.
+      <b><a href="https://culturedcode.com/things/">Things</a></b>: the core task manager that runs my life.
     </li>
     <li>
       <b><a href="https://bear.app">Bear</a></b>: all my knowledge, meeting notes, project overviews, etc. are stored here.
@@ -46,7 +46,7 @@ sticker: svg/sticker-tech.svg
       the little bit of RSS I use.
     </li>
     <li>
-      <b><a href="https://helloweather.com">Hello Weather</a></b>: beautiful
+      <b><a href="https://mercuryweather.app">Mercury Weather</a></b>: beautiful
       weather app on all platforms.
     </li>
   </ul>
@@ -92,9 +92,7 @@ sticker: svg/sticker-tech.svg
   </ul>
 </article>
 
-<aside class="--side flex --column --center">
-  <div class="card | flex --column --center">
-    <h2 class="mb-2 text-center">You can find me here</h2>
-    {% include "partials/socials.njk" %}
-  </div>
+<aside class="--side">
+  {%- from 'partials/meta.njk' import metadata %}
+  {{ metadata({ card: true }) }}
 </aside>

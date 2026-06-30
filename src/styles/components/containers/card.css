@@ -1,10 +1,10 @@
 .card {
-  --card-width: ;
+  --card-width: 46ch;
   --card-bg: var(--surface-1);
   --card-padding: var(--space-large);
-  --line-inset: calc(0.75 * var(--space-default));
-  --line-color: var(--accent-color);
-  --line-thickness: var(--bw-effect);
+  --corner-color: var(--accent-color);
+  --corner-thickness: var(--bw-effect);
+  --corner-arm: var(--space-default);
 
   background-color: var(--card-bg);
   padding: var(--card-padding);
@@ -13,44 +13,46 @@
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
 
-  &::before,
-  &::after {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-
-    border-style: solid;
-    border-width: var(--line-thickness);
-  }
-
-  &::after {
-    inset-inline: calc(var(--line-thickness) * -1);
-    inset-block: calc(var(--line-inset) * -1);
-    border-width: 0 var(--line-thickness);
-    border-color: var(--line-color);
-    border-image: linear-gradient(
-        to bottom,
-        transparent,
-        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
-        transparent
-      )
-      1;
+  h2 {
+    font-size: var(--size-small);
+    text-transform: uppercase;
+    color: var(--text-2);
   }
 
   &::before {
-    inset-inline: calc(var(--line-inset) * -1);
-    inset-block: calc(var(--line-thickness) * -1);
-    border-width: var(--line-thickness) 0;
-    border-image: linear-gradient(
-        to left,
-        transparent,
-        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
-        transparent
-      )
-      1;
-  }
+    content: "";
+    position: absolute;
+    inset: calc(var(--corner-thickness) * -2);
+    pointer-events: none;
 
-  h2 {
-    margin-bottom: var(--space-large);
+    background-image:
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0);
+    background-repeat: no-repeat;
+    background-size:
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm);
+    background-position:
+      top left,
+      top left,
+      top right,
+      top right,
+      bottom left,
+      bottom left,
+      bottom right,
+      bottom right;
+  }
+}
+@media (--bp-layout) {
+  .card {
+    --card-width: 100%;
   }
 }

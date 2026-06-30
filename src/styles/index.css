@@ -18,10 +18,10 @@
 
 /** components */
 @import "components/primitives/button.css" layer(components);
-@import "components/primitives/tag.css" layer(components);
 @import "components/containers/card.css" layer(components);
 @import "components/containers/page.css" layer(components);
 @import "components/containers/post-list.css" layer(components);
+@import "components/containers/tag-list.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
 @import "components/specific/article.css" layer(components);
 @import "components/specific/background-pattern.css" layer(components);
@@ -29,6 +29,7 @@
 @import "components/specific/codeblock.css" layer(components);
 @import "components/specific/footer.css" layer(components);
 @import "components/specific/header.css" layer(components);
+@import "components/specific/metadata.css" layer(components);
 @import "components/specific/section-header.css" layer(components);
 @import "blog/dock-hover.css" layer(components);
 @import "blog/showcase.css" layer(components);

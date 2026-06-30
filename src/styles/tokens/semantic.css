@@ -7,11 +7,11 @@
   --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
   --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
-  --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --accent-color: light-dark(var(--p-green-2), var(--p-orange-0));
   --link-color: light-dark(var(--p-green-2), var(--p-green-1));
   --title-color: var(--text-0);
   --header-color: light-dark(var(--p-orange-2), var(--p-orange-0));
-  --button-color: light-dark(var(--p-neutral-3), var(--p-orange-0));
+  --button-color: light-dark(var(--p-orange-2), var(--p-orange-0));
   --divider-color: var(--surface-2);
   --canvas-color: light-dark(var(--p-green-2), var(--p-orange-0));
   --glow-color: hsl(from var(--accent-color) h s l / var(--opacity-background-glow));
@@ -24,10 +24,9 @@
   --code-tertiary: var(--p-yellow-0);
   --code-bg: var(--p-neutral-4);
 
-  --logo-color-start: light-dark(var(--p-orange-0), var(--p-orange-0));
-  --logo-color-end: light-dark(var(--p-orange-1), var(--p-orange-1));
-  --logo-color-border: light-dark(var(--p-neutral-5), transparent);
-  --logo-text: light-dark(var(--p-orange-1), var(--p-orange-2));
+  --logo-color: light-dark(var(--p-green-2), var(--p-orange-0));
+  --logo-text: light-dark(var(--p-green-2), var(--p-orange-0));
+  --sticker-color: light-dark(var(--p-green-2), var(--p-orange-0));
 
   /** FONT-FAMILIES */
   --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;

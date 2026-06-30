@@ -7,44 +7,40 @@ pre {
     padding: var(--article-padding);
     font-size: var(--size-small);
   }
-  --line-inset: calc(0.75 * var(--space-default));
-  --line-color: var(--accent-color);
-  --line-thickness: var(--bw-effect);
-  &::before,
-  &::after {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-
-    border-style: solid;
-    border-width: var(--line-thickness);
-  }
-
-  &::after {
-    inset-inline: calc(var(--line-thickness) * -1);
-    inset-block: calc(var(--line-inset) * -1);
-    border-width: 0 var(--line-thickness);
-    border-color: var(--line-color);
-    border-image: linear-gradient(
-        to bottom,
-        transparent,
-        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
-        transparent
-      )
-      1;
-  }
+  --corner-color: var(--accent-color);
+  --corner-thickness: var(--bw-effect);
+  --corner-arm: var(--space-default);
 
   &::before {
-    inset-inline: calc(var(--line-inset) * -1);
-    inset-block: calc(var(--line-thickness) * -1);
-    border-width: var(--line-thickness) 0;
-    border-image: linear-gradient(
-        to left,
-        transparent,
-        var(--line-color) var(--line-inset) calc(100% - var(--line-inset)),
-        transparent
-      )
-      1;
+    content: "";
+    position: absolute;
+    inset: calc(var(--corner-thickness) * -2);
+    pointer-events: none;
+
+    background-image:
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0),
+      linear-gradient(var(--corner-color) 0 0), linear-gradient(var(--corner-color) 0 0);
+    background-repeat: no-repeat;
+    background-size:
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm),
+      var(--corner-arm) var(--corner-thickness),
+      var(--corner-thickness) var(--corner-arm);
+    background-position:
+      top left,
+      top left,
+      top right,
+      top right,
+      bottom left,
+      bottom left,
+      bottom right,
+      bottom right;
   }
 }
 

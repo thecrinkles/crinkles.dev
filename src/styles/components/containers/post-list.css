@@ -1,8 +1,11 @@
 .post-list {
+  --post-list-threshold-min: 100px; /* optical: min title-column width before the row wraps */
+  --post-list-time-gap: 6px; /* optical: sub-scale nudge, tighter than --space-small */
+
   max-width: var(--layout-main-content);
 
   & > li {
-    --layout-threshold: calc(100px + var(--space-huge));
+    --layout-threshold: calc(var(--post-list-threshold-min) + var(--space-huge));
     --layout-inline-size: 75%;
 
     container-type: inline-size;
@@ -23,6 +26,6 @@
   }
 
   time {
-    margin-top: 6px;
+    margin-top: var(--post-list-time-gap);
   }
 }

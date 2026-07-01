@@ -1,9 +1,9 @@
 @media (prefers-reduced-motion: no-preference) {
-  .--duration-0 {
+  .--glitch-fast {
     --duration: 1.5s;
   }
 
-  .--duration-1 {
+  .--glitch-slow {
     --duration: 2s;
   }
 
@@ -30,7 +30,6 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: var(--duration, 2.5s);
-    animation-delay: var(--delay, 0s);
   }
 
   @keyframes glitch {

@@ -5,7 +5,7 @@ pre {
   color: var(--code-default);
   border-radius: 0;
 
-  /* corner brackets via the `corners` primitive */
+  /* corner brackets applied centrally in corners.css */
 
   code {
     padding: var(--codeblock-padding);

@@ -10,7 +10,7 @@
   --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
   --link-color: light-dark(var(--p-green-2), var(--p-green-1));
   --title-color: var(--text-0);
-  --header-color: light-dark(var(--p-orange-0), var(--p-orange-0));
+  --header-color: var(--p-orange-0);
   --button-color: light-dark(var(--p-orange-1), var(--p-orange-0));
   --divider-color: var(--surface-2);
   --canvas-color: light-dark(var(--p-green-2), var(--p-orange-0));
@@ -33,9 +33,9 @@
   --monospace: "Recursive", ui-monospace, monospace;
 
   /* FONT-WEIGHT */
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --fw-light: var(--p-fw-3);
+  --fw-regular: var(--p-fw-4);
+  --fw-bold: var(--p-fw-7);
 
   --font-vars-default: "MONO" 0, "CASL" 0.15, "slnt" 0, "CRSV" 0;
   --font-vars-header: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 1;
@@ -62,7 +62,7 @@
   --layout-small: var(--p-bp-1);
   --layout-width: min(100%, calc(var(--p-bp-5) - 2 * var(--space-layout)));
   --layout-main-content: var(--p-bp-3);
-  --layout-article: 47rem;
+  --layout-article: var(--p-bp-3);
 
   /** BOX-SHADOW */
   --shadow-y: 0px;

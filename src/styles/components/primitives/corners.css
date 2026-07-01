@@ -2,8 +2,10 @@
  * CORNERS
  *
  * Decorative L-shaped accent brackets at a box's four corners, drawn on a
- * pseudo-element so they sit just outside the edge. Applied to the explicit
- * opt-in targets below; add the `corners` class to opt any other box in.
+ * pseudo-element so they sit just outside the edge. The primitive names its
+ * targets directly below: `.card`, and `pre` (generated code blocks can't
+ * carry an opt-in class), plus a `.corners` escape hatch to opt any other
+ * box in. `:where()` keeps specificity 0 so consumers still own the tokens.
  *
  * API (override on the consuming element):
  *   --corner-color      bracket color

@@ -1,17 +1,9 @@
-.--gap-none {
-  --layout-gap: 0;
-}
-
 .--gap-list {
   --layout-gap: var(--space-gap-list);
 }
 
 .--gap-default {
   --layout-gap: var(--space-default);
-}
-
-.--gap-large {
-  --layout-gap: var(--space-large);
 }
 
 .--gap-huge {

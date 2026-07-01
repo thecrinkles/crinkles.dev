@@ -106,7 +106,7 @@ article {
     }
   }
 
-  /** special elemenst */
+  /** special elements */
   :where(img, pre, .callout, .cp_embed_wrapper) {
     margin-left: 50%;
     transform: translateX(-50%);

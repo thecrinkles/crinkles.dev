@@ -59,7 +59,7 @@ main[data-layout="paginated"] {
   margin-inline: auto;
 }
 
-:where(.--where, .--side, .--extra) {
+:where(.--side, .--extra) {
   width: 100%;
 }
 
@@ -87,15 +87,11 @@ main[data-layout="paginated"] {
   grid-area: sticker;
 }
 
-.--pagination {
-  grid-area: pagination;
-}
-
 .--full-width {
   grid-column: 1 / -1;
 }
 
-/** Media queries*= */
+/** Media queries */
 @media (--bp-layout) {
   main[data-layout] {
     --sticker-size: 225px;

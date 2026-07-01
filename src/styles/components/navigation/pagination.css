@@ -8,7 +8,6 @@
   grid-area: pagination;
   grid-template-columns: 1fr 1fr;
   border-top: var(--bw-default) solid var(--divider-color);
-  margin-inline: auto;
   margin-top: var(--space-huge);
 }
 

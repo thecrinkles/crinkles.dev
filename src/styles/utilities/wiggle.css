@@ -33,7 +33,3 @@
     transform: rotate(0deg);
   }
 }
-
-.wiggle {
-  animation: wiggle 0.5s;
-}

@@ -8,7 +8,6 @@
 .btn {
   --button-padding: 2px;
   --button-text: var(--text-0);
-  --button-border: var(--button-color);
 
   text-decoration: none;
   text-align: center;

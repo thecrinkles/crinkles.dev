@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 
 <aside class="--side">
   <div class="card | flex --column --gap-default">
-    <h2>Categories</h2>
+    <h2 class="title">Categories</h2>
     {% set tags = collections.posts | getAllTags %}
     {% include "components/tag-list.njk" %}
   </div>

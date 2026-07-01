@@ -10,9 +10,9 @@
   width: 100%;
   max-width: var(--card-width, var(--layout-main-content));
 
-  /* corner brackets via the `corners` primitive */
+  /* corner brackets applied centrally in corners.css */
 
-  h2 {
+  .title {
     font-size: var(--size-small);
     text-transform: uppercase;
     color: var(--text-2);

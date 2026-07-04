@@ -3,8 +3,8 @@
   "url": "https://crinkles.dev/",
   "site": "Crinkles",
   "language": "en",
-  "description": "UI development studio of Kevin Pennekamp, a Dutch web craftsman, front-end engineer and engineering manager. I love CSS, creating development tooling and writing about it!",
-  "keywords": "CSS, front-end, web design, consulting, architecture",
+  "description": "I'm Kevin Pennekamp, a Dutch front-end engineer specializing in CSS and security. I write about architecture and the craft of building thoughtful software.",
+  "keywords": "CSS, front-end, web security, software architecture, web platform",
   "feed": {
     "filename": "feed.xml",
     "path": "/feed/feed.xml",

@@ -1,0 +1,11 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: post
+permalink: "writing/{{ post.fileSlug }}.md"
+eleventyExcludeFromCollections: true
+---
+# {{ post.data.title }}
+
+{{ post.rawInput | safe }}

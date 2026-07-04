@@ -1,0 +1,17 @@
+---
+permalink: llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.site }}
+
+> {{ metadata.description | safe }}
+
+## Writing
+
+{% for post in collections.posts -%}
+- [{{ post.data.title | safe }}]({{ metadata.url }}writing/{{ post.fileSlug }}.md){% if post.data.description %}: {{ post.data.description | trim | safe }}{% endif %}
+{% endfor %}
+## Pages
+
+- [About / User manual]({{ metadata.url }}about/)
+- [Uses]({{ metadata.url }}uses/)

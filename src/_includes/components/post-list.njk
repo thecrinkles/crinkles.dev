@@ -1,9 +1,6 @@
 <ul class="post-list hover-group | flex --column --gap-huge">
   {% for post in posts %}
-    <li class="sidebar --left --gap-small">
-      <div class="meta | flex --column">
-        <time class="italic text-2 size-small" date="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
-      </div>
+    <li class="sidebar --right --gap-small">
       <div class="flex --column">
         <h3>
           <a href="{{ post.page.url }}">
@@ -11,6 +8,9 @@
           </a>
         </h3>
         <p class="text-1">{{ post.data.description }}</p>
+      </div>
+      <div class="meta | flex --column">
+        <time class="italic text-2 size-small text-right" date="{{ post.data.date }}">{{ post.data.date | readableDate }}</time>
       </div>
     </li>
   {% endfor %}

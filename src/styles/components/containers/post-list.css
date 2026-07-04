@@ -14,18 +14,15 @@
       margin-top: var(--space-small);
     }
 
-    .meta {
-      padding-inline-end: var(--space-huge);
+    time {
+      margin-top: var(--post-list-time-gap);
+      text-align: right;
     }
 
     @container (inline-size < 40rem) {
-      .meta {
-        display: none;
+      time {
+        text-align: left;
       }
     }
-  }
-
-  time {
-    margin-top: var(--post-list-time-gap);
   }
 }

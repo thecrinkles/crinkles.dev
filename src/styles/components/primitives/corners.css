@@ -13,7 +13,7 @@
  *   --corner-arm        length of each arm
  */
 :where(.card, pre, .corners) {
-  --corner-color: var(--accent-color);
+  --corner-color: var(--color-accent);
   --corner-thickness: var(--bw-effect);
   --corner-arm: var(--space-default);
 

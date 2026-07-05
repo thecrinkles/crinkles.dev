@@ -2,8 +2,8 @@
  * TEXT COLORS
  */
 .text-1 {
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 .text-2 {
-  color: var(--text-2);
+  color: var(--color-text-2);
 }

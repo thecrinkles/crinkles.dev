@@ -1,6 +1,6 @@
 .card {
   --card-width: 46ch;
-  --card-bg: var(--surface-1);
+  --card-bg: var(--color-surface-1);
   --card-padding: var(--space-large);
 
   background-color: var(--card-bg);
@@ -15,7 +15,7 @@
   .title {
     font-size: var(--size-small);
     text-transform: uppercase;
-    color: var(--text-2);
+    color: var(--color-text-2);
   }
 }
 @media (--bp-layout) {

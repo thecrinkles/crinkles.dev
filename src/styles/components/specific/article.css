@@ -24,7 +24,7 @@ article {
     a {
       transition: all var(--duration-1);
       cursor: pointer;
-      color: var(--text-2);
+      color: var(--color-text-2);
       font-weight: var(--fw-regular);
       opacity: var(--article-link-opacity);
       text-decoration: none;
@@ -40,11 +40,11 @@ article {
     }
 
     &:hover {
-      color: var(--heading-color);
+      color: var(--color-heading);
 
       a {
         opacity: 1;
-        color: var(--heading-color);
+        color: var(--color-heading);
       }
     }
   }
@@ -58,7 +58,7 @@ article {
       margin-left: var(--space-large);
 
       &::marker {
-        color: var(--accent-color);
+        color: var(--color-accent);
         font-weight: var(--fw-bold);
       }
     }
@@ -82,11 +82,11 @@ article {
     display: block;
     position: relative;
     padding: 0 var(--space-default);
-    color: var(--text-2);
+    color: var(--color-text-2);
     font-style: italic;
 
     &::before {
-      background: var(--accent-color);
+      background: var(--color-accent);
       content: "";
       height: calc(100% + 1px);
       left: 0;
@@ -102,7 +102,7 @@ article {
       font-style: italic;
       text-align: right;
       margin-top: var(--space-small);
-      color: var(--accent-color);
+      color: var(--color-accent);
     }
   }
 
@@ -123,7 +123,7 @@ article {
   }
 
   :not(pre) > code {
-    color: var(--code-inline);
+    color: var(--color-code-inline);
   }
 }
 

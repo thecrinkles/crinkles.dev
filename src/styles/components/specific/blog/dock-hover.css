@@ -3,7 +3,7 @@
 .dock-hover--adjacent {
   --dock-hover-gap: 4px; /* optical: tighter than the smallest spacing step */
   --dock-hover-item-height: 75px; /* decorative fixed bar height */
-  --dock-hover-bar-color: var(--link-color);
+  --dock-hover-bar-color: var(--color-link);
 
   width: 100%;
   display: flex;

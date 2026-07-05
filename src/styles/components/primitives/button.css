@@ -7,13 +7,13 @@
 
 .btn {
   --button-padding: 2px;
-  --button-text: var(--text-0);
+  --button-text: var(--color-text-0);
 
   text-decoration: none;
   text-align: center;
   font-weight: var(--fw-bold);
   color: var(--button-text);
-  border-bottom: var(--bw-effect) solid var(--button-color);
+  border-bottom: var(--bw-effect) solid var(--color-button);
 
   padding-block: var(--button-padding);
   transition: all var(--duration-0);
@@ -26,7 +26,7 @@
 }
 
 .btn:is(:hover, :focus) {
-  --button-text: var(--button-color);
+  --button-text: var(--color-button);
 
   transform: scale(1.05);
 }

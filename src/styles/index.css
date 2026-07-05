@@ -24,6 +24,7 @@
 @import "components/containers/card.css" layer(components);
 @import "components/containers/page.css" layer(components);
 @import "components/containers/post-list.css" layer(components);
+@import "components/forms/search.css" layer(components);
 @import "components/navigation/header.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
 @import "components/navigation/tag-list.css" layer(components);
@@ -33,7 +34,6 @@
 @import "components/specific/codeblock.css" layer(components);
 @import "components/specific/footer.css" layer(components);
 @import "components/specific/metadata.css" layer(components);
-@import "components/specific/search.css" layer(components);
 
 /** blog-post-only styles (not part of the app design system) */
 @import "components/specific/blog/dock-hover.css" layer(components);

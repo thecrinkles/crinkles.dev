@@ -9,13 +9,13 @@
   h2 {
     font-size: var(--size-small);
     text-transform: uppercase;
-    color: var(--text-2);
+    color: var(--color-text-2);
     margin-block-end: var(--space-small);
 
     &:not(:first-of-type) {
       padding-block-start: var(--space-default);
       margin-block-start: var(--space-large);
-      border-top: var(--bw-default) solid var(--divider-color);
+      border-top: var(--bw-default) solid var(--color-divider);
     }
   }
 }
@@ -29,7 +29,7 @@
 
       h2:first-of-type {
         padding-block-start: var(--space-default);
-        border-top: var(--bw-default) solid var(--divider-color);
+        border-top: var(--bw-default) solid var(--color-divider);
       }
     }
 

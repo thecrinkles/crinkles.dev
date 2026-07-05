@@ -1,8 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  color: var(--text-0);
-  background-color: var(--surface-0);
+  color: var(--color-text-0);
+  background-color: var(--color-surface-0);
   z-index: 1;
   padding-inline: var(--space-layout);
   font-family: var(--sans-serif);
@@ -14,7 +14,7 @@ body {
 a {
   color: inherit;
   transition: all var(--duration-0);
-  text-decoration-color: hsl(from var(--link-color) h s l / var(--opacity-effect));
+  text-decoration-color: hsl(from var(--color-link) h s l / var(--opacity-effect));
   text-decoration-skip-ink: auto;
 
   &:is(:hover, :focus, [aria-current="page"]) {
@@ -34,7 +34,7 @@ h3 {
   font-family: var(--sans-serif);
   font-variation-settings: var(--font-vars-header);
   font-weight: var(--fw-bold);
-  color: var(--title-color);
+  color: var(--color-title);
 }
 
 h1 {
@@ -55,8 +55,8 @@ i,
 }
 
 ::selection {
-  color: var(--surface-0);
-  background: var(--text-0);
+  color: var(--color-surface-0);
+  background: var(--color-text-0);
   text-decoration: none;
 }
 

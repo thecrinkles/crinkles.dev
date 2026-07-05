@@ -12,7 +12,7 @@
   a::before {
     content: "#";
     font-size: var(--tag-prefix-size);
-    color: var(--link-color);
+    color: var(--color-link);
   }
 
   a[data-selected="true"] {

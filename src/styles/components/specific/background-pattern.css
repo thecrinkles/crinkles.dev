@@ -8,10 +8,10 @@
   height: calc(100vh - var(--pattern-height-offset));
   z-index: -1;
   background: linear-gradient(
-    var(--surface-0),
-    var(--canvas-color),
-    var(--canvas-color),
-    var(--surface-0)
+    var(--color-surface-0),
+    var(--color-canvas),
+    var(--color-canvas),
+    var(--color-surface-0)
   );
   opacity: var(--opacity-light);
   mask-image: url("../site/pattern.svg");

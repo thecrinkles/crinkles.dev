@@ -1,11 +1,11 @@
 .callout {
-  --callout-bg: var(--accent-color);
-  --callout-text: var(--surface-0);
+  --callout-bg: var(--color-accent);
+  --callout-text: var(--color-surface-0);
   --callout-label-offset: -0.675em; /* optical: lift label onto the top edge */
   --callout-label-padding: 0 6px;
 
   padding: var(--space-default);
-  background-color: var(--surface-1);
+  background-color: var(--color-surface-1);
   position: relative;
 
   &::before {
@@ -24,6 +24,6 @@
   a,
   a:visited {
     text-decoration: underline;
-    text-decoration-color: var(--text-0);
+    text-decoration-color: var(--color-text-0);
   }
 }

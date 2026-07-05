@@ -1,30 +1,31 @@
 :root {
   /** COLORS */
-  --text-0: light-dark(var(--p-neutral-5), var(--p-neutral-0));
-  --text-1: light-dark(var(--p-neutral-4), var(--p-neutral-1));
-  --text-2: light-dark(var(--p-neutral-3), var(--p-neutral-2));
-  --surface-0: light-dark(var(--p-neutral-0), var(--p-neutral-5));
-  --surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
-  --surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
+  --color-text-0: light-dark(var(--p-neutral-5), var(--p-neutral-0));
+  --color-text-1: light-dark(var(--p-neutral-4), var(--p-neutral-1));
+  --color-text-2: light-dark(var(--p-neutral-3), var(--p-neutral-2));
+  --color-surface-0: light-dark(var(--p-neutral-0), var(--p-neutral-5));
+  --color-surface-1: light-dark(var(--p-neutral-1), var(--p-neutral-4));
+  --color-surface-2: light-dark(var(--p-neutral-2), var(--p-neutral-3));
 
-  --accent-color: light-dark(var(--p-orange-1), var(--p-orange-0));
-  --link-color: light-dark(var(--p-green-2), var(--p-green-1));
-  --title-color: var(--text-0);
-  --heading-color: var(--p-orange-0);
-  --button-color: light-dark(var(--p-orange-1), var(--p-orange-0));
-  --glyph-color: light-dark(var(--p-green-2), var(--p-orange-0));
-  --interactive-color: var(--glyph-color);
-  --divider-color: var(--surface-2);
-  --canvas-color: light-dark(var(--p-green-2), var(--p-orange-0));
-  --glow-color: hsl(from var(--accent-color) h s l / var(--opacity-background-glow));
+  --color-accent: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --color-link: light-dark(var(--p-green-2), var(--p-green-1));
+  --color-title: var(--color-text-0);
+  --color-heading: var(--p-orange-0);
+  --color-button: light-dark(var(--p-orange-1), var(--p-orange-0));
+  --color-glyph: light-dark(var(--p-green-2), var(--p-orange-0));
+  --color-glyph-reverse: light-dark(var(--p-orange-0), var(--p-green-2));
+  --color-interactive: var(--color-glyph);
+  --color-divider: var(--color-surface-2);
+  --color-canvas: light-dark(var(--p-green-2), var(--p-orange-0));
+  --color-glow: hsl(from var(--color-accent) h s l / var(--opacity-background-glow));
 
-  --code-inline: light-dark(var(--p-orange-2), var(--p-orange-0));
-  --code-default: var(--p-neutral-0);
-  --code-muted: var(--p-neutral-2);
-  --code-primary: var(--p-orange-0);
-  --code-secondary: var(--p-green-0);
-  --code-tertiary: var(--p-yellow-0);
-  --code-bg: var(--p-neutral-4);
+  --color-code-inline: light-dark(var(--p-orange-2), var(--p-orange-0));
+  --color-code-default: var(--p-neutral-0);
+  --color-code-muted: var(--p-neutral-2);
+  --color-code-primary: var(--p-orange-0);
+  --color-code-secondary: var(--p-green-0);
+  --color-code-tertiary: var(--p-yellow-0);
+  --color-code-bg: var(--p-neutral-4);
 
   /** FONT-FAMILIES */
   --sans-serif: "Recursive", source-sans-pro, system-ui, sans-serif;
@@ -65,7 +66,7 @@
   /** BOX-SHADOW */
   --shadow-y: 0px;
   --shadow-blur: var(--p-size-3);
-  --shadow-default: 0 var(--shadow-y) var(--shadow-blur) var(--glow-color);
+  --shadow-default: 0 var(--shadow-y) var(--shadow-blur) var(--color-glow);
 
   /** BORDER-RADIUS */
   --radius-small: var(--p-radius-1);

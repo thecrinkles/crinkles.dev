@@ -1,8 +1,8 @@
 pre {
   --codeblock-padding: var(--space-default);
 
-  background-color: var(--code-bg);
-  color: var(--code-default);
+  background-color: var(--color-code-bg);
+  color: var(--color-code-default);
   border-radius: 0;
 
   /* corner brackets applied centrally in corners.css */
@@ -17,36 +17,36 @@ pre {
 code .token.punctuation,
 code .token.comment,
 code .token.operator {
-  color: var(--code-muted);
+  color: var(--color-code-muted);
   font-weight: var(--fw-light);
 }
 
 /** SYNTAX */
 code .token.keyword,
 code .token.tag {
-  color: var(--code-muted);
+  color: var(--color-code-muted);
 }
 
 /** To overwrite the above colors */
 code .token.attr-value {
-  color: var(--code-default);
+  color: var(--color-code-default);
 }
 
 code .token.attr-name,
 code .token.selector {
-  color: var(--code-primary);
+  color: var(--color-code-primary);
 }
 
 code .token.property,
 code .token.function,
 code .token.rule,
 code .token.atrule {
-  color: var(--code-secondary);
+  color: var(--color-code-secondary);
 }
 
 code .token.string,
 code .token.number {
-  color: var(--code-tertiary);
+  color: var(--color-code-tertiary);
 }
 
 code .token.function,

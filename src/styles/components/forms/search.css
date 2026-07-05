@@ -1,9 +1,9 @@
 search {
-  --search-rule: var(--divider-color);
-  --search-glyph: var(--glyph-color);
-  --search-interaction: var(--interactive-color);
-  --search-text: var(--text-0);
-  --search-placeholder: var(--text-2);
+  --search-rule: var(--color-divider);
+  --search-glyph: var(--color-glyph);
+  --search-interaction: var(--color-interactive);
+  --search-text: var(--color-text-0);
+  --search-placeholder: var(--color-text-2);
 
   display: flex;
   align-items: baseline;

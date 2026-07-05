@@ -19,7 +19,7 @@
 
 .showcase > *,
 .showcase--mobile > * {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
   box-shadow: var(--showcase-elevation);
   width: 100%;
   height: 100%;

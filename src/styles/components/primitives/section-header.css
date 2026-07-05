@@ -3,7 +3,7 @@
 
   font-size: var(--size-subheader);
   text-decoration: underline;
-  text-decoration-color: hsl(from var(--heading-color) h s l / var(--header-opacity));
+  text-decoration-color: hsl(from var(--color-heading) h s l / var(--header-opacity));
   text-decoration-thickness: 0.625ch;
   text-underline-offset: -0.35ch;
   text-decoration-skip-ink: none;

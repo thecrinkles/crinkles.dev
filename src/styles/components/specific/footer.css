@@ -7,7 +7,7 @@ footer {
   font-family: var(--monospace);
   font-variation-settings: var(--font-vars-code);
   font-size: var(--size-small);
-  border-top: var(--bw-default) solid var(--divider-color);
+  border-top: var(--bw-default) solid var(--color-divider);
 
   .quote {
     width: 100%;
@@ -17,7 +17,7 @@ footer {
     &::before,
     &::after {
       font-weight: var(--fw-bold);
-      color: var(--accent-color);
+      color: var(--color-accent);
     }
 
     &::before {

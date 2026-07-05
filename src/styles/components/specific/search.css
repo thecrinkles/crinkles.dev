@@ -1,0 +1,75 @@
+search {
+  --search-rule: var(--divider-color);
+  --search-glyph: var(--glyph-color);
+  --search-interaction: var(--interactive-color);
+  --search-text: var(--text-0);
+  --search-placeholder: var(--text-2);
+
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-small);
+  border-bottom: var(--bw-default) solid var(--search-rule);
+  padding-bottom: var(--space-small);
+  transition: border-color var(--duration-0) ease;
+  width: 100%;
+}
+
+search .glyph {
+  font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
+  font-weight: var(--fw-bold);
+  color: var(--search-glyph);
+  cursor: text;
+  user-select: none;
+}
+
+search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding-block: 0.125rem;
+  font-family: var(--monospace);
+  font-variation-settings: var(--font-vars-code);
+  font-size: var(--size-small);
+  color: var(--search-text);
+  caret-color: var(--search-interaction);
+  outline: none;
+}
+
+search input::placeholder {
+  color: var(--search-placeholder);
+  opacity: 1;
+}
+
+search input::-webkit-search-decoration,
+search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+search ::selection {
+  background: hsl(from var(--search-glyph) h s l / var(--opacity-light));
+}
+
+search:hover {
+  border-color: color-mix(in oklab, var(--search-rule), var(--search-interaction) 45%);
+}
+
+search:focus-within {
+  border-bottom-color: var(--search-interaction);
+}
+
+search:has(input:focus-visible) {
+  border-bottom-width: var(--bw-effect);
+  padding-bottom: calc(var(--space-small) - (var(--bw-effect) - var(--bw-default)));
+}
+
+search:active {
+  border-bottom-color: var(--search-interaction);
+}
+
+search:has(input:disabled) {
+  border-bottom-style: dashed;
+  opacity: var(--opacity-effect);
+  pointer-events: none;
+}

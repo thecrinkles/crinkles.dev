@@ -21,7 +21,7 @@ header.main-header {
         right: 0;
         bottom: var(--bw-effect);
         height: var(--bw-effect);
-        background: var(--logo-text);
+        background: var(--interactive-color);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform var(--duration-0) ease;

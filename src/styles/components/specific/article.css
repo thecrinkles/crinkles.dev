@@ -40,11 +40,11 @@ article {
     }
 
     &:hover {
-      color: var(--header-color);
+      color: var(--heading-color);
 
       a {
         opacity: 1;
-        color: var(--header-color);
+        color: var(--heading-color);
       }
     }
   }

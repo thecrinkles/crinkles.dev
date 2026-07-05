@@ -4,5 +4,8 @@
   font-weight: 300 700;
   font-style: oblique -15deg 0deg;
   font-display: swap;
-  size-adjust: 90%;
+  size-adjust: 96.5%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
 }

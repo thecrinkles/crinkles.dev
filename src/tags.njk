@@ -9,21 +9,29 @@ pagination:
   filter:
     - all
     - writing
+    - posts
 permalink: /tags/{{ tag | slugify }}/
 eleventyComputed:
   title: "Category: '{{ tag }}'"
 ---
 
 {% set selected = tag %}
-<section class="--main">
-  {% set posts = collections[ tag ] | reverse or [] %} {% include
-  "components/post-list.njk" %}
+<section class="--main | flex --column --gap-default">
+  <div data-search-default>
+    {% set posts = collections[ tag ] | reverse or [] %}
+    {% include "components/post-list.njk" %}
+  </div>
+  <ul class="post-list | flex --column --gap-huge" data-search-results data-search-tag="{{ tag }}" hidden></ul>
+  <p class="text-1" data-search-empty hidden>No matching posts.</p>
 </section>
 
 <aside class="--side">
   <div class="card | flex --column --gap-default">
+    {% include "components/search.njk" %}
     <h2 class="title">Categories</h2>
     {% set tags = collections.posts | getAllTags %}
     {% include "components/tag-list.njk" %}
   </div>
 </aside>
+
+<script defer src="/js/search.js"></script>

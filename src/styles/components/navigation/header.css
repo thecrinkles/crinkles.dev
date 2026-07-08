@@ -7,42 +7,39 @@ header.main-header {
   .logo {
     --layout-gap: 0.4em;
 
+    align-items: end;
+
     a {
       color: var(--color-text-0);
       position: relative;
       font-family: var(--monospace);
       font-variation-settings: var(--font-vars-logo);
       text-decoration: none;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: var(--bw-effect);
-        height: var(--bw-effect);
-        background: var(--color-interactive);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform var(--duration-0) ease;
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-      }
     }
 
-    &:is(:hover, :focus) svg:first-child {
+    &:is(:hover, :focus) .lettermark path {
+      fill: var(--color-link);
+    }
+
+    &:is(:hover, :focus) svg.crinkle:first-child {
       animation: wiggle 0.4s;
     }
 
-    &:is(:hover, :focus) svg:last-of-type {
+    &:is(:hover, :focus) svg.crinkle:last-of-type {
       animation: wiggle-reverse 0.6s;
     }
 
-    svg {
+    svg.crinkle {
       transition: transform var(--duration-3);
-      height: 1rem;
+    }
+
+    svg {
+      height: var(--size-subheader);
+    }
+
+    svg.lettermark {
+      height: calc(1.1 * var(--size-subheader));
+      margin-bottom: 0.35em;
     }
 
     path {

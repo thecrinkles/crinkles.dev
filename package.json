@@ -8,6 +8,7 @@
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "start": "eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "format": "npx prettier --write --ignore-unknown",
     "audit": "npx @sandworm/audit@latest --fail-on='[\"*.critical\", \"*.high\"]'",
     "favicons": "node ./src/_setup/generate-favicons.js"
   },

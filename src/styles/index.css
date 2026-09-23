@@ -29,6 +29,7 @@
 @import "components/data/datacard.css" layer(components);
 @import "components/forms/search.css" layer(components);
 @import "components/navigation/header.css" layer(components);
+@import "components/navigation/skip-link.css" layer(components);
 @import "components/navigation/pagination.css" layer(components);
 @import "components/navigation/tag-list.css" layer(components);
 @import "components/specific/article.css" layer(components);

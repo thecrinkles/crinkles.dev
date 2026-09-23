@@ -56,6 +56,7 @@
       name="description"
       content="{{ description or metadata.description }}"
     />
+    <meta name="author" content="{{ metadata.author.name }}" />
     <meta property="fediverse:creator" content="@crinkles@front-end.social" />
     <!-- OG -->
     <meta property="og:site_name" content="{{ metadata.site }}" />
@@ -67,6 +68,7 @@
       content="{{ description or metadata.description }}"
     />
     <meta property="og:image" content="{{ metadata.social.img }}" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
@@ -108,8 +110,9 @@
   </head>
 
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     {% include "partials/header.njk" %}
-    <main data-layout="{{ layout }}">{{ content | safe }}</main>
+    <main id="main" data-layout="{{ layout }}">{{ content | safe }}</main>
     {% include "partials/footer.njk" %}
     <div class="pattern"></div>
   </body>

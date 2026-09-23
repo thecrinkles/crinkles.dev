@@ -1,0 +1,26 @@
+/**
+ * SKIP LINK
+ *
+ * First focusable element on the page, jumps past the header to `#main`.
+ * Hidden until it receives keyboard focus.
+ */
+
+.skip-link {
+  position: absolute;
+  inset-block-start: var(--space-small);
+  inset-inline-start: var(--space-small);
+  z-index: 1;
+  padding: var(--space-small) var(--space-default);
+  background: var(--color-surface-1);
+  color: var(--color-text-0);
+  border-radius: var(--radius-small);
+
+  /* feo's .visually-hidden has no focus escape, so the hiding lives here */
+  &:not(:focus) {
+    clip-path: inset(50%);
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

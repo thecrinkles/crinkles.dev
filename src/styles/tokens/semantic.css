@@ -44,7 +44,7 @@
   --size-header: var(--p-size-2);
   --size-subheader: var(--p-size-1);
   --size-small: var(--p-size--1);
-  --size-glyph: var(--p-size-1);
+  --size-glyph: var(--p-size-2);
 
   /** SPACING */
   --space-none: 0;
